@@ -1,0 +1,20 @@
+{
+      
+        "txIns": [
+            {
+                "fromAddr": "t1SM2aDhvz535zJ43zQnb393x3YLUf4sAmZ",
+                "fromTxid": "dd089dd44ba35ffc82665fbfcae7754ab3df1a03ac56f1320c2bdc54c8d54013",
+                "fromIndex": 0,
+                "fromAmount": 32000,
+                "fromScriptPubKey": "76a9145cf0bea581fee7556db3087422478848e0db814488ac"
+            }
+        ],
+        "txOuts": [
+            {
+                "toAddr": "t1SM2aDhvz535zJ43zQnb393x3YLUf4sAmZ",
+                "toAmount": 31000
+            }
+        ],
+        "hex":""
+        
+    }

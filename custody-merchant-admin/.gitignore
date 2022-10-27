@@ -1,0 +1,17 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
+go.mod
+go.sum
+logs/*
+.idea/*
+.DS_Store/*
+static/*
+router/web/.DS_Store
+custody-merchant-admin
+bernie-local-config.toml

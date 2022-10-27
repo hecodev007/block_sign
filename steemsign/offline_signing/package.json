@@ -1,0 +1,22 @@
+{
+  "name": "offline_signing",
+  "version": "0.0.1",
+  "description": "Steem offline transfer transaction signing tool",
+  "main": "get_block_prefix.js",
+  "dependencies": {
+    "@steemit/steem-js": "^0.7.11"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/steemit/offline_signing.git"
+  },
+  "author": "Justin Welch",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/steemit/offline_signing/issues"
+  },
+  "homepage": "https://github.com/steemit/offline_signing#readme"
+}

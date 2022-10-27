@@ -1,0 +1,13 @@
+mode = "debug"
+coin_name  = "fis"
+user_id  = 12
+csv_path = "./fis_d_usb_202102041847.csv"
+
+
+[databases.user]
+name= "addrmanagement"
+type= "mysql"
+url = "rm-wz97y5e9e7bs85y7gbo.mysql.rds.aliyuncs.com"
+user= "dataserver"
+password= "3vn8QoHNkZzZzRDj2dWM"
+mode= "release"

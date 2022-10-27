@@ -1,0 +1,1 @@
+nohup ./bchserver_linux  &

@@ -1,0 +1,77 @@
+2022-03-26 11:40:23	INFO	/Users/one/xutonghua/xth_sign/lunasign/main.go:58	startServer  :14032
+2022-03-26 11:41:32	INFO	/Users/one/xutonghua/xth_sign/lunasign/main.go:51	get signal: 2 sever will stop and showdown
+2022-03-26 11:41:44	INFO	/Users/one/xutonghua/xth_sign/lunasign/main.go:58	startServer  :14032
+2022-03-26 12:32:50	INFO	/Users/one/xutonghua/xth_sign/lunasign/main.go:51	get signal: 2 sever will stop and showdown
+2022-03-26 12:32:50	INFO	/Users/one/xutonghua/xth_sign/lunasign/main.go:56	server showdown !
+2022-03-26 12:32:50	INFO	/Users/one/xutonghua/xth_sign/lunasign/main.go:62	startServer  :14032, err:http: Server closed
+2022-03-26 12:33:08	INFO	/Users/one/xutonghua/xth_sign/lunasign/main.go:58	startServer  :14032
+2022-03-26 12:34:07	INFO	/Users/one/xutonghua/xth_sign/lunasign/main.go:51	get signal: 2 sever will stop and showdown
+2022-03-26 12:34:13	INFO	/Users/one/xutonghua/xth_sign/lunasign/main.go:58	startServer  :14032
+2022-03-26 12:34:16	INFO	/Users/one/xutonghua/xth_sign/lunasign/utils/luna/rpc.go:183	https://lcd.terra.dev/wasm/contracts/terra1rl20t79ffsrqfa29rke48tj05gj9jxumm92vg8/store?query_msg=%!B(string=terra15srwqp98mv36hf6cs9heu5pz9qa59hl8km5q2d)"balance"%!A(MISSING)%!B(MISSING)"address"%!A(MISSING)%!"(MISSING)%!v(MISSING)"%!D(MISSING)%!D(MISSING)
+2022-03-26 12:35:51	INFO	/Users/one/xutonghua/xth_sign/lunasign/main.go:51	get signal: 2 sever will stop and showdown
+2022-03-26 12:36:02	INFO	/Users/one/xutonghua/xth_sign/lunasign/main.go:58	startServer  :14032
+2022-03-26 12:36:35	INFO	/Users/one/xutonghua/xth_sign/lunasign/main.go:51	get signal: 2 sever will stop and showdown
+2022-03-26 12:36:41	INFO	/Users/one/xutonghua/xth_sign/lunasign/main.go:58	startServer  :14032
+2022-03-26 12:36:46	INFO	/Users/one/xutonghua/xth_sign/lunasign/utils/luna/rpc.go:183	https://lcd.terra.dev/wasm/contracts/terra1rl20t79ffsrqfa29rke48tj05gj9jxumm92vg8/store?query_msg={"balance":{"address": "terra15srwqp98mv36hf6cs9heu5pz9qa59hl8km5q2d"}}
+2022-03-26 12:36:51	INFO	/Users/one/xutonghua/xth_sign/lunasign/utils/luna/rpc.go:183	https://lcd.terra.dev/wasm/contracts/terra1rl20t79ffsrqfa29rke48tj05gj9jxumm92vg8/store?query_msg={"balance":{"address": "terra15srwqp98mv36hf6cs9heu5pz9qa59hl8km5q2d"}}
+2022-03-26 12:36:55	INFO	/Users/one/xutonghua/xth_sign/lunasign/utils/luna/rpc.go:183	https://lcd.terra.dev/wasm/contracts/terra1rl20t79ffsrqfa29rke48tj05gj9jxumm92vg8/store?query_msg={"balance":{"address": "terra15srwqp98mv36hf6cs9heu5pz9qa59hl8km5q2d"}}
+2022-03-26 12:36:57	INFO	/Users/one/xutonghua/xth_sign/lunasign/utils/luna/rpc.go:183	https://lcd.terra.dev/wasm/contracts/terra1rl20t79ffsrqfa29rke48tj05gj9jxumm92vg8/store?query_msg={"balance":{"address": "terra15srwqp98mv36hf6cs9heu5pz9qa59hl8km5q2d"}}
+2022-03-26 12:36:58	INFO	/Users/one/xutonghua/xth_sign/lunasign/utils/luna/rpc.go:183	https://lcd.terra.dev/wasm/contracts/terra1rl20t79ffsrqfa29rke48tj05gj9jxumm92vg8/store?query_msg={"balance":{"address": "terra15srwqp98mv36hf6cs9heu5pz9qa59hl8km5q2d"}}
+2022-03-26 12:37:00	INFO	/Users/one/xutonghua/xth_sign/lunasign/utils/luna/rpc.go:183	https://lcd.terra.dev/wasm/contracts/terra1rl20t79ffsrqfa29rke48tj05gj9jxumm92vg8/store?query_msg={"balance":{"address": "terra15srwqp98mv36hf6cs9heu5pz9qa59hl8km5q2d"}}
+2022-03-26 12:37:00	INFO	/Users/one/xutonghua/xth_sign/lunasign/utils/luna/rpc.go:183	https://lcd.terra.dev/wasm/contracts/terra1rl20t79ffsrqfa29rke48tj05gj9jxumm92vg8/store?query_msg={"balance":{"address": "terra15srwqp98mv36hf6cs9heu5pz9qa59hl8km5q2d"}}
+2022-03-26 12:37:03	INFO	/Users/one/xutonghua/xth_sign/lunasign/utils/luna/rpc.go:183	https://lcd.terra.dev/wasm/contracts/terra1rl20t79ffsrqfa29rke48tj05gj9jxumm92vg8/store?query_msg={"balance":{"address": "terra15srwqp98mv36hf6cs9heu5pz9qa59hl8km5q2d"}}
+2022-03-26 12:37:04	INFO	/Users/one/xutonghua/xth_sign/lunasign/utils/luna/rpc.go:183	https://lcd.terra.dev/wasm/contracts/terra1rl20t79ffsrqfa29rke48tj05gj9jxumm92vg8/store?query_msg={"balance":{"address": "terra15srwqp98mv36hf6cs9heu5pz9qa59hl8km5q2d"}}
+2022-03-26 12:37:04	INFO	/Users/one/xutonghua/xth_sign/lunasign/utils/luna/rpc.go:183	https://lcd.terra.dev/wasm/contracts/terra1rl20t79ffsrqfa29rke48tj05gj9jxumm92vg8/store?query_msg={"balance":{"address": "terra15srwqp98mv36hf6cs9heu5pz9qa59hl8km5q2d"}}
+2022-03-26 12:39:28	INFO	/Users/one/xutonghua/xth_sign/lunasign/main.go:51	get signal: 2 sever will stop and showdown
+2022-03-26 12:39:38	INFO	/Users/one/xutonghua/xth_sign/lunasign/main.go:58	startServer  :14032
+2022-03-26 12:40:50	INFO	/Users/one/xutonghua/xth_sign/lunasign/utils/luna/rpc.go:183	https://lcd.terra.dev/wasm/contracts/terra1rl20t79ffsrqfa29rke48tj05gj9jxumm92vg8/store?query_msg={"balance":{"address": "terra15srwqp98mv36hf6cs9heu5pz9qa59hl8km5q2d"}}
+2022-03-26 12:40:53	INFO	/Users/one/xutonghua/xth_sign/lunasign/utils/luna/rpc.go:183	https://lcd.terra.dev/wasm/contracts/terra1rl20t79ffsrqfa29rke48tj05gj9jxumm92vg8/store?query_msg={"balance":{"address": "terra15srwqp98mv36hf6cs9heu5pz9qa59hl8km5q2d"}}
+2022-03-26 12:40:55	INFO	/Users/one/xutonghua/xth_sign/lunasign/utils/luna/rpc.go:183	https://lcd.terra.dev/wasm/contracts/terra1rl20t79ffsrqfa29rke48tj05gj9jxumm92vg8/store?query_msg={"balance":{"address": "terra15srwqp98mv36hf6cs9heu5pz9qa59hl8km5q2d"}}
+2022-03-26 12:40:57	INFO	/Users/one/xutonghua/xth_sign/lunasign/utils/luna/rpc.go:183	https://lcd.terra.dev/wasm/contracts/terra1rl20t79ffsrqfa29rke48tj05gj9jxumm92vg8/store?query_msg={"balance":{"address": "terra15srwqp98mv36hf6cs9heu5pz9qa59hl8km5q2d"}}
+2022-03-26 12:40:59	INFO	/Users/one/xutonghua/xth_sign/lunasign/utils/luna/rpc.go:183	https://lcd.terra.dev/wasm/contracts/terra1rl20t79ffsrqfa29rke48tj05gj9jxumm92vg8/store?query_msg={"balance":{"address": "terra15srwqp98mv36hf6cs9heu5pz9qa59hl8km5q2d"}}
+2022-03-26 12:41:01	INFO	/Users/one/xutonghua/xth_sign/lunasign/utils/luna/rpc.go:183	https://lcd.terra.dev/wasm/contracts/terra1rl20t79ffsrqfa29rke48tj05gj9jxumm92vg8/store?query_msg={"balance":{"address": "terra15srwqp98mv36hf6cs9heu5pz9qa59hl8km5q2d"}}
+2022-03-26 12:41:02	INFO	/Users/one/xutonghua/xth_sign/lunasign/utils/luna/rpc.go:183	https://lcd.terra.dev/wasm/contracts/terra1rl20t79ffsrqfa29rke48tj05gj9jxumm92vg8/store?query_msg={"balance":{"address": "terra15srwqp98mv36hf6cs9heu5pz9qa59hl8km5q2d"}}
+2022-03-26 12:41:03	INFO	/Users/one/xutonghua/xth_sign/lunasign/utils/luna/rpc.go:183	https://lcd.terra.dev/wasm/contracts/terra1rl20t79ffsrqfa29rke48tj05gj9jxumm92vg8/store?query_msg={"balance":{"address": "terra15srwqp98mv36hf6cs9heu5pz9qa59hl8km5q2d"}}
+2022-03-26 12:41:07	INFO	/Users/one/xutonghua/xth_sign/lunasign/utils/luna/rpc.go:183	https://lcd.terra.dev/wasm/contracts/terra1rl20t79ffsrqfa29rke48tj05gj9jxumm92vg8/store?query_msg={"balance":{"address": "terra15srwqp98mv36hf6cs9heu5pz9qa59hl8km5q2d"}}
+2022-03-26 12:42:24	INFO	/Users/one/xutonghua/xth_sign/lunasign/utils/luna/rpc.go:183	https://lcd.terra.dev/wasm/contracts/terra1rl20t79ffsrqfa29rke48tj05gj9jxumm92vg8/store?query_msg={"balance":{"address": "terra15srwqp98mv36hf6cs9heu5pz9qa59hl8km5q2d"}}
+2022-03-26 12:42:27	INFO	/Users/one/xutonghua/xth_sign/lunasign/utils/luna/rpc.go:183	https://lcd.terra.dev/wasm/contracts/terra1rl20t79ffsrqfa29rke48tj05gj9jxumm92vg8/store?query_msg={"balance":{"address": "terra15srwqp98mv36hf6cs9heu5pz9qa59hl8km5q2d"}}
+2022-03-26 12:42:28	INFO	/Users/one/xutonghua/xth_sign/lunasign/utils/luna/rpc.go:183	https://lcd.terra.dev/wasm/contracts/terra1rl20t79ffsrqfa29rke48tj05gj9jxumm92vg8/store?query_msg={"balance":{"address": "terra15srwqp98mv36hf6cs9heu5pz9qa59hl8km5q2d"}}
+2022-03-26 12:42:29	INFO	/Users/one/xutonghua/xth_sign/lunasign/utils/luna/rpc.go:183	https://lcd.terra.dev/wasm/contracts/terra1rl20t79ffsrqfa29rke48tj05gj9jxumm92vg8/store?query_msg={"balance":{"address": "terra15srwqp98mv36hf6cs9heu5pz9qa59hl8km5q2d"}}
+2022-03-26 12:42:31	INFO	/Users/one/xutonghua/xth_sign/lunasign/utils/luna/rpc.go:183	https://lcd.terra.dev/wasm/contracts/terra1rl20t79ffsrqfa29rke48tj05gj9jxumm92vg8/store?query_msg={"balance":{"address": "terra15srwqp98mv36hf6cs9heu5pz9qa59hl8km5q2d"}}
+2022-03-26 12:42:37	INFO	/Users/one/xutonghua/xth_sign/lunasign/main.go:51	get signal: 2 sever will stop and showdown
+2022-03-26 12:43:10	INFO	/Users/one/xutonghua/xth_sign/lunasign/main.go:58	startServer  :14032
+2022-03-26 12:45:37	INFO	/Users/one/xutonghua/xth_sign/lunasign/main.go:51	get signal: 2 sever will stop and showdown
+2022-03-26 12:45:43	INFO	/Users/one/xutonghua/xth_sign/lunasign/main.go:58	startServer  :14032
+2022-03-26 12:46:00	INFO	/Users/one/xutonghua/xth_sign/lunasign/main.go:51	get signal: 2 sever will stop and showdown
+2022-03-26 12:46:17	INFO	/Users/one/xutonghua/xth_sign/lunasign/main.go:58	startServer  :14032
+2022-03-26 12:46:25	INFO	/Users/one/xutonghua/xth_sign/lunasign/utils/luna/rpc.go:286	1
+2022-03-26 12:46:25	INFO	/Users/one/xutonghua/xth_sign/lunasign/utils/luna/rpc.go:194	<html>
+<head><title>400 Bad Request</title></head>
+<body>
+<center><h1>400 Bad Request</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+2022-03-26 12:46:26	INFO	/Users/one/xutonghua/xth_sign/lunasign/utils/luna/rpc.go:286	1
+2022-03-26 12:46:26	INFO	/Users/one/xutonghua/xth_sign/lunasign/utils/luna/rpc.go:194	<html>
+<head><title>400 Bad Request</title></head>
+<body>
+<center><h1>400 Bad Request</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+2022-03-26 12:46:40	INFO	/Users/one/xutonghua/xth_sign/lunasign/utils/luna/rpc.go:286	1
+2022-03-26 12:46:40	INFO	/Users/one/xutonghua/xth_sign/lunasign/utils/luna/rpc.go:194	<html>
+<head><title>400 Bad Request</title></head>
+<body>
+<center><h1>400 Bad Request</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+2022-03-26 12:52:12	INFO	/Users/one/xutonghua/xth_sign/lunasign/main.go:51	get signal: 2 sever will stop and showdown
+2022-03-26 12:52:18	INFO	/Users/one/xutonghua/xth_sign/lunasign/main.go:58	startServer  :14032
+2022-03-26 12:55:56	INFO	/Users/one/xutonghua/xth_sign/lunasign/main.go:51	get signal: 2 sever will stop and showdown
+2022-03-26 12:55:56	INFO	/Users/one/xutonghua/xth_sign/lunasign/main.go:56	server showdown !
+2022-03-26 12:55:56	INFO	/Users/one/xutonghua/xth_sign/lunasign/main.go:62	startServer  :14032, err:http: Server closed
+2022-03-26 12:56:07	INFO	/Users/one/xutonghua/xth_sign/lunasign/main.go:58	startServer  :14032
+2022-03-26 13:34:45	INFO	/Users/one/xutonghua/xth_sign/lunasign/main.go:51	get signal: 2 sever will stop and showdown

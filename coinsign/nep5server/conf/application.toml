@@ -1,0 +1,36 @@
+dev = "debug"
+model = "cold"
+pem_path = "./pem"
+
+[http]
+port = "10800"
+readtimeout = 300
+writetimeout= 300
+
+[log]
+path="/Users/zwj/gopath/src/github.com/group-coldwallet/nep5server/logs" #实际文件路径
+spath="/Users/zwj/gopath/src/github.com/group-coldwallet/nep5server" #软连接生成路径，实际会指向path
+name="nep5.log"
+level="debug"
+
+#nep-5 暂时可以不需要手续费
+[[nep5]]
+name = "MMC"
+decimal = 4
+assetsId="dc68c8a842d41e8d09e6ac439177f9cfa83a1d60"
+
+[[nep5]]
+name = "MMD"
+decimal = 8
+assetsId="dc68c8a842d41e8d09e6ac439177f9cfa83a1d61"
+
+
+[[nep5]]
+name = "SWTH"
+decimal = 8
+assetsId="ab38352559b8b203bde5fddfa0b07d8b2525e132"
+
+#nep5将会等价于 {"nep5":[{"name":"MMC","decimal":4},{"name":"MMD","decimal":8}]}
+
+
+

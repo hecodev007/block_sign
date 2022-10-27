@@ -1,0 +1,96 @@
+2022-05-09 10:43:52	INFO	/Users/one/xutonghua/gitlab/hscsync/services/watch.go:66	catch address number:[591]
+2022-05-09 10:43:52	INFO	/Users/one/xutonghua/gitlab/hscsync/services/push.go:71	push server start
+2022-05-09 10:43:52	INFO	/Users/one/xutonghua/gitlab/hscsync/services/proc.go:65	proc server start
+2022-05-09 10:43:53	INFO	/Users/one/xutonghua/gitlab/hscsync/services/scan.go:38	scan server start
+2022-05-09 10:46:04	INFO	/Users/one/xutonghua/gitlab/hscsync/services/watch.go:66	catch address number:[591]
+2022-05-09 10:46:04	INFO	/Users/one/xutonghua/gitlab/hscsync/services/push.go:71	push server start
+2022-05-09 10:46:04	INFO	/Users/one/xutonghua/gitlab/hscsync/services/proc.go:65	proc server start
+2022-05-09 10:46:05	INFO	/Users/one/xutonghua/gitlab/hscsync/services/scan.go:38	scan server start
+2022-05-09 10:46:06	INFO	/Users/one/xutonghua/gitlab/hscsync/services/scan.go:124	scanBlock 当前扫描区块:14736176,最高区块 : 14739868
+2022-05-09 10:46:28	INFO	/Users/one/xutonghua/gitlab/hscsync/services/proc.go:103	处理不可逆交易 14736180 14739868
+2022-05-09 10:46:39	INFO	/Users/one/xutonghua/gitlab/hscsync/services/watch.go:66	catch address number:[591]
+2022-05-09 10:46:40	INFO	/Users/one/xutonghua/gitlab/hscsync/services/push.go:71	push server start
+2022-05-09 10:46:40	INFO	/Users/one/xutonghua/gitlab/hscsync/services/proc.go:65	proc server start
+2022-05-09 10:47:32	INFO	/Users/one/xutonghua/gitlab/hscsync/services/wtc/proc.go:195	RepushTx: {"uid":1,"txid":"0x7618b78e9f75f6aba8dfe86209995c56eb96a42eafb7d21c507d98ef29a0b65d","height":0}
+2022-05-09 10:52:30	INFO	/Users/one/xutonghua/gitlab/hscsync/services/watch.go:66	catch address number:[591]
+2022-05-09 10:52:31	INFO	/Users/one/xutonghua/gitlab/hscsync/services/push.go:71	push server start
+2022-05-09 10:52:31	INFO	/Users/one/xutonghua/gitlab/hscsync/services/proc.go:65	proc server start
+2022-05-09 10:52:58	INFO	/Users/one/xutonghua/gitlab/hscsync/services/wtc/proc.go:195	RepushTx: {"uid":1,"txid":"0x7618b78e9f75f6aba8dfe86209995c56eb96a42eafb7d21c507d98ef29a0b65d","height":0}
+2022-05-09 10:54:19	INFO	/Users/one/xutonghua/gitlab/hscsync/services/watch.go:66	catch address number:[591]
+2022-05-09 10:54:19	INFO	/Users/one/xutonghua/gitlab/hscsync/services/push.go:71	push server start
+2022-05-09 10:54:19	INFO	/Users/one/xutonghua/gitlab/hscsync/services/proc.go:65	proc server start
+2022-05-09 10:54:21	INFO	/Users/one/xutonghua/gitlab/hscsync/services/wtc/proc.go:195	RepushTx: {"uid":1,"txid":"0x7618b78e9f75f6aba8dfe86209995c56eb96a42eafb7d21c507d98ef29a0b65d","height":0}
+2022-05-09 10:55:57	INFO	/Users/one/xutonghua/gitlab/hscsync/services/watch.go:66	catch address number:[591]
+2022-05-09 10:55:58	INFO	/Users/one/xutonghua/gitlab/hscsync/services/push.go:71	push server start
+2022-05-09 10:55:58	INFO	/Users/one/xutonghua/gitlab/hscsync/services/proc.go:65	proc server start
+2022-05-09 10:56:02	INFO	/Users/one/xutonghua/gitlab/hscsync/services/wtc/proc.go:195	RepushTx: {"uid":1,"txid":"0x7618b78e9f75f6aba8dfe86209995c56eb96a42eafb7d21c507d98ef29a0b65d","height":0}
+2022-05-09 10:56:03	INFO	/Users/one/xutonghua/gitlab/hscsync/services/wtc/proc.go:455	a
+2022-05-09 10:56:29	INFO	/Users/one/xutonghua/gitlab/hscsync/services/watch.go:66	catch address number:[591]
+2022-05-09 10:56:30	INFO	/Users/one/xutonghua/gitlab/hscsync/services/push.go:71	push server start
+2022-05-09 10:56:30	INFO	/Users/one/xutonghua/gitlab/hscsync/services/proc.go:65	proc server start
+2022-05-09 10:56:31	INFO	/Users/one/xutonghua/gitlab/hscsync/services/wtc/proc.go:195	RepushTx: {"uid":1,"txid":"0x7618b78e9f75f6aba8dfe86209995c56eb96a42eafb7d21c507d98ef29a0b65d","height":0}
+2022-05-09 10:56:32	INFO	/Users/one/xutonghua/gitlab/hscsync/services/wtc/proc.go:457	input is not transfer data
+2022-05-09 10:56:52	INFO	/Users/one/xutonghua/gitlab/hscsync/services/watch.go:66	catch address number:[591]
+2022-05-09 10:56:53	INFO	/Users/one/xutonghua/gitlab/hscsync/services/push.go:71	push server start
+2022-05-09 10:56:53	INFO	/Users/one/xutonghua/gitlab/hscsync/services/proc.go:65	proc server start
+2022-05-09 10:57:48	INFO	/Users/one/xutonghua/gitlab/hscsync/services/wtc/proc.go:195	RepushTx: {"uid":1,"txid":"0x7618b78e9f75f6aba8dfe86209995c56eb96a42eafb7d21c507d98ef29a0b65d","height":0}
+2022-05-09 10:57:49	INFO	/Users/one/xutonghua/gitlab/hscsync/services/wtc/proc.go:490	0x1c2349acbb7f83d07577692c75b6d7654899bf10
+2022-05-09 10:58:24	INFO	/Users/one/xutonghua/gitlab/hscsync/services/watch.go:66	catch address number:[591]
+2022-05-09 10:58:24	INFO	/Users/one/xutonghua/gitlab/hscsync/services/push.go:71	push server start
+2022-05-09 10:58:24	INFO	/Users/one/xutonghua/gitlab/hscsync/services/proc.go:65	proc server start
+2022-05-09 10:58:25	INFO	/Users/one/xutonghua/gitlab/hscsync/services/wtc/proc.go:195	RepushTx: {"uid":1,"txid":"0x7618b78e9f75f6aba8dfe86209995c56eb96a42eafb7d21c507d98ef29a0b65d","height":0}
+2022-05-09 10:58:26	INFO	/Users/one/xutonghua/gitlab/hscsync/services/wtc/proc.go:522	mykey 解析数据解析：sender：,receiver:,am:
+2022-05-09 10:58:26	INFO	/Users/one/xutonghua/gitlab/hscsync/services/wtc/proc.go:524	mykey 解析异常 err:opCodeTransferEth error
+2022-05-09 10:58:51	INFO	/Users/one/xutonghua/gitlab/hscsync/services/watch.go:66	catch address number:[591]
+2022-05-09 10:58:52	INFO	/Users/one/xutonghua/gitlab/hscsync/services/push.go:71	push server start
+2022-05-09 10:58:52	INFO	/Users/one/xutonghua/gitlab/hscsync/services/proc.go:65	proc server start
+2022-05-09 10:58:52	INFO	/Users/one/xutonghua/gitlab/hscsync/services/wtc/proc.go:195	RepushTx: {"uid":1,"txid":"0x7618b78e9f75f6aba8dfe86209995c56eb96a42eafb7d21c507d98ef29a0b65d","height":0}
+2022-05-09 10:58:53	INFO	/Users/one/xutonghua/gitlab/hscsync/services/wtc/proc.go:494	0x3efc190d59645f005a5974aa84aa94401ad997938870e7b2aa74a45138ad679b
+2022-05-09 10:58:53	INFO	/Users/one/xutonghua/gitlab/hscsync/services/wtc/proc.go:523	mykey 解析数据解析：sender：,receiver:,am:
+2022-05-09 10:58:53	INFO	/Users/one/xutonghua/gitlab/hscsync/services/wtc/proc.go:525	mykey 解析异常 err:opCodeTransferEth error
+2022-05-09 10:59:14	INFO	/Users/one/xutonghua/gitlab/hscsync/services/watch.go:66	catch address number:[591]
+2022-05-09 10:59:15	INFO	/Users/one/xutonghua/gitlab/hscsync/services/push.go:71	push server start
+2022-05-09 10:59:15	INFO	/Users/one/xutonghua/gitlab/hscsync/services/proc.go:65	proc server start
+2022-05-09 10:59:18	INFO	/Users/one/xutonghua/gitlab/hscsync/services/wtc/proc.go:195	RepushTx: {"uid":1,"txid":"0x7618b78e9f75f6aba8dfe86209995c56eb96a42eafb7d21c507d98ef29a0b65d","height":0}
+2022-05-09 10:59:19	INFO	/Users/one/xutonghua/gitlab/hscsync/services/wtc/proc.go:498	0x3efc190d59645f005a5974aa84aa94401ad997938870e7b2aa74a45138ad679b
+2022-05-09 10:59:19	INFO	/Users/one/xutonghua/gitlab/hscsync/services/wtc/proc.go:524	mykey 解析数据解析：sender：,receiver:,am:
+2022-05-09 10:59:19	INFO	/Users/one/xutonghua/gitlab/hscsync/services/wtc/proc.go:526	mykey 解析异常 err:opCodeTransferEth error
+2022-05-09 11:04:45	INFO	/Users/one/xutonghua/gitlab/hscsync/services/watch.go:66	catch address number:[591]
+2022-05-09 11:04:45	INFO	/Users/one/xutonghua/gitlab/hscsync/services/push.go:71	push server start
+2022-05-09 11:04:45	INFO	/Users/one/xutonghua/gitlab/hscsync/services/proc.go:65	proc server start
+2022-05-09 11:04:48	INFO	/Users/one/xutonghua/gitlab/hscsync/services/wtc/proc.go:193	RepushTx: {"uid":1,"txid":"0x7618b78e9f75f6aba8dfe86209995c56eb96a42eafb7d21c507d98ef29a0b65d","height":0}
+2022-05-09 11:06:12	INFO	/Users/one/xutonghua/gitlab/hscsync/services/watch.go:66	catch address number:[591]
+2022-05-09 11:06:13	INFO	/Users/one/xutonghua/gitlab/hscsync/services/push.go:71	push server start
+2022-05-09 11:06:13	INFO	/Users/one/xutonghua/gitlab/hscsync/services/proc.go:65	proc server start
+2022-05-09 11:06:14	INFO	/Users/one/xutonghua/gitlab/hscsync/services/wtc/proc.go:193	RepushTx: {"uid":1,"txid":"0x7618b78e9f75f6aba8dfe86209995c56eb96a42eafb7d21c507d98ef29a0b65d","height":0}
+2022-05-09 11:06:15	INFO	/Users/one/xutonghua/gitlab/hscsync/services/wtc/proc.go:562	don't find contract : 0xa5cab5ebd01190e30c24bb79642dd7bb6728720d
+2022-05-09 11:06:16	INFO	/Users/one/xutonghua/gitlab/hscsync/services/wtc/proc.go:149	{"type":10,"coin":"eth","token":"","height":14735556,"hash":"0x93c6b7787a40d67f063a7dfc93a921f055349931e6005898d6db030d311a5680","confirmations":4401,"time":1652005960,"txs":[{"name":"eth","txid":"0x7618b78e9f75f6aba8dfe86209995c56eb96a42eafb7d21c507d98ef29a0b65d","fee":"0.001636672","from":"0xa5cab5ebd01190e30c24bb79642dd7bb6728720d","to":"0x003b9b084e311a4b819dcb52628717b5b7586644","amount":"200","memo":"","contract":"0xc770eefad204b5180df6a14ee197d99d808ee52d"}]}
+2022-05-09 11:10:36	INFO	/Users/one/xutonghua/gitlab/hscsync/services/watch.go:66	catch address number:[591]
+2022-05-09 11:10:37	INFO	/Users/one/xutonghua/gitlab/hscsync/services/push.go:71	push server start
+2022-05-09 11:10:37	INFO	/Users/one/xutonghua/gitlab/hscsync/services/proc.go:65	proc server start
+2022-05-09 11:11:01	INFO	/Users/one/xutonghua/gitlab/hscsync/services/watch.go:66	catch address number:[591]
+2022-05-09 11:11:02	INFO	/Users/one/xutonghua/gitlab/hscsync/services/push.go:71	push server start
+2022-05-09 11:11:02	INFO	/Users/one/xutonghua/gitlab/hscsync/services/proc.go:65	proc server start
+2022-05-09 11:11:03	INFO	/Users/one/xutonghua/gitlab/hscsync/services/scan.go:38	scan server start
+2022-05-09 11:11:03	INFO	/Users/one/xutonghua/gitlab/hscsync/services/scan.go:124	scanBlock 当前扫描区块:14735556,最高区块 : 14739986
+2022-05-09 11:11:10	INFO	/Users/one/xutonghua/gitlab/hscsync/services/wtc/proc.go:149	{"type":10,"coin":"eth","token":"","height":14735556,"hash":"0x93c6b7787a40d67f063a7dfc93a921f055349931e6005898d6db030d311a5680","confirmations":4431,"time":1652005960,"txs":[{"name":"eth","txid":"0x7618b78e9f75f6aba8dfe86209995c56eb96a42eafb7d21c507d98ef29a0b65d","fee":"0.001636672","from":"0xa5cab5ebd01190e30c24bb79642dd7bb6728720d","to":"0x003b9b084e311a4b819dcb52628717b5b7586644","amount":"200","memo":"","contract":"0xc770eefad204b5180df6a14ee197d99d808ee52d"}]}
+2022-05-09 11:11:24	INFO	/Users/one/xutonghua/gitlab/hscsync/services/proc.go:103	处理不可逆交易 14735560 14739986
+2022-05-09 11:11:58	INFO	/Users/one/xutonghua/gitlab/hscsync/services/proc.go:103	处理不可逆交易 14735570 14739986
+2022-05-09 11:12:50	INFO	/Users/one/xutonghua/gitlab/hscsync/services/proc.go:103	处理不可逆交易 14735580 14739986
+2022-05-09 11:13:27	INFO	/Users/one/xutonghua/gitlab/hscsync/services/proc.go:103	处理不可逆交易 14735590 14739986
+2022-05-09 11:14:11	INFO	/Users/one/xutonghua/gitlab/hscsync/services/proc.go:103	处理不可逆交易 14735600 14739986
+2022-05-09 11:14:42	INFO	/Users/one/xutonghua/gitlab/hscsync/services/proc.go:103	处理不可逆交易 14735610 14739986
+2022-05-09 11:15:33	INFO	/Users/one/xutonghua/gitlab/hscsync/services/watch.go:66	catch address number:[591]
+2022-05-09 11:15:33	INFO	/Users/one/xutonghua/gitlab/hscsync/services/push.go:71	push server start
+2022-05-09 11:15:33	INFO	/Users/one/xutonghua/gitlab/hscsync/services/proc.go:65	proc server start
+2022-05-09 11:15:34	INFO	/Users/one/xutonghua/gitlab/hscsync/services/scan.go:38	scan server start
+2022-05-09 11:15:35	INFO	/Users/one/xutonghua/gitlab/hscsync/services/scan.go:124	scanBlock 当前扫描区块:14735556,最高区块 : 14740007
+2022-05-09 11:15:42	INFO	/Users/one/xutonghua/gitlab/hscsync/services/wtc/proc.go:149	{"type":10,"coin":"eth","token":"","height":14735556,"hash":"0x93c6b7787a40d67f063a7dfc93a921f055349931e6005898d6db030d311a5680","confirmations":4452,"time":1652005960,"txs":[{"name":"eth","txid":"0x7618b78e9f75f6aba8dfe86209995c56eb96a42eafb7d21c507d98ef29a0b65d","fee":"0.001636672","from":"0xa5cab5ebd01190e30c24bb79642dd7bb6728720d","to":"0x003b9b084e311a4b819dcb52628717b5b7586644","amount":"200","memo":"","contract":"0xc770eefad204b5180df6a14ee197d99d808ee52d"}]}
+2022-05-09 11:15:55	INFO	/Users/one/xutonghua/gitlab/hscsync/services/proc.go:103	处理不可逆交易 14735560 14740007
+2022-05-09 11:16:27	INFO	/Users/one/xutonghua/gitlab/hscsync/services/proc.go:103	处理不可逆交易 14735570 14740007
+2022-05-09 11:17:15	INFO	/Users/one/xutonghua/gitlab/hscsync/services/watch.go:66	catch address number:[591]
+2022-05-09 11:17:16	INFO	/Users/one/xutonghua/gitlab/hscsync/services/push.go:71	push server start
+2022-05-09 11:17:16	INFO	/Users/one/xutonghua/gitlab/hscsync/services/proc.go:65	proc server start
+2022-05-09 11:17:17	INFO	/Users/one/xutonghua/gitlab/hscsync/services/scan.go:38	scan server start
+2022-05-09 11:17:17	INFO	/Users/one/xutonghua/gitlab/hscsync/services/scan.go:124	scanBlock 当前扫描区块:14735556,最高区块 : 14740015
+2022-05-09 11:17:25	INFO	/Users/one/xutonghua/gitlab/hscsync/services/wtc/proc.go:149	{"type":10,"coin":"eth","token":"","height":14735556,"hash":"0x93c6b7787a40d67f063a7dfc93a921f055349931e6005898d6db030d311a5680","confirmations":4460,"time":1652005960,"txs":[{"name":"eth","txid":"0x7618b78e9f75f6aba8dfe86209995c56eb96a42eafb7d21c507d98ef29a0b65d","fee":"0.001636672","from":"0xa5cab5ebd01190e30c24bb79642dd7bb6728720d","to":"0x003b9b084e311a4b819dcb52628717b5b7586644","amount":"200","memo":"","contract":"0xc770eefad204b5180df6a14ee197d99d808ee52d"}]}

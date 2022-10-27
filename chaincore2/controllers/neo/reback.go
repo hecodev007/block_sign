@@ -1,0 +1,28 @@
+package neo
+
+import (
+	"github.com/astaxie/beego"
+	"github.com/group-coldwallet/chaincore2/common"
+	"github.com/group-coldwallet/chaincore2/service/neo"
+)
+
+type RebackController struct {
+	beego.Controller
+}
+
+func (c *RebackController) Get() {
+	// 返回数据
+	resp := map[string]interface{}{
+		"code":    0,
+		"message": "ok",
+		"data":    nil,
+	}
+
+	height := c.Input().Get("height")
+	if height != "" {
+		neo.SyncBlockData(common.StrToInt64(height))
+	}
+
+	c.Data["json"] = resp
+	c.ServeJSON()
+}

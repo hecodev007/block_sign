@@ -1,0 +1,6 @@
+/cphsign
+tmplog/
+tmplogs/
+csvbak
+go.sum
+.idea/

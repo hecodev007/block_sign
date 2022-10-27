@@ -1,0 +1,5 @@
+/.idea
+/tmplogs
+go.sum
+zenDataServer
+*_test.go

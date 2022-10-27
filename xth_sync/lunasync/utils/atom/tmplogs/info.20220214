@@ -1,0 +1,3 @@
+2022-02-14 15:15:15	INFO	atom/types.go:191	[{"from_address":"terra1rtn03a9l3qsc0a9verxwj00afs93mlm0yr7chk","to_address":"terra1hl5hewj2jsh9xhdzz52c70s9tyskntuxhxmezg","amount":[{"denom":"uusd","amount":"500000000"}]}]
+2022-02-14 15:16:17	INFO	atom/types.go:191	[{"from_address":"terra1rtn03a9l3qsc0a9verxwj00afs93mlm0yr7chk","to_address":"terra1hl5hewj2jsh9xhdzz52c70s9tyskntuxhxmezg","amount":[{"denom":"uusd","amount":"500000000"}]}]1234
+2022-02-14 15:17:35	INFO	atom/types.go:192	[{"from_address":"terra1rtn03a9l3qsc0a9verxwj00afs93mlm0yr7chk","to_address":"terra1hl5hewj2jsh9xhdzz52c70s9tyskntuxhxmezg","amount":[{"denom":"uusd","amount":"500000000"}]}]1234

@@ -1,0 +1,121 @@
+env = "dev"
+encryption = false
+dataserver = "http://123123123"
+[Scan]
+num = 3
+
+[im]
+dingtoken = "e51dd328730e8ad2a9427b32d00ab534089c1b35b0a89467354bdb0b5c448a2e"
+reviewtoken = "eb38f462017cd43b7e38f33b86e097fd57cdf36086f4e2e746723ad8bfb82473"
+
+[wechat]
+url = "http://127.0.0.1:8188/v1/wx/test/text"
+
+[http]
+port = "10086"
+readtimeout = 60
+writetimeout = 60
+
+
+#todo 加密
+# "username:password@tcp(host:3306)/dbname?charset=utf8"
+# [db]
+# master = "Y+bi4vGPBDf2pFBPFKwESPEMo5EUTxJLnSfjcb+qG2tkSgQG6v67uw3IjYa0DF0DxpPv6C4fN0yKN6TxtyicEyKma0lYpIXHmW0WiL7XeAipZOOoOE0S6fUVAi6MQuHSbTj2cbB7Ngbewr2F+k7nk8g="
+# slaves = [
+#     "Y+bi4vGPBDf2pFBPFKwESPEMo5EUTxJLnSfjcb+qG2tkSgQG6v67uw3IjYa0DF0DxpPv6C4fN0yKN6TxtyicEyKma0lYpIXHmW0WiL7XeAipZOOoOE0S6fUVAi6MQuHSbTj2cbB7Ngbewr2F+k7nk8g="
+# ]
+# [db]
+# master = "hoocustody:Eb!ZXrNt!!x5xru0@tcp(rm-j6c5ekl1af4dc9k8w6o.mysql.rds.aliyuncs.com:3306)/finance_data?charset=utf8"
+# slaves = [
+#     "hoocustody:Eb!ZXrNt!!x5xru0@tcp(rm-j6c5ekl1af4dc9k8w6o.mysql.rds.aliyuncs.com:3306)/finance_data?charset=utf8"
+# ]
+[db]
+master = "root:12345678@tcp(0.0.0.0:3306)/finance_data?charset=utf8"
+slaves = [
+    "root:12345678@tcp(0.0.0.0:3306)/finance_data?charset=utf8"
+]
+
+
+[db2]
+master = ""
+
+#币种交易模型（UTXO模型，账户模型，某些币种虽然是UTXO模型，但是交易过程需要写成账户模型，比如BTM）
+[transfer]
+utxo = ["btc", "ltc", "rub", "wbc"]
+account = ["nas", "eth", "eos", "cocos", "mdu", "zvc", "fo", "waxp", "klay", "gxc", "bnb", "hx", "xlm", "cds", "cru","steemÍ"]
+
+#钱包类型
+[wallettype]
+cold = ["btc", "eth", "bnb", "xlm"]
+hot = ["nas", "klay", "gxc", "rub", "wbc", "cds", "cru"]
+
+
+[hotservers]
+[hotservers.cocos]
+url = "http://13.230.40.105:8091"
+user = ""
+password = ""
+
+[hotservers.zvc]
+url = "http://127.0.0.1:10015"
+user = ""
+password = ""
+
+[hotservers.klay]
+url = "http://127.0.0.1:18854"
+user = ""
+password = ""
+
+[hotservers.gxc]
+url = "http://3.112.110.18:18000"
+user = "gxc-rylink"
+password = "rylink2020"
+
+[hotservers.cru]
+url = "http://172.0.0.1:15100"
+user = ""
+password = ""
+
+[hotservers.stx]
+url = "http://127.0.0.1:22006"
+user = ""
+password = ""
+
+[walletserver]
+url = "http://127.0.0.1:18888"
+user = ""
+password = ""
+
+#币种服务（某些币种的utxo 验证地址等等）
+[coinservers]
+[coinservers.btc]
+url = "http://47.244.140.180:9999"
+user = ""
+password = ""
+
+
+[redis]
+url = "127.0.0.1:6379"
+user = ""
+password = ""
+
+[clusterRedis]
+cluster = false
+addr = "127.0.0.1:6379"
+pwd = ""
+
+[clusterRedis2]
+cluster = false
+addr = "127.0.0.1:6379"
+pwd = ""
+
+[collect]
+zvc = "0.01"
+
+
+[merge]
+[merge.bnb]
+balance_threshold = 0.2 #合并金额的时候保留阈值金额在冷地址
+merge_threshold = 1 #主链币归集起始金额
+merge_token_threshold = 1 #代币归集起始金额
+

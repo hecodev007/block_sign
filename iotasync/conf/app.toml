@@ -1,0 +1,69 @@
+appname = "iota"
+mode = "prod1"
+[server]
+runmode = "debug"
+ip="0.0.0.0"
+port="15042"
+read_timeout= 60
+write_timeout= 60
+
+[Sync]
+name = "iota"
+enablesync =  true
+enablegoroutine = true
+enablemempool = true  #
+fullbackup = false #交易全量保存数据库，false 只保存监控地址的交易,arp只能false要更新数据库用户余额
+epochcount = 2
+epochtime  = 60
+initheight = 3065836
+enablerollback = false
+rollheight = 10000
+confirmations = 6
+intervaltime = 20
+
+[nodes.iota]
+url = "http://chrysalis-nodes.iota.cafe"
+rpc_key = "hoo"
+rpc_secret = "123456"
+
+[databases.user]
+name= "addrmanagement"
+type= "mysql"
+url= "rm-j6c5ekl1af4dc9k8w499.mysql.rds.aliyuncs.com:3306"
+user= "hoocustody"
+password= "Eb!ZXrNt!!x5xru0"
+mode= "release"
+
+[databases.sync]
+name= "iotasync"
+type= "mysql"
+url= "rm-j6c5ekl1af4dc9k8w499.mysql.rds.aliyuncs.com:3306"
+user= "hoocustody"
+password= "Eb!ZXrNt!!x5xru0"
+mode= "release"
+
+[mq]
+hostport = "b-30ba08b2-dbea-4e1a-a282-b4569cb9896f.mq.ap-northeast-1.amazonaws.com:5671"
+username = "blockchain_coin-MQ"
+password  = "draXv3HB4dKqmDjANU"
+
+[push]
+enable = true
+type = "http"
+agent = true
+url = "http://172.16.210.86:8090/agent/index"
+user = "agentuser"
+password = "agentpass"
+mqurl="amqp://rylink:rylink2020@172.17.2.41"
+reconns=30
+publishers=["iota"]
+
+[log]
+outfile= "tmplogs/info"
+errfile= "tmplogs/err"
+formatter= "text"
+release= 0.1
+mode= "dev"
+level= "info" #debug info warn error panic
+max_age= 24
+rotation_time= 24

@@ -1,0 +1,6 @@
+{"level":"INFO","time":"2021-07-12 16:41:10","caller":"zaplog/log_test.go:11","msg":"a"}
+{"level":"INFO","time":"2021-07-12 16:41:10","caller":"zaplog/log_test.go:13","msg":"info,最困难的事情就是认识自己。"}
+{"level":"INFO","time":"2021-07-12 16:45:48","caller":"zaplog/log_test.go:11","msg":"a"}
+{"level":"INFO","time":"2021-07-12 16:45:48","caller":"zaplog/log_test.go:13","msg":"info,最困难的事情就是认识自己。"}
+{"level":"INFO","time":"2021-07-12 16:59:36","caller":"zaplog/log_test.go:11","msg":"a"}
+{"level":"INFO","time":"2021-07-12 16:59:36","caller":"zaplog/log_test.go:13","msg":"info,最困难的事情就是认识自己。"}

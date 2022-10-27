@@ -1,0 +1,10 @@
+vendor
+.idea/*
+file
+.DS_Store
+main_test.go
+bsc-sign
+logs
+config.toml
+config-prod.toml
+*.log

@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package grpcs;
+option go_package = "/;grpcs";
+
+service Greeter {
+  rpc SendRequest (ParamRequest) returns (ParamReply) {}
+}
+
+message ParamRequest {
+  string              method = 1;
+  map<string, bytes>  params = 2;
+  int64               time_stamp = 3;
+}
+
+message ParamReply {
+  int64               code = 1;
+  string              msg = 2;
+  map<string, bytes> rpc_reply = 3;
+}

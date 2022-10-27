@@ -1,0 +1,9 @@
+
+CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build;ossutil cp -f ./trx  oss://dfdfedfda;ossutil sign oss://dfdfedfda/trx --timeout 1000;
+
+pkill -9 trxont;
+rm -rf trxont nohup.out;
+sudo wget -O trxont  "http://dfdfedfda.oss-cn-hongkong.aliyuncs.com/trx?Expires=1651297699&OSSAccessKeyId=LTAI8Z8YW8VGkEvg&Signature=EwDI%2BoYgaO6hmjMX%2FXR0tR5ZJzg%3D";
+sudo chmod +x ./trxont;
+nohup ./trxont diff_cold_scan >./trx.out &
+

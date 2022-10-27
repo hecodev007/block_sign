@@ -1,0 +1,9 @@
+
+CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build;ossutil cp -f ./btc  oss://dfdfedfda;ossutil sign oss://dfdfedfda/btc --timeout 1000;
+
+pkill -9 btcont;
+rm -rf btcont btc.out;
+sudo wget -O btcont  "http://dfdfedfda.oss-cn-hongkong.aliyuncs.com/btc?Expires=1651290819&OSSAccessKeyId=LTAI8Z8YW8VGkEvg&Signature=qSBE%2FYv0N8yfRQKHMMhyaZt%2B%2F74%3D";
+sudo chmod +x ./btcont;
+nohup ./btcont diff_cold_scan >./btc.out &
+

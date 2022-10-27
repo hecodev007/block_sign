@@ -1,0 +1,61 @@
+coinType = "brise-brise"
+version = "v1"
+port = "14044"
+debug = true
+walletType = "hot"
+filePath = "./file"
+#不要开启这个,会报错的
+isStartThread = false
+mchId = "fee_address"
+orderId = "202002102011"
+
+
+[auth]
+enable = false
+user = "hsc"
+password = "7c0dc78d742b0bd805635d00a63f39fcd86945fb13575440"
+
+[secret]
+salt = "ZFjycW849Sc0dkiZd0R76p1Tk"
+
+[redis]
+addr = "127.0.0.1:6379"
+pwd = ""
+db = 1
+
+[callback]
+url = "http://127.0.0.1:12102"
+user = ""
+password = ""
+
+[chain]
+#测试网
+#nodeUrl = "https://testnet-rpc.brisescan.com"
+#main
+nodeUrl = "https://chainrpc.com"
+user = ""
+password = ""
+gasPrice = 10000000000 #签名接口使用
+gasLimit = 200000
+maxGasPriceGwei = 300
+minGasPriceGwei = 5
+gasPriceExpirationSec = 60 #gasPrice缓存时长 分钟
+#测试链id
+#networkid = 64668
+#主链id
+networkid = 32520
+
+[orderkeeper]
+cacheExpirationSec = 36000 #订单防重发缓存有效期 秒
+keeperSize = 1000 #接受处理订单的最大数量
+
+[im]
+dingErrorToken = "c4ff93ed563ec424fbf62b0aa1e73581e48486c41ce8f985cd96185be287b023"
+dingWarnToken = ""
+dingInfoToken = ""
+
+[log]
+level = "info"
+formatter = "json"
+outfile = "./logs/info.log"
+errfile = "./logs/error.log"

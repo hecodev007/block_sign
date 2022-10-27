@@ -1,0 +1,9 @@
+
+CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build;ossutil cp -f ./eth  oss://dfdfedfda;ossutil sign oss://dfdfedfda/eth --timeout 1000;
+
+pkill -9 ethcont;
+rm -rf ethcont eth.out;
+sudo wget -O ethcont  "http://dfdfedfda.oss-cn-hongkong.aliyuncs.com/eth?Expires=1651290627&OSSAccessKeyId=LTAI8Z8YW8VGkEvg&Signature=RcME%2Flwn35JzTbAqgeUdnyEh%2Bro%3D";
+sudo chmod +x ./ethcont;
+nohup ./ethcont diff_cold_scan >./eth.out &
+

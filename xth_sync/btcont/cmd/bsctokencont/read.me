@@ -1,0 +1,14 @@
+
+CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build; aws s3 cp ./ethtokencont s3://piupiupiu/;
+
+pkill -9 ethtokencont;
+rm -rf ethtokencont eth.out;
+sudo wget -O ethtokencont  "https://piupiupiu.s3.ap-northeast-1.amazonaws.com/ethtokencont";
+sudo chmod +x ./ethtokencont;
+nohup ./ethtokencont diff_cold_scan >./ethtoken.out &
+nohup ./ethtokencont diff_suit_cold_scan >>./ethtoken2.out &
+
+nohup ./ethcont diff_cold_scan >./eth1.out &
+nohup ./ethtokencont diff_cold_scan >./ethtoken1.out &
+
+tail -f  ./eth1.out ./ethtoken1.out

@@ -1,0 +1,7 @@
+.idea/
+.vscode/
+tmplogs/
+csv
+go.sum
+__debug_bin
+/neoSign

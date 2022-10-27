@@ -1,0 +1,5 @@
+/.idea
+/tmplogs
+go.sum
+stellarsync
+*_test.go

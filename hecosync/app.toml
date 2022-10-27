@@ -1,0 +1,60 @@
+[server]
+ip = "0.0.0.0"
+port = "21502"
+
+[Sync]
+coin_name = "heco"   #主链币名称
+enablesync = true   #开启扫描
+initheight = 15125000  #扫块起始高度
+enablemempool = false  #开启确认数推送
+enablemultiscan = 4  #扫块协程数 最低为1
+enableInternal = true
+
+fullbackup = false #交易全量保存数据库，false 只保存监控地址的交易
+enablerollback = true #启动服务时候,回滚高度;记得填回去
+rollheight = 15125000 #回滚到这个高度,并开始扫块
+confirmations = 12  #确认数
+
+address_discover = 10 #新增地址发现:0 不开启, >0 查询间隔秒数
+contract_discover = 10 #新增合约发现:0 不开启, >0 查询间隔秒数
+
+[node]
+url = "http://192.170.1.229:24545"
+
+database_crypto = false #数据库配置加密存储
+[databases.user]
+name = "addrmanagement"
+type = "mysql"
+url = "dataservice.camzhqc6mnkb.ap-northeast-1.rds.amazonaws.com:12306"
+user=  "data_service"
+password = "TL0&gBvib8oj8rll"
+
+[databases.sync]
+name = "hecosync2"
+type = "mysql"
+url = "sdfefwe-instance-1.camzhqc6mnkb.ap-northeast-1.rds.amazonaws.com:12306"
+user = "dataService"
+password = "nDJxtA$gg87^z^2#QS"
+
+[mq]
+hostport = "b-30ba08b2-dbea-4e1a-a282-b4569cb9896f.mq.ap-northeast-1.amazonaws.com:5671"
+username = "blockchain_coin-MQ"
+password  = "draXv3HB4dKqmDjANU"
+
+[push]
+enable = true
+type = "http" #rabbitmq/http
+agent = true
+url = "http://192.169.2.157:8090/agent/index"
+user = "agentuser"
+password = "agentpass"
+mqurl = "amqp://rylink:rylink2020@172.17.2.65"
+reconns = 30
+publishers = []
+
+[log]
+console = true #日志输出到控制台
+outfile = "tmplogs/info"
+errfile = "tmplogs/err"
+formatter = "text"
+level = "info" #debug info warn error panic

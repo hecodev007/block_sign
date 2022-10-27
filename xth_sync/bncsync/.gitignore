@@ -1,0 +1,5 @@
+/.idea
+/tmplogs
+go.sum
+karsync
+*_test.go

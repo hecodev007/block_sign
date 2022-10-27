@@ -1,0 +1,29 @@
+name = "fil"
+
+[server]
+runmode = "debug"
+ip="0.0.0.0"
+port="18072"
+read_timeout= 60
+write_timeout= 60
+
+[csv]
+dir= "csv"
+read_file= ""
+write_file= ""
+
+[log]
+OutFile= "tmplogs/info"
+errfile= "tmplogs/err"
+formatter= "text"
+release= 0.1
+mode= "dev"
+level= "debug"
+log_path= "tmp"
+log_name= "debug.log"
+max_age= 24
+rotation_time= 24
+[node]
+#url = "http://54.150.109.55:1234/rpc/v0?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBbGxvdyI6WyJyZWFkIiwid3JpdGUiLCJzaWduIiwiYWRtaW4iXX0.cgeQ3qhAlUgOaGzJ6BkhOl0mpTfjS7AzYjnG85IoXcI"
+#url = "http://fil.rylink.io:1234/rpc/v0?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBbGxvdyI6WyJyZWFkIiwid3JpdGUiLCJzaWduIiwiYWRtaW4iXX0.cgeQ3qhAlUgOaGzJ6BkhOl0mpTfjS7AzYjnG85IoXcI"
+url = "https://api.node.glif.io/rpc/v0"

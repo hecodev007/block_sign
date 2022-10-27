@@ -1,0 +1,10 @@
+{"level":"info","msg":"listen port:10017","time":"2020-09-18T17:36:48+08:00"}
+{"level":"info","msg":"| 200 |     599.705µs |       127.0.0.1 | GET  /swagger/index.html |","time":"2020-09-18T17:44:05+08:00"}
+{"level":"info","msg":"| 200 |     371.993µs |       127.0.0.1 | GET  /swagger/swagger-ui.css |","time":"2020-09-18T17:44:05+08:00"}
+{"level":"info","msg":"| 200 |     623.058µs |       127.0.0.1 | GET  /swagger/swagger-ui-standalone-preset.js |","time":"2020-09-18T17:44:05+08:00"}
+{"level":"info","msg":"| 200 |  187.477638ms |       127.0.0.1 | GET  /swagger/swagger-ui-bundle.js |","time":"2020-09-18T17:44:05+08:00"}
+{"level":"info","msg":"| 200 |      282.33µs |       127.0.0.1 | GET  /swagger/doc.json |","time":"2020-09-18T17:44:07+08:00"}
+{"level":"info","msg":"| 200 |    9.469408ms |       127.0.0.1 | GET  /swagger/favicon-32x32.png |","time":"2020-09-18T17:44:07+08:00"}
+{"level":"info","msg":"| 200 |    6.876677ms |       127.0.0.1 | POST  /v1/createaddr |","time":"2020-09-18T17:44:58+08:00"}
+{"level":"info","msg":"Shutdown Server ...","time":"2020-09-18T19:25:46+08:00"}
+{"level":"info","msg":"Server exiting","time":"2020-09-18T19:25:46+08:00"}

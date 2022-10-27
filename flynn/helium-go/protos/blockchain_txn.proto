@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package protos;
+
+
+import "blockchain_txn_payment_v1.proto";
+import "blockchain_txn_payment_v2.proto";
+
+message blockchain_txn {
+    oneof txn {
+        blockchain_txn_payment_v1 payment = 8;
+        blockchain_txn_payment_v2 payment_v2 = 24;
+    }
+}
+
+message blockchain_txn_bundle_v1 {
+  repeated blockchain_txn transactions = 1;
+}

@@ -1,0 +1,21 @@
+http_port: ":9980"
+env: developer
+gen_file_path: "/Users/zwj/gopath/src/qieusdtserver/files"
+#本地地址加载目录
+#load_address_path: "/Users/zwj/gopath/src/createaddr/files/usdt"
+load_address_path: "/Users/zwj/gopath/src/qieusdtserver/files/coldtest"
+old_address_file: "/Users/zwj/gopath/src/qieusdtserver/files/old.csv"
+usdt:
+  host: 47.244.140.180:9992
+  user: user
+  password: 709394
+log:
+  formatter: text
+  release:   0.1
+  mode:      develop
+  level:     "debug"
+  log_path:  "./logs"
+  log_name:  "usdt_trans_log"
+  max_age:   24
+  rotation_time:   24
+

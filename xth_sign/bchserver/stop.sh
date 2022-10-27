@@ -1,0 +1,1 @@
+kill $(ps -ef|grep bchserver_linux|awk '$0 !~/grep/ {print $2}' |tr -s '\n' ' ')

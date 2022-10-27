@@ -1,0 +1,149 @@
+# default false
+release_mode = false
+mod = "dev"
+# 开启防止cdn重放攻击
+cdn_disable = false
+# 开启JWT防泄露
+jwt_out = false
+# default DEBUG, DEBUG INFO WARN ERROR OFF
+log_level = "DEBUG"
+# 输出的文件目录
+log_file = "logs"
+# 上传的文件目录
+static_file = "static"
+
+# REDIS,FILE,COOKIE(COOKIE Default)
+session_store = "COOKIE"
+
+# REDIS,MEMCACHED,IN_MEMORY(IN_MEMORY Default)
+cache_store = "IN_MEMORY"
+
+[app]
+name = "Hoo Custody Admin"
+version = "0.0.2"
+
+[server]
+graceful = true
+addr = ":38001"
+domain_api = ""  # Domains
+domain_web = "35.76.228.210"
+domain_socket = ""
+
+[database.web]
+name = "custody_pre"
+user_name = "custody"
+pwd  = "OpDomFBx7Wk4Lts33qg57jXh"
+host = "hoocustody-dev.cluster-cjokoae5jmn7.ap-northeast-1.rds.amazonaws.com"
+port = "53306"
+
+[redis]
+model = "CLUSTER" #CLUSTER
+alone_address = "hoocustody-dev.drtye2.clustercfg.apne1.cache.amazonaws.com:6379" # 单机地址
+alone_pwd = ""
+cluster_address = ["hoocustody-dev.drtye2.clustercfg.apne1.cache.amazonaws.com:6379"] # 集群地址
+cluster_pwd = ""
+
+[rabbitmq]
+prefix = "amqps"
+mq_url = "b-59fecdb5-5f87-4fd4-b099-121f293555ea.mq.ap-northeast-1.amazonaws.com:5671"
+mq_user = "hoocustody-mq"
+mq_password = "CsMa8GkLn7hjHPJ4"
+reconns= 30
+publishers=["moac"]
+
+[memcached]
+server = "127.0.0.1:11211"
+
+# 分布式追踪
+[opentracing]
+disable = false
+type = "appdash"  # "jaeger" "appdash" or "elastic"
+service_name = "hooCustody" # jaeger or elastic serviceName
+address = "http://localhost:8701" # jaeger-agent 127.0.0.1:6831 ｜ appdash http://localhost:8700
+
+# Casbin权限策略配置
+[casbin]
+model_path= 'rbac_model.conf'
+
+[email]
+iam_user_name= "new-project@hoo.com"                            # from地址
+recipient= []                                                   # 接收地址
+smtp_password="BGTAH2cr4Ief0SdAip2G2PwP2NH8gjQvIvqp1lANTYfk"
+smtp_username="AKIA3J4EEKZXW6G5RQCZ"
+host = "email-smtp.ap-northeast-1.amazonaws.com"
+port = 587
+title = "HOO mail"
+
+[sms.inland]
+app_key="NQ1021"
+app_secret="WcS0qK"
+app_code="1000"
+batch ="http://39.97.4.102:9090/sms/batch/v1" # 相同内容群发地址
+distinct ="http://39.97.4.102:9090/sms/distinct/v1" # 一对一内容群发地址
+balance ="http://39.97.4.102:9090/sms/balance/v1" # 余额查询地址
+
+[sms.iso]
+app_key="I10271"
+app_secret="lA594d"
+app_code="1000"
+batch ="http://39.97.4.102:9090/sms/batch/v1" # 相同内容群发地址
+distinct ="http://39.97.4.102:9090/sms/distinct/v1" # 一对一内容群发地址
+balance ="http://39.97.4.102:9090/sms/balance/v1" # 余额查询地址
+
+[sns]
+secret_key = "qYh76D2Zc/+BpviyUkrvUxbxwYKdkFSFKNDpuCH1"
+access_key_id = "AKIAZXPISQLLNKJRB5MF"
+region= "ap-northeast-1"
+
+[wlwx]
+custom_name = "C97215"
+custom_pwd = "I3ULR4LRBV"
+sms_client_url = "https://smsapp.wlwx.com"
+uid = "1"
+content = ""
+cest_mobiles = ""
+need_report = true
+sp_code = ""
+
+[blockchain]
+url = "47.52.170.4:10086/v3/isInsideAddress"
+client_id = ""
+api_secret = ""
+
+[blockchaincustody]
+base_url = "http://47.52.170.4:10086"
+coin_list = "/custody/coin/list"
+create_mch = "/custody/create/mch"
+reset_mch = "/custody/resecret/mch"
+get_mch = "/custody/get/mch"
+verify_param = "/custody/verify/param"
+create_address = "/custody/address"
+create_lot_coin_address = "/custody/lot/coin/address"
+bind_address = "/custody/address/bind"
+withdraw = "/custody/withdraw"
+balance = "/custody/coin/balance"
+chain_status = "/custody/upchain/status"
+client_id = "d28fa2b0-d36a-4b5f-a7ff-0612bdc620d7"
+api_secret = "31ywhtAGwh74ThyfnGHj788aVWhbViKhpZ"
+call_back_base_url = "http://35.76.228.210:38001"
+
+[price.hoo]
+url = "https://www.hoo.co/api/price/ticker"
+
+[price.hoogeek]
+url = "https://maya-price-goose.mojo-r.hoogeek.com/api/v2/token"
+
+
+[fee]
+open=true
+url = "https://hoo.com/api/open/coin/fee"
+rate = 1.2
+limit = 10
+
+[grpc.server]
+host = "127.0.0.1"
+port = "8027"
+
+[grpc.client]
+host = "127.0.0.1"
+port = "8027"

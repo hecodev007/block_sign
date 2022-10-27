@@ -1,0 +1,24 @@
+coinType = "bsc"
+version = "v1"
+port = "8585"
+debug = true
+walletType = "hot"
+filePath = "./file"
+isStartThread = true
+mchId = "fee_address"
+orderId = "202002102011"
+
+
+[auth]
+enable = false
+user = "123"
+password = "123"
+
+[bsc]
+nodeUrl1 = "https://data-seed-prebsc-1-s1.binance.org:8545/"
+nodeUrl = "http://bsc.rylink.io:30575"
+user = ""
+password = ""
+gasPrice = 20000000000
+gasLimit = 400000
+networkid = 56  # main： 56 test： 97

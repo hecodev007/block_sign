@@ -1,0 +1,4 @@
+/.idea
+/tmplogs
+go.sum
+*_test.go

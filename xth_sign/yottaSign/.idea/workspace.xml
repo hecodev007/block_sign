@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2ffdc88c-3bf5-4b78-bda4-e84dc92d1748" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../bchaSign/utils/bcha/addr_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bchaSign/utils/bcha/address.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../neoSign/utils/rate.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atpSign/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../atpSign/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atpSign/ReadMe.md" beforeDir="false" afterPath="$PROJECT_DIR$/../atpSign/ReadMe.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atpSign/api/controller/Controller.go" beforeDir="false" afterPath="$PROJECT_DIR$/../atpSign/api/controller/Controller.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atpSign/api/models/dagModel.go" beforeDir="false" afterPath="$PROJECT_DIR$/../atpSign/api/models/dagModel.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atpSign/api/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/../atpSign/api/router.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atpSign/cfxSign" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atpSign/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../atpSign/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atpSign/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../atpSign/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atpSign/utils/alaya/account.go" beforeDir="false" afterPath="$PROJECT_DIR$/../atpSign/utils/alaya/account.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atpSign/utils/alaya/rpc.go" beforeDir="false" afterPath="$PROJECT_DIR$/../atpSign/utils/alaya/rpc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atpSign/utils/keystore/csv.go" beforeDir="false" afterPath="$PROJECT_DIR$/../atpSign/utils/keystore/csv.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atpSign/utils/keystore/keyStore.go" beforeDir="false" afterPath="$PROJECT_DIR$/../atpSign/utils/keystore/keyStore.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../filSign/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../filSign/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../filSign/ReadMe.md" beforeDir="false" afterPath="$PROJECT_DIR$/../filSign/ReadMe.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../filSign/api/controller/Controller.go" beforeDir="false" afterPath="$PROJECT_DIR$/../filSign/api/controller/Controller.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../filSign/api/models/filModel.go" beforeDir="false" afterPath="$PROJECT_DIR$/../filSign/api/models/filModel.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../filSign/api/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/../filSign/api/router.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../filSign/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../filSign/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../filSign/utils/fil/rpc.go" beforeDir="false" afterPath="$PROJECT_DIR$/../filSign/utils/fil/rpc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../filSign/utils/keystore/csv.go" beforeDir="false" afterPath="$PROJECT_DIR$/../filSign/utils/keystore/csv.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../filSign/utils/keystore/keyStore.go" beforeDir="false" afterPath="$PROJECT_DIR$/../filSign/utils/keystore/keyStore.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../neoSign/ReadMe.md" beforeDir="false" afterPath="$PROJECT_DIR$/../neoSign/ReadMe.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../neoSign/api/controller/Controller.go" beforeDir="false" afterPath="$PROJECT_DIR$/../neoSign/api/controller/Controller.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../neoSign/api/models/neoModel.go" beforeDir="false" afterPath="$PROJECT_DIR$/../neoSign/api/models/neoModel.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../neoSign/common/validator/types.go" beforeDir="false" afterPath="$PROJECT_DIR$/../neoSign/common/validator/types.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../neoSign/utils/neo/sign2.go" beforeDir="false" afterPath="$PROJECT_DIR$/../neoSign/utils/neo/sign2.go" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="GOROOT" path="$USER_HOME$/go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="ProjectId" id="1jquc8WiXMUysMJU880MlFRypy9" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="689" y="345" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604546338296">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="689" y="345" key="#com.intellij.fileTypes.FileTypeChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1604546338296" />
+    <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1606205237866">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1606205237866" />
+  </component>
+</project>

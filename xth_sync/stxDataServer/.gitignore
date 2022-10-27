@@ -1,0 +1,5 @@
+/.idea
+/tmplogs
+go.sum
+oktDataServer
+*_test.go

@@ -1,0 +1,42 @@
+读取配置文件: ./app_dev.toml
+[xorm] [info]  2022/05/11 07:19:25.378900 PING DATABASE mysql
+[xorm] [info]  2022/05/11 07:19:26.661848 PING DATABASE mysql
+2022-05-11 07:19:28	INFO	/Users/one/xutonghua/gitlab/hscsync/services/watch.go:66	catch address number:[586]
+2022-05-11 07:19:29	INFO	/Users/one/xutonghua/gitlab/hscsync/services/push.go:71	push server start
+2022-05-11 07:19:29	INFO	/Users/one/xutonghua/gitlab/hscsync/services/proc.go:65	proc server start
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /eth/rpc                  --> hscsync/api.(*MController).RpcPost-fm (2 handlers)
+[GIN-debug] POST   /eth/insert               --> hscsync/api.(*MController).InsertWatchAddress-fm (2 handlers)
+[GIN-debug] POST   /eth/remove               --> hscsync/api.(*MController).RemoveWatchAddress-fm (2 handlers)
+[GIN-debug] POST   /eth/update               --> hscsync/api.(*MController).UpdateWatchAddress-fm (2 handlers)
+[GIN-debug] POST   /eth/repush               --> hscsync/api.(*MController).RepushTx-fm (2 handlers)
+[GIN-debug] POST   /eth/insertcontract       --> hscsync/api.(*MController).InsertWatchContract-fm (2 handlers)
+[GIN-debug] POST   /eth/removecontract       --> hscsync/api.(*MController).RemoveWatchContract-fm (2 handlers)
+[GIN-debug] GET    /info                     --> hscsync/api.(*MController).Info-fm (2 handlers)
+[GIN-debug] GET    /debug/pprof/             --> github.com/DeanThompson/ginpprof.IndexHandler.func1 (2 handlers)
+[GIN-debug] GET    /debug/pprof/heap         --> github.com/DeanThompson/ginpprof.HeapHandler.func1 (2 handlers)
+[GIN-debug] GET    /debug/pprof/goroutine    --> github.com/DeanThompson/ginpprof.GoroutineHandler.func1 (2 handlers)
+[GIN-debug] GET    /debug/pprof/allocs       --> github.com/DeanThompson/ginpprof.AllocsHandler.func1 (2 handlers)
+[GIN-debug] GET    /debug/pprof/block        --> github.com/DeanThompson/ginpprof.BlockHandler.func1 (2 handlers)
+[GIN-debug] GET    /debug/pprof/threadcreate --> github.com/DeanThompson/ginpprof.ThreadCreateHandler.func1 (2 handlers)
+[GIN-debug] GET    /debug/pprof/cmdline      --> github.com/DeanThompson/ginpprof.CmdlineHandler.func1 (2 handlers)
+[GIN-debug] GET    /debug/pprof/profile      --> github.com/DeanThompson/ginpprof.ProfileHandler.func1 (2 handlers)
+[GIN-debug] GET    /debug/pprof/symbol       --> github.com/DeanThompson/ginpprof.SymbolHandler.func1 (2 handlers)
+[GIN-debug] POST   /debug/pprof/symbol       --> github.com/DeanThompson/ginpprof.SymbolHandler.func1 (2 handlers)
+[GIN-debug] GET    /debug/pprof/trace        --> github.com/DeanThompson/ginpprof.TraceHandler.func1 (2 handlers)
+[GIN-debug] GET    /debug/pprof/mutex        --> github.com/DeanThompson/ginpprof.MutexHandler.func1 (2 handlers)
+[GIN-debug] Listening and serving HTTP on :15009
+[GIN-debug] [ERROR] listen tcp :15009: bind: address already in use
+2022-05-11 07:19:29	ERROR	/Users/one/xutonghua/gitlab/hscsync/main.go:42	listen tcp :15009: bind: address already in use
+goroutine 1 [running]:
+runtime/debug.Stack()
+	/usr/local/go/src/runtime/debug/stack.go:24 +0x65
+hscsync/common/log.Error({0xc0004999b0, 0x2f, 0xc0004999b0})
+	/Users/one/xutonghua/gitlab/hscsync/common/log/log.go:405 +0x54
+main.main()
+	/Users/one/xutonghua/gitlab/hscsync/main.go:42 +0x6dc
+
+

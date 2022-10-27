@@ -1,0 +1,13 @@
+appname = "steemsign"
+coinName = "steem"
+runmode = "dev"
+httpport = 14056
+outFile = "tmplogs/info"
+errFile = "tmplogs/err"
+globalConfigPath = ""
+url = "https://api.steemit.com"
+
+[prod]
+
+[dev]
+

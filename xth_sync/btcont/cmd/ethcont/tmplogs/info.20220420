@@ -1,0 +1,10 @@
+2022-04-20 08:44:05	INFO	/Users/one/xutonghua/xth_sync/btcont/cmd/eth/main.go:41	71
+2022-04-20 08:44:05	INFO	/Users/one/xutonghua/xth_sync/btcont/common/model/ethnode.go:65	BlockCount 2022-04-20 08:44:05.687458 +0800 CST m=+1.272889399
+2022-04-20 08:44:16	INFO	/Users/one/xutonghua/xth_sync/btcont/cmd/eth/main.go:32	btcount end!!!
+2022-04-20 08:45:05	INFO	/Users/one/xutonghua/xth_sync/btcont/cmd/eth/main.go:41	71
+2022-04-20 08:45:15	INFO	/Users/one/xutonghua/xth_sync/btcont/common/model/ethnode.go:66	BlockCount 2022-04-20 08:45:15.755183 +0800 CST m=+10.373992256
+2022-04-20 08:46:17	INFO	/Users/one/xutonghua/xth_sync/btcont/common/model/ethnode.go:66	BlockCount 2022-04-20 08:46:17.989496 +0800 CST m=+72.608980788
+2022-04-20 08:47:19	INFO	/Users/one/xutonghua/xth_sync/btcont/common/model/ethnode.go:66	BlockCount 2022-04-20 08:47:19.213128 +0800 CST m=+133.833277442
+2022-04-20 08:48:21	INFO	/Users/one/xutonghua/xth_sync/btcont/common/model/ethnode.go:66	BlockCount 2022-04-20 08:48:21.014963 +0800 CST m=+195.635782247
+2022-04-20 08:49:22	INFO	/Users/one/xutonghua/xth_sync/btcont/common/model/ethnode.go:66	BlockCount 2022-04-20 08:49:22.516473 +0800 CST m=+257.137960681
+2022-04-20 08:50:24	INFO	/Users/one/xutonghua/xth_sync/btcont/common/model/ethnode.go:66	BlockCount 2022-04-20 08:50:24.486925 +0800 CST m=+319.109085198

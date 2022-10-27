@@ -1,0 +1,51 @@
+syntax = "proto3";
+package proto;
+
+message OrderRequest {
+    int64 apply_id = 1;
+    int64 apply_coin_id = 2;
+    string outer_order_no = 3;
+    string order_no = 4;
+    int64 mch_id = 5;
+    string mch_name = 6;
+    string coin_name = 7;
+    string worker = 8;
+    string amount_code = 9;
+    string order_code = 10;
+    string token = 11;
+    string memo = 12;
+    string fee = 13;
+    int32 decimal = 14;
+    repeated OrderAddrRequest order_address = 15;
+    map<string, string> extra = 16;
+}
+
+message OrderAddrRequest {
+    int32 dir = 1;
+    string address = 2;
+    string amount = 3;
+    string token_amount = 4;
+    string txId = 5;
+    int32 vout = 6;
+    map<string, string> inner_extra = 7;
+}
+
+
+message ResponseOrder {
+    int32 Code = 1;
+    string Message = 2;
+    int64 Data = 3;
+}
+
+//普通返回
+message ResponseMsg {
+    int32  Code = 1;
+    string Message = 2;
+}
+
+service OrderMaker {
+    //创建订单
+    rpc MakeOrder (OrderRequest) returns (ResponseOrder) {};
+    //心跳
+    rpc HandleOk(ResponseMsg) returns (ResponseMsg) {};
+}

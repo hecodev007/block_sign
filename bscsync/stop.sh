@@ -1,0 +1,1 @@
+kill $(ps -ef|grep bsc-dataserver |awk '$0 !~/grep/ {print $2}' |tr -s '\n' ' ')

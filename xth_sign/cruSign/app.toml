@@ -1,0 +1,30 @@
+name = "cru"
+
+[server]
+runmode = "debug"
+ip="0.0.0.0"
+port="18073"
+read_timeout= 60
+write_timeout= 60
+
+[csv]
+dir= "csv"
+read_file= ""
+write_file= ""
+
+[log]
+OutFile= "tmplogs/info"
+errfile= "tmplogs/err"
+formatter= "text"
+release= 0.1
+mode= "dev"
+level= "debug"
+log_path= "tmp"
+log_name= "debug.log"
+max_age= 24
+rotation_time= 24
+[node]
+prefix=42 #地址前缀,测试:42,主网:
+url = ""
+#rpc_key = "rylink"
+#rpc_secret = "4CpmLnbOiaTbD20gPdsRYY6WiMFDyF8N8QzGGYrAfIw="

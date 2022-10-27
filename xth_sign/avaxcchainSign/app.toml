@@ -1,0 +1,31 @@
+name = "avaxcchain"
+
+[server]
+runmode = "debug"
+ip="0.0.0.0"
+port="14039"
+read_timeout= 600
+write_timeout= 600
+
+[csv]
+dir= "csv"
+read_file= ""
+write_file= ""
+
+[log]
+OutFile= "tmplogs/info"
+errfile= "tmplogs/err"
+formatter= "text"
+release= 0.1
+mode= "dev"
+level= "debug"
+log_path= "tmp"
+log_name= "debug.log"
+max_age= 24
+rotation_time= 24
+
+[node]
+url="https://api.avax.network/ext/bc/C/rpc"
+chainid= 43114
+#交易默认gasprice 为0自动获取,avac-cchain 最低25000000000,60000000000
+gasprice = 0

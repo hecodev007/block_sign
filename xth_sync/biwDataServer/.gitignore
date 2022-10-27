@@ -1,0 +1,5 @@
+/.idea
+/tmplogs
+go.sum
+biwDataServer
+*_test.go

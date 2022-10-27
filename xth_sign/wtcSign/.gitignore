@@ -1,0 +1,6 @@
+/wtcSign
+tmplog/
+tmplogs/
+csvbak
+go.sum
+.idea/

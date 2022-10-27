@@ -1,0 +1,11 @@
+{"level":"info","msg":"listen port:9986","time":"2020-07-23T21:56:17+08:00"}
+{"level":"info","msg":"Shutdown Server ...","time":"2020-07-23T21:56:33+08:00"}
+{"level":"info","msg":"Server exiting","time":"2020-07-23T21:56:33+08:00"}
+{"level":"info","msg":"listen port:9986","time":"2020-07-23T21:56:44+08:00"}
+{"level":"info","msg":"| 200 |     119.686µs |             ::1 | GET  /v1/mtr/balance |","time":"2020-07-23T21:57:41+08:00"}
+{"level":"info","msg":"Shutdown Server ...","time":"2020-07-23T21:58:42+08:00"}
+{"level":"info","msg":"Server exiting","time":"2020-07-23T21:58:42+08:00"}
+{"level":"info","msg":"listen port:9986","time":"2020-07-23T21:58:52+08:00"}
+{"level":"info","msg":"| 200 |  2.123864069s |             ::1 | GET  /v1/mtr/balance |","time":"2020-07-23T21:59:00+08:00"}
+{"level":"info","msg":"Shutdown Server ...","time":"2020-07-23T23:25:08+08:00"}
+{"level":"info","msg":"Server exiting","time":"2020-07-23T23:25:08+08:00"}

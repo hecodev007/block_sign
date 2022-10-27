@@ -1,0 +1,6 @@
+/waxsign
+tmplog/
+tmplogs/
+csv
+go.sum
+.idea/

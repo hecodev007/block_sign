@@ -1,0 +1,5 @@
+/.idea
+/tmplogs
+go.sum
+ytaDataServer
+*_test.go

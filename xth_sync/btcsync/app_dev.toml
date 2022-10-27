@@ -1,0 +1,66 @@
+name = "btc"
+
+[server]
+runmode = "debug"
+ip="0.0.0.0"
+port="10032"
+read_timeout= 60
+write_timeout= 60
+
+[Sync]
+name = "btc"
+enablesync = true
+enable_usdt_scan = true
+enablegoroutine = false
+enablemultiscan = 1
+enablemempool = true  #
+fullbackup = false #交易全量保存数据库，false 只保存监控地址的交易,arp只能false要更新数据库用户余额
+epochcount = 2
+epochtime  = 60
+initheight = 733362
+enablerollback = true
+rollheight = 730520
+confirmations = 6
+
+[nodes.btc]
+url = "http://rylink:4CpmLnbOiaTbD20gPdsRYY6WiMFDyF8N8QzGGYrAfIw=@52.197.118.147:31821"
+usdt = "http://user:709394@52.194.40.139:9990"
+#url = "http://rylink:4CpmLnbOiaTbD20gPdsRYY6WiMFDyF8N8QzGGYrAfIw=@13.230.58.120:31821"
+
+[databases.user]
+name= "addrmanagement"
+type= "mysql"
+url= "rm-j6c5ekl1af4dc9k8w499.mysql.rds.aliyuncs.com:3306"
+user= "hoocustody"
+password= "Eb!ZXrNt!!x5xru0"
+mode= "release"
+
+[databases.sync]
+name= "biwsync"
+type= "mysql"
+url= "rm-j6c5ekl1af4dc9k8w499.mysql.rds.aliyuncs.com:3306"
+user= "hoocustody"
+password= "Eb!ZXrNt!!x5xru0"
+mode= "release"
+
+
+[push]
+enable = false
+type = "http" #rabbitmq/http
+agent = true
+url = "http://127.0.0.1:8090/agent/index"
+user = "agentuser"
+password = "agentpass"
+mqurl="amqp://rylink:rylink2020@172.17.2.65"
+reconns=30
+publishers=["moac"]
+
+[log]
+outfile= "tmplogs/info"
+errfile= "tmplogs/err"
+formatter= "text"
+release= 0.1
+mode= "dev"
+level= "info" #debug info warn error panic
+max_age= 24
+rotation_time= 24

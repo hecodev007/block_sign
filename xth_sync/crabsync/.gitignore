@@ -1,0 +1,6 @@
+/.idea
+/tmplogs
+go.sum
+crabsync
+*_test.go
+main

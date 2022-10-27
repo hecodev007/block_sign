@@ -1,0 +1,31 @@
+run_model: "debug"
+enable_rpc: false
+
+system_model: cold #冷热系统切换 cold hot
+#system_model: hot #冷热系统切换 cold cold
+
+http:
+  port: 8054
+  read_timeout: 300
+  write_timeout: 3000
+
+log:
+  log_path: "./tmp"
+  log_name: "zecserver.log"
+  log_level: "debug"
+
+zec:
+ addr_path: "./pem/zec/file"  #地址读取目录
+ create_addr_path: "./pem/zec/create"  #地址生成目录
+ default_fee: 100000 #0.001 默认手续费
+ max_fee: 10000000 #0.1 默认最高手续费
+ min_fee: 1000 #0.00001 默认最低手续费
+# rpc_host: "http://47.244.140.180:9994"
+ rpc_host: "http://172.17.12.3:9994"
+ rpc_user: "user"
+ rpc_password: "709394"
+
+#cron表达式
+cron:
+  loadkeyjob: "@every 50s"
+

@@ -1,0 +1,101 @@
+basePath: '{{.BasePath}}'
+host: '{{.Host}}'
+info:
+  contact: {}
+  description: '{{.Description}}'
+  license: {}
+  title: '{{.Title}}'
+  version: '{{.Version}}'
+paths:
+  /v1/addr:
+    post:
+      parameters:
+      - description: '{''num'':10,''orderId'':''123456'',''mchId'':''test'',''coinName'':''bch''}'
+        in: body
+        name: body
+        required: true
+        schema:
+          type: object
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: '{"code":0,"message":"ok","data":{},"hash":"8978608dad8f150ea142e1c076f6564e"}'
+          schema:
+            type: string
+      summary: 生成地址,冷系统有效，热系统无效
+  /v1/create:
+    post:
+      parameters:
+      - description: sign tpl
+        in: body
+        name: body
+        required: true
+        schema:
+          type: object
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: '{"code":0,"message":"ok","data":{},"hash":"8978608dad8f150ea142e1c076f6564e"}'
+          schema:
+            type: string
+      summary: 创建签名模板
+  /v1/importpk:
+    post:
+      consumes:
+      - multipart/form-data
+      parameters:
+      - description: address
+        in: formData
+        name: address
+        required: true
+        type: string
+      - description: privkey
+        in: formData
+        name: privkey
+        required: true
+        type: string
+      produces:
+      - multipart/form-data
+      responses:
+        "200":
+          description: '{"code":0,"message":"ok","data":{},"hash":"8978608dad8f150ea142e1c076f6564e"}'
+          schema:
+            type: string
+      summary: 临时导入地址私钥，冷系统有效，热系统失效
+  /v1/push:
+    post:
+      parameters:
+      - description: push hex
+        in: body
+        name: body
+        required: true
+        schema:
+          type: object
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: '{"code":0,"message":"ok","data":{},"hash":"8978608dad8f150ea142e1c076f6564e"}'
+          schema:
+            type: string
+      summary: 广播交易
+  /v1/sign:
+    post:
+      parameters:
+      - description: sign json
+        in: body
+        name: body
+        required: true
+        schema:
+          type: object
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: '{"code":0,"message":"ok","data":{},"hash":"8978608dad8f150ea142e1c076f6564e"}'
+          schema:
+            type: string
+      summary: 模板签名，冷系统有效，热系统无效
+swagger: "2.0"

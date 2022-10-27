@@ -1,0 +1,60 @@
+[server]
+ip = "0.0.0.0"
+port = "18341"
+
+[Sync]
+coin_name = ""   #主链币名称
+enablesync = true   #开启扫描
+initheight = 14717431  #扫块起始高度
+enablemempool = true  #开启确认数推送
+enablemultiscan = 1  #扫块协程数 最低为1
+enableInternal = true
+
+fullbackup = false #交易全量保存数据库，false 只保存监控地址的交易
+enablerollback = false #启动服务时候,回滚高度;记得填回去
+rollheight = 14717020 #回滚到这个高度,并开始扫块
+confirmations = 12  #确认数
+
+address_discover = 10 #新增地址发现:0 不开启, >0 查询间隔秒数
+contract_discover = 10 #新增合约发现:0 不开启, >0 查询间隔秒数
+
+[node]
+url = "http://192.169.1.40:20545"
+
+database_crypto = false #数据库配置加密存储
+[databases.user]
+name = "addrmanagement"
+type = "mysql"
+url = "dataservice.camzhqc6mnkb.ap-northeast-1.rds.amazonaws.com:12306"
+user=  "data_service"
+password = "TL0&gBvib8oj8rll"
+
+[databases.sync]
+name = "steemsync"
+type = "mysql"
+url = "rm-j6c5ekl1af4dc9k8w6o.mysql.rds.aliyuncs.com:3306"
+user = "hoocustody"
+password = "Eb!ZXrNt!!x5xru0"
+
+[mq]
+hostport = "b-30ba08b2-dbea-4e1a-a282-b4569cb9896f.mq.ap-northeast-1.amazonaws.com:5671"
+username = "blockchain_coin-MQ"
+password  = "draXv3HB4dKqmDjANU"
+
+[push]
+enable = false
+type = "http" #rabbitmq/http
+agent = true
+url = "http://172.16.210.86:8090/agent/index"
+user = "agentuser"
+password = "agentpass"
+mqurl = "amqp://rylink:rylink2020@172.17.2.65"
+reconns = 30
+publishers = []
+
+[log]
+console = true #日志输出到控制台
+outfile = "tmplogs/info"
+errfile = "tmplogs/err"
+formatter = "text"
+level = "info" #debug info warn error panic

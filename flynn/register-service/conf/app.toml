@@ -1,0 +1,23 @@
+port = "10086"
+debug = true
+version = "v1"
+
+[auth]
+encrypt = true
+enable = false
+user = "Y6ze"
+password = "Y6ze"
+
+[databases.user]
+name= "addrmanagement"
+type= "mysql"
+url = "rm-wz97y5e9e7bs85y7gbo.mysql.rds.aliyuncs.com"
+user= "dataserver"
+password= "3vn8QoHNkZzZzRDj2dWM"
+mode= "release"
+
+[services.ht-heco]
+name = "ht-heco"
+url = "http://127.0.0.1:18080"
+user = ""
+password = ""

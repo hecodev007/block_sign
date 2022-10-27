@@ -1,0 +1,5 @@
+/.idea
+/tmplogs
+go.sum
+dashDataServer
+*_test.go

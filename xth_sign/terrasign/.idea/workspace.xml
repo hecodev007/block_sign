@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1930acd5-aa1d-4c4e-8c79-a12d5c53207a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../xlmSign/utils/xlm/app.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../glmrsign/ReadMe.md" beforeDir="false" afterPath="$PROJECT_DIR$/../glmrsign/ReadMe.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kavaSign/app.toml" beforeDir="false" afterPath="$PROJECT_DIR$/../kavaSign/app.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReadMe.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/controller/Controller.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/models/atomModel.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/models/atom_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/router.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/conf/config.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/lock.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/log/log.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/validator/types.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kavaSign" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/btc/btc.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/btc/rpc.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/btc/vout.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/kava/account.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/kava/app.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/kava/buildtx.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/kava/kavatx.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/kava/rpc.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/kava/sdk_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/keystore/crypto.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/keystore/csv.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/keystore/keyStore.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/keystore/path.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/keystore/types.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/rate.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../waxsign/ReadMe.md" beforeDir="false" afterPath="$PROJECT_DIR$/../waxsign/ReadMe.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xlmSign/ReadMe.md" beforeDir="false" afterPath="$PROJECT_DIR$/../xlmSign/ReadMe.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xlmSign/api/controller/Controller.go" beforeDir="false" afterPath="$PROJECT_DIR$/../xlmSign/api/controller/Controller.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xlmSign/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../xlmSign/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xlmSign/utils/xlm/addr_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/../xlmSign/utils/xlm/addr_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xlmSign/utils/xlm/sign.go" beforeDir="false" afterPath="$PROJECT_DIR$/../xlmSign/utils/xlm/sign.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xlmSign/xlmSign" beforeDir="false" afterPath="$PROJECT_DIR$/../xlmSign/xlmSign" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" url="file:///usr/local/go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="dv7ekjuh" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
+  </component>
+  <component name="ProjectId" id="1j4lJXabDXKoFn94lNbKJagpEuW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="go.sdk" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/csv/goapi" />
+      <recent name="$PROJECT_DIR$/utils/kava" />
+      <recent name="$PROJECT_DIR$/utils/atom2" />
+      <recent name="$PROJECT_DIR$/api/models" />
+      <recent name="$PROJECT_DIR$/utils/atom" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Go 测试.terrasign/utils/kava 中的 Test_sdk">
+    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="atomSign" />
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$" />
+      <package value="atomSign" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
+      <module name="atomSign" />
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <framework value="gotest" />
+      <kind value="DIRECTORY" />
+      <package value="atomSign" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="kavaSign/utils/kava 中的 Test_cli" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="atomSign" />
+      <working_directory value="$PROJECT_DIR$/utils/kava" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="kavaSign/utils/kava" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTest_cli\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="kavaSign/utils/kava 中的 Test_sdk" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="atomSign" />
+      <working_directory value="$PROJECT_DIR$/utils/kava" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="kavaSign/utils/kava" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTest_sdk\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="kavaSign/utils/kava 中的 Test_sendTx" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="atomSign" />
+      <working_directory value="$PROJECT_DIR$/utils/kava" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="kavaSign/utils/kava" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTest_sendTx\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="terrasign/utils/kava 中的 Test_acc" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="atomSign" />
+      <working_directory value="$PROJECT_DIR$/utils/kava" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="terrasign/utils/kava" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTest_acc\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="terrasign/utils/kava 中的 Test_sdk" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="terrasign" />
+      <working_directory value="$PROJECT_DIR$/utils/kava" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="terrasign/utils/kava" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTest_sdk\E$" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go 测试.terrasign/utils/kava 中的 Test_sdk" />
+        <item itemvalue="Go 测试.terrasign/utils/kava 中的 Test_acc" />
+        <item itemvalue="Go 测试.kavaSign/utils/kava 中的 Test_sendTx" />
+        <item itemvalue="Go 测试.kavaSign/utils/kava 中的 Test_sdk" />
+        <item itemvalue="Go 测试.kavaSign/utils/kava 中的 Test_cli" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/api/models/atom_test.go</url>
+          <line>8</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/utils/kava/sdk_test.go</url>
+          <line>17</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

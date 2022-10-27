@@ -1,0 +1,35 @@
+2022-05-10 09:52:01	ERROR	/Users/one/xutonghua/gitlab/hscsync/main.go:42	listen tcp :15009: bind: address already in use
+goroutine 1 [running]:
+runtime/debug.Stack()
+	/usr/local/go/src/runtime/debug/stack.go:24 +0x65
+hscsync/common/log.Error({0xc0003e99b0, 0x2f, 0xc0003e99b0})
+	/Users/one/xutonghua/gitlab/hscsync/common/log/log.go:405 +0x54
+main.main()
+	/Users/one/xutonghua/gitlab/hscsync/main.go:42 +0x6dc
+
+
+2022-05-10 18:34:55	ERROR	/Users/one/xutonghua/gitlab/hscsync/main.go:42	listen tcp :15009: bind: address already in use
+goroutine 1 [running]:
+runtime/debug.Stack()
+	/usr/local/go/src/runtime/debug/stack.go:24 +0x65
+hscsync/common/log.Error({0xc0004cb9b0, 0x2f, 0xc0004cb9b0})
+	/Users/one/xutonghua/gitlab/hscsync/common/log/log.go:405 +0x54
+main.main()
+	/Users/one/xutonghua/gitlab/hscsync/main.go:42 +0x6dc
+
+
+{"level":"ERROR","time":"2022-05-10 18:37:28","caller":"/Users/one/xutonghua/gitlab/hscsync/services/scan.go:97","msg":"GetBlockCount invalid character '<' looking for beginning of value"}
+{"level":"ERROR","time":"2022-05-10 18:38:38","caller":"/Users/one/xutonghua/gitlab/hscsync/services/scan.go:97","msg":"GetBlockCount invalid character '<' looking for beginning of value"}
+{"level":"ERROR","time":"2022-05-10 18:39:48","caller":"/Users/one/xutonghua/gitlab/hscsync/services/scan.go:97","msg":"GetBlockCount invalid character '<' looking for beginning of value"}
+{"level":"ERROR","time":"2022-05-10 18:40:58","caller":"/Users/one/xutonghua/gitlab/hscsync/services/scan.go:97","msg":"GetBlockCount invalid character '<' looking for beginning of value"}
+{"level":"ERROR","time":"2022-05-10 18:42:08","caller":"/Users/one/xutonghua/gitlab/hscsync/services/scan.go:97","msg":"GetBlockCount invalid character '<' looking for beginning of value"}
+2022-05-11 07:19:29	ERROR	/Users/one/xutonghua/gitlab/hscsync/main.go:42	listen tcp :15009: bind: address already in use
+goroutine 1 [running]:
+runtime/debug.Stack()
+	/usr/local/go/src/runtime/debug/stack.go:24 +0x65
+hscsync/common/log.Error({0xc0004999b0, 0x2f, 0xc0004999b0})
+	/Users/one/xutonghua/gitlab/hscsync/common/log/log.go:405 +0x54
+main.main()
+	/Users/one/xutonghua/gitlab/hscsync/main.go:42 +0x6dc
+
+

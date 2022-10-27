@@ -1,0 +1,29 @@
+name = "eth"
+
+
+[nodes.eth]
+#url = "http://3.112.208.9:32357"
+url = "http://13.230.253.68:8545"
+rpc_key = ""
+rpc_secret = ""
+
+[nodes.etc]
+url = "http://3.112.208.9:32357"
+#url = "http://13.230.253.68:8545"
+rpc_key = ""
+rpc_secret = ""
+
+[log]
+formatter= "text"
+release= 0.1
+mode= "dev"
+level= "trace"
+log_path= "tmp"
+log_name= "debug.log"
+max_age= 24
+rotation_time= 24
+
+[csv]
+dir= "csv"
+read_file= "eth_address"
+write_file= "eth_balance"

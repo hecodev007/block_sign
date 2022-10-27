@@ -1,0 +1,18 @@
+{"level":"info","msg":"listen port:9986","time":"2020-07-24T12:29:22+08:00"}
+{"level":"info","msg":"Shutdown Server ...","time":"2020-07-24T12:30:15+08:00"}
+{"level":"info","msg":"Server exiting","time":"2020-07-24T12:30:15+08:00"}
+{"level":"info","msg":"listen port:9986","time":"2020-07-24T12:30:36+08:00"}
+{"level":"info","msg":"http://mtr.rylink.io:30869/accounts/0x05abd2413d21f4dff90f647e453b9c73fe5d8ac3","time":"2020-07-24T12:30:43+08:00"}
+{"level":"info","msg":"| 200 |    8.194536ms |       127.0.0.1 | GET  /v1/mtr/balance |","time":"2020-07-24T12:30:43+08:00"}
+{"level":"info","msg":"Shutdown Server ...","time":"2020-07-24T12:31:50+08:00"}
+{"level":"info","msg":"Server exiting","time":"2020-07-24T12:31:50+08:00"}
+{"level":"info","msg":"listen port:9986","time":"2020-07-24T12:32:04+08:00"}
+{"level":"info","msg":"http://mtr.rylink.io:30869/accounts/0x05abd2413d21f4dff90f647e453b9c73fe5d8ac3","time":"2020-07-24T12:32:34+08:00"}
+{"level":"info","msg":"| 200 |    4.188084ms |       127.0.0.1 | GET  /v1/mtr/balance |","time":"2020-07-24T12:32:34+08:00"}
+{"level":"info","msg":"Shutdown Server ...","time":"2020-07-24T12:33:42+08:00"}
+{"level":"info","msg":"Server exiting","time":"2020-07-24T12:33:42+08:00"}
+{"level":"info","msg":"listen port:18583","time":"2020-07-24T12:33:58+08:00"}
+{"level":"info","msg":"http://mtr.rylink.io:30869/accounts/0x05abd2413d21f4dff90f647e453b9c73fe5d8ac3","time":"2020-07-24T12:34:28+08:00"}
+{"level":"info","msg":"| 200 |    3.950023ms |       127.0.0.1 | GET  /v1/mtr/balance |","time":"2020-07-24T12:34:28+08:00"}
+{"level":"info","msg":"Shutdown Server ...","time":"2020-07-24T12:44:29+08:00"}
+{"level":"info","msg":"Server exiting","time":"2020-07-24T12:44:29+08:00"}

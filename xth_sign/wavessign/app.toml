@@ -1,0 +1,32 @@
+name = "waves"
+
+[server]
+runmode = "debug"
+ip="0.0.0.0"
+port="14038"
+read_timeout= 600
+write_timeout= 600
+
+[csv]
+dir= "csv"
+read_file= ""
+write_file= ""
+
+[log]
+OutFile= "tmplogs/info"
+errfile= "tmplogs/err"
+formatter= "text"
+release= 0.1
+mode= "dev"
+level= "debug"
+log_path= "tmp"
+log_name= "debug.log"
+max_age= 24
+rotation_time= 24
+
+[node]
+url=""
+eth=""
+eth2=""
+chainid=""
+fee = 100000

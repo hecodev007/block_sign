@@ -1,0 +1,6 @@
+/solsign
+tmplog/
+tmplogs/
+csv
+go.sum
+.idea/

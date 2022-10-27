@@ -1,0 +1,89 @@
+name = "hsc"
+mode = "test"
+
+[Sync]
+name = "hsc"
+enablesync = true
+enablemultiscan = 0
+enablegoroutine = false
+enablemempool = false
+fullbackup = false
+epochcount = 100
+epochtime = 60
+initheight = 3176689
+enablerollback = false
+rollheight = 3176688
+confirmations = 6
+intervaltime = 15
+
+[nodes.hsc]
+url = "https://http-mainnet.hoosmartchain.com"
+rpc_key = ""
+rpc_secret = ""
+
+#
+#[databases.user]
+#name = "48hx3NPjcpP713YtbjI="
+#type = "mysql"
+#url = "5s1hz83nboT10X5mYydKGey5IO5stE2G2cb5x6m1ltOWBPbJrGlEnqX6cTOiamspdmh8na//dXLy8wICRVTq"
+#user = "5s1hz+HxeYDq23gt"
+#password = "1uAliNnAapv+inQiODRLDw=="
+#mode = "release"
+#
+#
+#[databases.sync]
+#name = "6t923cfsfw=="
+#type = "mysql"
+#url = "5s5zxdTvcd//3m47dCNVTbn0BrKgVTa06PZDL6K69WeU/4Z5nivOOGe2Erh0WQnYn5LDIdXmESna0aYPJBNLxCVOsD6y"
+#user = "5s1hz+3nboT10X4="
+#password = "7Ohf1srDOJX7iiwWehgVQLGh"
+#mode = "release"
+
+
+
+[databases.user]
+name = "localdb"
+type = "mysql"
+url = "127.0.0.1:3306"
+user = "root"
+password = "123456"
+mode = "release"
+
+[databases.sync]
+name = "localdb"
+type = "mysql"
+url = "127.0.0.1:3306"
+user = "root"
+password = "123456"
+mode = "release"
+
+
+
+[server]
+runmode = "debug"
+ip = "0.0.0.0"
+port = "18891"
+read_timeout = 60
+write_timeout = 60
+
+[mq]
+hostport = "b-30ba08b2-dbea-4e1a-a282-b4569cb9896f.mq.ap-northeast-1.amazonaws.com:5671"
+username = "blockchain_coin-MQ"
+password  = "draXv3HB4dKqmDjANU"
+
+[push]
+enable = true
+type = "http"
+agent = true
+url = "http://192.169.2.157:8090/agent/index"
+user = "ryryry1"
+pass = "hhoshoh565"
+mqurl = "amqp://admin:123456@localhost:5672/"
+reconns = 30
+publishers = ["hsc"]
+
+[log]
+level = "info"
+formatter = "json"
+outfile = "./logs/info.out"
+errfile = "./logs/error.out"

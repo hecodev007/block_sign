@@ -1,0 +1,5 @@
+.idea/
+./csv
+tmplogs
+
+go.sum

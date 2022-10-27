@@ -1,0 +1,31 @@
+
+[auth]
+enable=false
+  password = "test"
+  username = "test"
+
+[log]
+  log_dir = "test"
+  log_filename = ""
+
+[mysql]
+  user="root"
+  password="123456"
+  host="localhost:3306"
+  dbname="finance_data"
+
+[rpc]
+enable=false
+username="test"
+password="test"
+unlockpassword="cococococo."
+url="http://127.0.0.1:8098"
+[mode]
+  dev=true
+  [account]
+  viper="waldo123"
+
+[http]
+listen_address="0.0.0.0:8048"
+
+

@@ -1,0 +1,44 @@
+basePath: '{{.BasePath}}'
+host: '{{.Host}}'
+info:
+  contact: {}
+  description: '{{.Description}}'
+  license: {}
+  title: '{{.Title}}'
+  version: '{{.Version}}'
+paths:
+  /v1/createaddr:
+    post:
+      parameters:
+      - description: '{''num'':10,''orderId'':''123456'',''mchId'':''test'',''coinName'':''mtr''}'
+        in: body
+        name: body
+        required: true
+        schema:
+          type: object
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: '{"code":0,"message":"ok","data":{},"hash":"8978608dad8f150ea142e1c076f6564e"}'
+          schema:
+            type: string
+      summary: 生成地址
+  /v1/transfer:
+    post:
+      parameters:
+      - description: sign json
+        in: body
+        name: body
+        required: true
+        schema:
+          type: object
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: '{"code":0,"message":"ok","data":"123123123"}'
+          schema:
+            type: string
+      summary: 交易签名
+swagger: "2.0"

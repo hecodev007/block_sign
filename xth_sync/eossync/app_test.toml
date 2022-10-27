@@ -1,0 +1,71 @@
+appname = "eossync"
+mode = "prod"
+[server]
+runmode = "debug"
+ip="0.0.0.0"
+port="18899"
+read_timeout= 60
+write_timeout= 60
+
+[Sync]
+name = "eos"
+enablesync = true
+enablegoroutine = true
+enablemempool = false
+fullbackup = true #交易全量保存数据库
+initheight = 227003045
+#延迟高度扫块
+delaycount = 0
+#启用回滚高度
+enablerollback = false
+#回滚高度
+rollheight = 1
+#确认数
+confirmations = 12
+
+[nodes.eos]
+url="https://api.eosdetroit.io"
+#url="https://api.bossweden.org"
+#url="https://api.bosexplorer.io"
+#rpc_key = "rylink"
+#rpc_secret = "4CpmLnbOiaTbD20gPdsRYY6WiMFDyF8N8QzGGYrAfIw="
+
+
+[databases.user]
+name= "6kDzq6McR2q5Id4Br0Q="
+type= "mysql"
+url= "70XjuL0YW323J9ZKolEHy2dO6URED2pJn/zF51B37pivhogejk9cjkpIh6kRh35PEyPR/hrj1l92AFKFiTzy"
+user= "70XjuJEOTHmoLdAB"
+password= "32in/6k/X2K8fNwO+UIG3Q=="
+mode= "release"
+
+[databases.sync]
+name= "7kvkqrcTSg=="
+type= "mysql"
+url= "+EDxvKgKTCa3KsAQoF4J1OZ6KWn0Lh9frpVFLqoW8JbJAw9FXPHpi1yE7DARt4Drax46bxxJLGKwhzOTHXfGAPTz4HbIGA=="
+user= "70XjuJ0YW323J9Y="
+password= "5WDdobo8DWy5fIQ6u25YkoPZ"
+mode= "release"
+
+
+
+[push]
+enable = true
+type = "http" #rabbitmq/http
+agent = true
+url = "http://192.169.2.157:8090/agent/index"
+user = "agentuser"
+password = "agentpass"
+mqurl="6knmqfRSBnmnKNoKqgoC284lriwMppBmnYedYdOK9LFRdab8+F9Fo7uT1PsVaW/XnGhtL5xTqCA="
+reconns=30
+publishers=["eos"]
+
+[log]
+outfile= "tmplogs/info"
+errfile= "tmplogs/err"
+formatter= "text"
+release= 0.1
+mode= "dev"
+level= "info" #debug info warn error panic
+max_age= 24
+rotation_time= 24

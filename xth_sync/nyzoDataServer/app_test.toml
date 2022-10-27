@@ -1,0 +1,66 @@
+appname = "cfx"
+mode = "prod"
+[server]
+runmode = "debug"
+ip="0.0.0.0"
+port="18900"
+read_timeout= 60
+write_timeout= 60
+
+[Sync]
+name = "cfx"
+enablesync = true
+enablegoroutine = true
+enablemempool = true  #
+fullbackup = true #交易全量保存数据库，false 只保存监控地址的交易,arp只能false要更新数据库用户余额
+epochcount = 2
+epochtime  = 60
+initheight = 771933
+enablerollback = false
+rollheight = 10000
+confirmations = 6
+intervaltime = 20
+
+[nodes.cfx]
+url = "http://3.114.68.247:4000"
+#rpc_key = "rylink"
+#rpc_secret = "4CpmLnbOiaTbD20gPdsRYY6WiMFDyF8N8QzGGYrAfIw="
+
+[databases.user]
+name= "6kDzq6McR2q5Id4Br0Q="
+type= "mysql"
+url= "70XjuL0YW323J9ZKolEHy2dO6URED2pJn/zF51B37pivhogejk9cjkpIh6kRh35PEyPR/hrj1l92AFKFiTzy"
+user= "70XjuJEOTHmoLdAB"
+password= "32in/6k/X2K8fNwO+UIG3Q=="
+mode= "release"
+
+[databases.sync]
+name= "6ELvqrcTSg=="
+type= "mysql"
+url= "70bxsqQQRCW9Jd4eqUEJh6+rxQyAm/u6l7UHpyET8UsjYHSthv5OeRx3jFjl7iccw1ucPR/26dIuNf0="
+user= "70XjuJ0YW323J9Y="
+password= "5WDdobo8DWy5fIQ6u25YkoPZ"
+mode= "release"
+
+
+
+[push]
+enable = true
+type = "http" #rabbitmq/http
+agent = true
+url = "http://192.169.2.157:8090/agent/index"
+user = "agentuser"
+password = "agentpass"
+mqurl="6knmqfRSBnmnKNoKqgoC284lriwMppBmnYedYdOK9LFRdab8+F9Fo7uT1PsVaW/XnGhtL5xTqCA="
+reconns=30
+publishers=["biw"]
+
+[log]
+outfile= "tmplogs/info"
+errfile= "tmplogs/err"
+formatter= "text"
+release= 0.1
+mode= "dev"
+level= "info" #debug info warn error panic
+max_age= 24
+rotation_time= 24

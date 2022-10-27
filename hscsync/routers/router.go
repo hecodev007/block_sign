@@ -1,0 +1,35 @@
+package routers
+
+import (
+	"hscsync/api"
+	"hscsync/common"
+	"hscsync/services"
+
+	"github.com/gin-gonic/gin"
+)
+
+func InitRouter(name string, w services.WatchControl, p common.Processor) *gin.Engine {
+	r := gin.New()
+	r.Use(corsMiddleware())
+	api.NewMController(p, w).Router(r, name)
+	//r.Use(gin.Logger())
+	//r.Use(gin.Recovery())
+	return r
+}
+
+func corsMiddleware() gin.HandlerFunc {
+	return func(c *gin.Context) {
+		c.Writer.Header().Set("Access-Control-Allow-Origin", "*")
+		c.Writer.Header().Set("Access-Control-Max-Age", "86400")
+		c.Writer.Header().Set("Access-Control-Allow-Methods", "POST, GET, OPTIONS, PUT, DELETE, UPDATE")
+		c.Writer.Header().Set("Access-Control-Allow-Headers", "X-Requested-With, Content-Type, Origin, Authorization, Accept, Client-Security-Token, Accept-Encoding, x-access-token")
+		c.Writer.Header().Set("Access-Control-Expose-Headers", "Content-Length,access-control-allow-origin, access-control-allow-headers")
+		c.Writer.Header().Set("Access-Control-Allow-Credentials", "true")
+
+		if c.Request.Method == "OPTIONS" {
+			c.AbortWithStatus(200)
+		} else {
+			c.Next()
+		}
+	}
+}

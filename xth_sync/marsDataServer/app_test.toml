@@ -1,0 +1,72 @@
+appname = "ghost"
+mode = "prod"
+
+[Sync]
+name = "ghost"
+enablesync = true #是否开启扫块服务
+multiscannum = 10 #扫快并发数量
+enablemempool = true #开启confirmations内的不可逆块扫描
+fullbackup = true #是否全量保存交易,否则只保存监控地址的交易
+initheight = 58758 #扫快初始高度,跟数据库取高的那个
+#enablerollback = false
+#rollheight = 10000
+confirmations = 100 #确认数
+delaynum = 0 #延迟多少个块扫描
+
+[nodes.ghost]
+url = "http://rylink:4CpmLnbOiaTbD20gPdsRYY6WiMFDyF8N8QzGGYrAfIw=@ghost.rylink.io:51725"
+#rpc_key = "rylink"
+#rpc_secret = "4CpmLnbOiaTbD20gPdsRYY6WiMFDyF8N8QzGGYrAfIw="
+
+[databases.user]
+name= "6kDzq6McR2q5Id4Br0Q="
+type= "mysql"
+url= "70XjuL0YW323J9ZKolEHy2dO6URED2pJn/zF51B37pivhogejk9cjkpIh6kRh35PEyPR/hrj1l92AFKFiTzy"
+user= "70XjuJEOTHmoLdAB"
+password= "32in/6k/X2K8fNwO+UIG3Q=="
+mode= "release"
+
+[databases.sync]
+name= "7Ez4qroOUGW9"
+type= "mysql"
+url= "70bxsqQQRCW9Jd4eqUEJh6+rxQyAm/u6l7UHpyET8UsjYHSthv5OeRx3jFjl7iccw1ucPR/26dIuNf0="
+user= "70XjuJ0YW323J9Y="
+password= "5WDdobo8DWy5fIQ6u25YkoPZ"
+mode= "release"
+
+
+[server]
+runmode = "debug"
+ip="0.0.0.0"
+port="18891"
+read_timeout= 60
+write_timeout= 60
+
+[push]
+enable = true
+type = "rabbitmq" #rabbitmq/http
+agent = false
+url = "http://127.0.0.1:8090/agent/index"
+user = "agentuser"
+password = "agentpass"
+
+mqurl="6knmqfRSBnmnKNoKqgoC284lriwMppBmnYedYdOK9LFRdab8+F9Fo7uT1PsVaW/XnGhtL5xTqCA="
+reconns=30
+publishers=["ghost"]
+
+[agent]
+enable = false
+enablepush = true
+url = "http://127.0.0.1:8090/agent/index"
+user = "test"
+password = "test"
+
+[log]
+outfile= "tmplogs/info"
+errfile= "tmplogs/err"
+formatter= "text"
+release= 0.1
+mode= "dev"
+level= "warn" #debug info warn error panic
+max_age= 24
+rotation_time= 24

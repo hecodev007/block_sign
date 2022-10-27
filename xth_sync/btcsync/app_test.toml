@@ -1,0 +1,69 @@
+name = "btc"
+
+[server]
+runmode = "debug"
+ip="0.0.0.0"
+port="15009"
+read_timeout= 60
+write_timeout= 60
+
+[Sync]
+name = "btc"
+enablesync = true
+enable_usdt_scan = true
+enablegoroutine = true
+enablemultiscan = 1
+enablemempool = true  #
+fullbackup = false #交易全量保存数据库，false 只保存监控地址的交易,arp只能false要更新数据库用户余额
+epochcount = 2
+epochtime  = 60
+initheight = 731636
+enablerollback = false
+rollheight = 730520
+confirmations = 6
+
+[nodes.btc]
+url = "http://rylink:4CpmLnbOiaTbD20gPdsRYY6WiMFDyF8N8QzGGYrAfIw=@btc.rylink.io:31821"
+usdt = "http://user:709394@192.169.2.125:9990"
+#url = "http://rylink:4CpmLnbOiaTbD20gPdsRYY6WiMFDyF8N8QzGGYrAfIw=@13.230.58.120:31821"
+#rpc_key = "rylink"
+#rpc_secret = "4CpmLnbOiaTbD20gPdsRYY6WiMFDyF8N8QzGGYrAfIw="
+
+[databases.user]
+name= "addrmanagement"
+type= "mysql"
+url= "dataservice.camzhqc6mnkb.ap-northeast-1.rds.amazonaws.com:12306"
+user= "data_service"
+password= "TL0&gBvib8oj8rll"
+mode= "release"
+
+[databases.sync]
+name= "btcsync"
+type= "mysql"
+url= "sdfefwe-instance-1.camzhqc6mnkb.ap-northeast-1.rds.amazonaws.com:12306"
+user= "dataService"
+password= "nDJxtA$gg87^z^2#QS"
+mode= "release"
+
+
+
+[push]
+enable = false
+type = "http" #rabbitmq/http
+agent = true
+url = "http://192.169.2.157:8090/agent/index"
+user = "agentuser"
+password = "agentpass"
+mqurl="amqp://rylink:rylink2020@172.17.2.65"
+reconns=30
+publishers=["btc"]
+
+[log]
+outfile= "tmplogs/info"
+errfile= "tmplogs/err"
+formatter= "text"
+release= 0.1
+mode= "dev"
+level= "info" #debug info warn error panic
+max_age= 24
+rotation_time= 24

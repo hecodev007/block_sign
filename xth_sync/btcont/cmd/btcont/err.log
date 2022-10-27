@@ -1,0 +1,10 @@
+2022-04-26 05:40:54	ERROR	/Users/one/xutonghua/xth_sync/btcont/cmd/btc/main.go:16	err
+goroutine 1 [running]:
+runtime/debug.Stack()
+	/usr/local/go/src/runtime/debug/stack.go:24 +0x65
+btcont/common/log.Error({0xc00014ff60, 0x0, 0x0})
+	/Users/one/xutonghua/xth_sync/btcont/common/log/log.go:167 +0x54
+main.main()
+	/Users/one/xutonghua/xth_sync/btcont/cmd/btc/main.go:16 +0x75
+
+

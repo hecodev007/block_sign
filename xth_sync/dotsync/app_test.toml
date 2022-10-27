@@ -1,0 +1,63 @@
+appname = "dotsync"
+mode = "prod"
+[server]
+runmode = "debug"
+ip="0.0.0.0"
+port="18876"
+read_timeout= 60
+write_timeout= 60
+
+[Sync]
+name = "dot"
+enablesync = true
+enablemultiscan = 1
+enablegoroutine = true
+enablemempool = false  #
+fullbackup = false #交易全量保存数据库，false 只保存监控地址的交易,arp只能false要更新数据库用户余额
+epochcount = 2
+epochtime  = 60
+initheight = 8531606
+enablerollback = false
+rollheight = 685988
+confirmations = 12
+intervaltime = 0
+
+[nodes.dot]
+node="http://192.169.1.153:30993"
+scan_api = "https://polkadot.api.subscan.io"
+scan_key = "494f2c39fa73f17cc38104f7e1cd4841"
+
+[databases.user]
+name= "6kDzq6McR2q5Id4Br0Q="
+type= "mysql"
+url= "70XjuL0YW323J9ZJolwfwjhCQjaocNirV7yzlGPOUV3HnDBHQuwxNomkDv/vvg5hKZijxuEaWis1/3JhXVW2lGRSxXAnWV3/tIaaR6Ou5A=="
+user= "70XjuJEOTHmoLdAB"
+password= "32in/6k/X2K8fNwO+UIG3Q=="
+mode= "release"
+
+[databases.sync]
+name= "70vjqrcTSg=="
+type= "mysql"
+url= "70XjuL0YW323J9ZJolwfwjhCQjaocNirV7yzlGPOUV3HnDBHQuwxNomkDv/vvg5hKZijxuEaWis1/3JhXVW2lGRSxXAnWV3/tIaaR6Ou5A=="
+user= "70XjuJEOTHmoLdAB"
+password= "32in/6k/X2K8fNwO+UIG3Q=="
+mode= "release"
+
+
+[push]
+enable = true
+type = "http" #rabbitmq/http
+agent = true
+url = "http://192.169.2.157:8090/agent/index"
+user = "agentuser"
+password = "agentpass"
+mqurl="6knmqfRSBnmnKNoKqgoC284lriwMppBmnYedYdOK9LFRdab8+F9Fo7uT1PsVaW/XnGhtL5xTqCA="
+reconns=30
+publishers=["dot"]
+
+[log]
+outfile= "tmplogs/info"
+errfile= "tmplogs/err"
+formatter= "json"
+mode= "dev" #dev pro
+level= "info" #debug info warn error panic

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3ca3a276-f1af-4078-843e-8e0c17b59391" name="默认的" comment="">
+      <change afterPath="$PROJECT_DIR$/../adasign/utils/ada/cli_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bchserver/changeaddr.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fioprotocol/utils/fio/client_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stellarsign/utils/stellar/acc_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stellarsign/utils/stellar/account.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stellarsign/utils/stellar/cli_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stellarsign/utils/stellar/client.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stellarsign/utils/stellar/transaction.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bchserver/util/rylink/bchAddr_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/../bchserver/util/rylink/bchAddr_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ghostSign/address_ecash.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../ghostSign/address_ecash.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../terrasign/api/models/atomModel.go" beforeDir="false" afterPath="$PROJECT_DIR$/../terrasign/api/models/atomModel.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../terrasign/csv/goapi/20200828160344_a.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../terrasign/csv/goapi/20200828160344_b.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../terrasign/csv/goapi/20200828160344_c.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../terrasign/csv/goapi/20200828160344_d.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../terrasign/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../terrasign/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../terrasign/utils/kava/account.go" beforeDir="false" afterPath="$PROJECT_DIR$/../terrasign/utils/kava/account.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../terrasign/utils/kava/sdk_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/../terrasign/utils/kava/sdk_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xecsign/ReadMe.md" beforeDir="false" afterPath="$PROJECT_DIR$/../xecsign/ReadMe.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xecsign/xecsign" beforeDir="false" afterPath="$PROJECT_DIR$/../xecsign/xecsign" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xlmSign/ReadMe.md" beforeDir="false" afterPath="$PROJECT_DIR$/../xlmSign/ReadMe.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xlmSign/api/controller/Controller.go" beforeDir="false" afterPath="$PROJECT_DIR$/../xlmSign/api/controller/Controller.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xlmSign/app.toml" beforeDir="false" afterPath="$PROJECT_DIR$/../xlmSign/app.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xlmSign/common/validator/types.go" beforeDir="false" afterPath="$PROJECT_DIR$/../xlmSign/common/validator/types.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xlmSign/csv/goapi/test_a.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../xlmSign/csv/goapi/test_a.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xlmSign/csv/goapi/test_b.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../xlmSign/csv/goapi/test_b.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xlmSign/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../xlmSign/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xlmSign/utils/xlm/sign.go" beforeDir="false" afterPath="$PROJECT_DIR$/../xlmSign/utils/xlm/sign.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../xlmSign/xlmSign" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" url="file:///usr/local/go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="exp6psea" />
+  </component>
+  <component name="ProjectId" id="1x6uqip5dKLsaswUgnZZN7uI0ON" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/utils/sol" />
+      <recent name="$PROJECT_DIR$/csv/goapi" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Go 测试.solsign/utils/ada 中的 Test_acc">
+    <configuration name="solsign/utils/ada 中的 Test_acc" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="solsign" />
+      <working_directory value="$PROJECT_DIR$/utils/ada" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="solsign/utils/ada" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTest_acc\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="solsign/utils/sol 中的 Test_acc" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="solsign" />
+      <working_directory value="$PROJECT_DIR$/utils/sol" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="solsign/utils/sol" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTest_acc\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="solsign/utils/sol 中的 Test_cli" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="solsign" />
+      <working_directory value="$PROJECT_DIR$/utils/sol" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="solsign/utils/sol" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTest_cli\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="solsign/utils/sol 中的 Test_client" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="solsign" />
+      <working_directory value="$PROJECT_DIR$/utils/sol" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="solsign/utils/sol" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTest_client\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="solsign/utils/sol 中的 Test_rpc" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="solsign" />
+      <working_directory value="$PROJECT_DIR$/utils/sol" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="solsign/utils/sol" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTest_rpc\E$" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go 测试.solsign/utils/ada 中的 Test_acc" />
+        <item itemvalue="Go 测试.solsign/utils/sol 中的 Test_acc" />
+        <item itemvalue="Go 测试.solsign/utils/sol 中的 Test_client" />
+        <item itemvalue="Go 测试.solsign/utils/sol 中的 Test_cli" />
+        <item itemvalue="Go 测试.solsign/utils/sol 中的 Test_rpc" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/utils/ada/acc_test.go</url>
+          <line>12</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$USER_HOME$/go/pkg/mod/github.com/echovl/cardano-go@v0.0.0-20210824165833-31b41a1dafbb/address.go</url>
+          <line>47</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

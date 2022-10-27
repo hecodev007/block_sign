@@ -1,0 +1,71 @@
+appname = "neotoken"
+
+[Sync]
+name = "neo"
+enablesync = true
+enablegoroutine = true
+enablemempool = true  #
+fullbackup = false #交易全量保存数据库，false 只保存监控地址的交易
+epochcount = 2
+epochtime  = 60
+initheight = 6103473
+enablerollback = false
+rollheight = 10000
+confirmations = 12
+intervaltime = 20
+
+[nodes.neo]
+url = "http://neo.rylink.io:30233"
+#rpc_key = "rylink"
+#rpc_secret = "4CpmLnbOiaTbD20gPdsRYY6WiMFDyF8N8QzGGYrAfIw="
+
+[databases.user]
+name= "addrmanagement"
+type= "mysql"
+url= "rm-j6c5ekl1af4dc9k8w499.mysql.rds.aliyuncs.com:3306"
+user= "user"
+password= "123456"
+mode= "release"
+
+[databases.sync]
+name= "neotokensync"
+type= "mysql"
+url= "rm-j6c5ekl1af4dc9k8w499.mysql.rds.aliyuncs.com:3306"
+user= "user"
+password= "123456"
+mode= "release"
+
+[server]
+runmode = "debug"
+ip="0.0.0.0"
+port="18892"
+read_timeout= 60
+write_timeout= 60
+
+[push]
+enable = false
+type = "rabbitmq" #rabbitmq/http
+agent = false
+url = "http://127.0.0.1:8090/agent/index"
+user = "agentuser"
+password = "agentpass"
+mqurl="amqp://rylink:rylink2020@172.17.2.65"
+reconns=30
+publishers=["neotoken"]
+
+[agent]
+enable = false
+enablepush = false
+url = "http://127.0.0.1:8090/agent/index"
+user = "test"
+password = "test"
+
+[log]
+outfile= "tmplogs/info"
+errfile= "tmplogs/err"
+formatter= "text"
+release= 0.1
+mode= "dev"
+level= "info" #debug info warn error panic
+max_age= 24
+rotation_time= 24

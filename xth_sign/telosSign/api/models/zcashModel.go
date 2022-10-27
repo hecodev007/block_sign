@@ -1,0 +1,198 @@
+package models
+
+import (
+	"bytes"
+	"encoding/hex"
+	"encoding/json"
+	"errors"
+	"fmt"
+	"github.com/btcsuite/btcd/btcec"
+	"github.com/btcsuite/btcd/chaincfg"
+	"github.com/btcsuite/btcd/txscript"
+	"github.com/btcsuite/btcd/wire"
+	"github.com/btcsuite/btcutil"
+	"github.com/iqoption/zecutil"
+	"telosSign/common"
+	"telosSign/common/conf"
+	"telosSign/utils/keystore"
+	"telosSign/utils/zcash"
+)
+
+const MaxZCashFee = int64(100000)
+const MinZCashFee = int64(1000)
+
+var chaincfgParams = &chaincfg.Params{Name: "mainnet"}
+
+func init() {
+	*chaincfgParams = chaincfg.MainNetParams
+}
+
+type ZcashModel struct{}
+
+func (m *ZcashModel) NewAccount(num int, MchName, OrderNo string) (adds []string, err error) {
+	//同一个商户keystore保存不能并发
+	common.Lock(MchName + "_" + OrderNo)
+	defer common.Unlock(MchName + "_" + OrderNo)
+	if keystore.Have(conf.GetConfig().Csv.Dir, MchName, OrderNo) {
+		//log.Debug("address already created")
+		return nil, errors.New("address already created")
+	}
+	var (
+		cvsKeysA []*keystore.CsvKey
+		cvsKeysB []*keystore.CsvKey
+		cvsKeysC []*keystore.CsvKey
+		cvsKeysD []*keystore.CsvKey
+	)
+	for i := 1; i <= num; i++ {
+		if address, private, err := m.genAccount(); err != nil {
+			return nil, err
+		} else {
+			adds = append(adds, address)
+
+			aesKey := keystore.RandBase64Key()
+			aesPrivKey, err := keystore.AesBase64CryptCfb([]byte(private), aesKey, true)
+			if err != nil {
+				return nil, err
+			}
+			cvsKeysA = append(cvsKeysA, &keystore.CsvKey{Address: address, Key: string(aesPrivKey)})
+			cvsKeysB = append(cvsKeysB, &keystore.CsvKey{Address: address, Key: string(aesKey)})
+			cvsKeysC = append(cvsKeysC, &keystore.CsvKey{Address: address, Key: string(keystore.Base64Encode([]byte(private)))})
+			cvsKeysD = append(cvsKeysD, &keystore.CsvKey{Address: address, Key: ""})
+		}
+
+	}
+	if err := keystore.GenerateCvsABC(cvsKeysA, cvsKeysB, cvsKeysC, cvsKeysD, MchName, OrderNo); err != nil {
+		return nil, fmt.Errorf("generateCvsABC err: %v", err)
+	}
+
+	return adds, nil
+}
+func (m *ZcashModel) genAccount() (address string, wtfPri string, err error) {
+
+	if priv, err := btcec.NewPrivateKey(btcec.S256()); err != nil {
+		return "", "", err
+	} else if priWif, err := btcutil.NewWIF(priv, &chaincfg.MainNetParams, true); err != nil {
+		return "", "", err
+	} else if address, err = zecutil.Encode(priWif.PrivKey.PubKey().SerializeCompressed(), chaincfgParams); err != nil {
+		return "", "", nil
+	} else {
+		return address, priWif.String(), nil
+	}
+
+}
+
+func (m *ZcashModel) GetAccount(mchName, address string) (*btcutil.WIF, error) {
+
+	if privateWif, err := m.GetPrivate(mchName, address); err != nil {
+		return nil, err
+	} else if wif, err := btcutil.DecodeWIF(string(privateWif)); err != nil {
+		return nil, err
+	} else {
+		return wif, nil
+	}
+
+}
+
+//获取私钥
+func (m *ZcashModel) GetPrivate(mchName, address string) (private []byte, err error) {
+	//get mch akey
+	if tmpA, err := keystore.KeystoreGetKeyA(mchName, address); err != nil {
+		return nil, fmt.Errorf("doesn't find keyA for mch : %s , address : %s", mchName, address)
+	} else if akey, err := keystore.Base64Decode([]byte(tmpA)); err != nil {
+		return nil, fmt.Errorf("keyA base64 decode err:%v", err)
+	} else if bkey, err := keystore.KeystoreGetKeyB(mchName, address); err != nil {
+		return nil, fmt.Errorf("doesn't find keyB for mch : %s , address : %s", mchName, address)
+	} else if privkey, err := keystore.AesCryptCfb([]byte(akey), []byte(bkey), false); err != nil {
+		return nil, fmt.Errorf("aes crypt cfb failed : %s , address : %s", mchName, address)
+	} else {
+		return privkey, nil
+	}
+
+}
+
+func (m *ZcashModel) computeFee(txInput *zcash.UtxoParams) int64 {
+	var inAmount, outAmount int64
+	for _, v := range txInput.TxOuts {
+		outAmount += v.ToAmount
+	}
+	for _, v := range txInput.TxIns {
+		inAmount += v.FromAmount
+	}
+	return inAmount - outAmount
+}
+
+//todo:56粉尘找零,fee大小限制,from地址过滤
+func (m *ZcashModel) SignTx(mchName string, txData interface{}) (rawTx string, err error) {
+	txDataBytes, err := json.Marshal(txData)
+	if err != nil {
+		return "", fmt.Errorf("err sign data:", err.Error())
+	}
+	newTx, err := zcash.BuildRawTx(txDataBytes, chaincfgParams)
+	if err != nil {
+		return "", err
+	}
+
+	var signParam = new(zcash.UtxoParams)
+	if err := json.Unmarshal(txDataBytes, signParam); err != nil {
+		return "", err
+	} else if signParam.Fee < MinZCashFee || signParam.Fee > MaxZCashFee { //手续费判断
+		return "", fmt.Errorf("tx.fee between %d and %d", MinZCashFee, MaxZCashFee)
+	} else if fee := m.computeFee(signParam); fee < signParam.Fee { //不够指定手续费
+		return "", errors.New("insuffient fee")
+	} else if fee > signParam.Fee+56 { //有多余的找零,56粉尘额度
+
+		if ChangeAddr, err := zecutil.DecodeAddress(signParam.ChangeAddr, chaincfgParams.Name); err != nil {
+			return "", errors.New("chanageAddr DecodeAddress error:" + err.Error())
+		}else if addrType := zcash.CheckAddressType(ChangeAddr); addrType == -1 {
+			return "", errors.New("unsuport to address: prefix with t1 or t3")
+		} else if changeTxScript, err := zecutil.PayToAddrScript(ChangeAddr); err != nil {
+			return "", errors.New("chanageAddr PayToAddrScript error:" + err.Error())
+		} else {
+			newTx.TxOut = append(newTx.TxOut, wire.NewTxOut(fee-signParam.Fee, changeTxScript))
+		}
+	}
+
+	zecTx := &zecutil.MsgTx{
+		MsgTx:        newTx,
+		ExpiryHeight: signParam.ExpiryHeight,
+	}
+	//var prevTxScript []byte
+	for i := 0; i < len(signParam.TxIns); i++ {
+		var pubKeyScript []byte
+		var fromAddr btcutil.Address
+
+		if fromAddr, err = zecutil.DecodeAddress(signParam.TxIns[i].FromAddr, chaincfgParams.Name); err != nil {
+			return "", errors.New("fromAdddr " + signParam.TxIns[i].FromAddr + " DecodeAddress error:" + err.Error())
+		} else if pubKeyScript, err = zecutil.PayToAddrScript(fromAddr); err != nil {
+			return "", errors.New("fromAdddr " + signParam.TxIns[i].FromAddr + " PayToAddrScript error:" + err.Error())
+		}
+
+		sigScript, err := zecutil.SignTxOutput(
+			chaincfgParams,
+			zecTx,
+			i,
+			pubKeyScript,
+			txscript.SigHashAll,
+			txscript.KeyClosure(func(a btcutil.Address) (*btcec.PrivateKey, bool, error) {
+				if wif, err := m.GetAccount(mchName, fromAddr.EncodeAddress()); err != nil {
+					return nil, false, err
+				} else {
+					return wif.PrivKey, wif.CompressPubKey, nil
+				}
+			}),
+			nil,
+			nil,
+			signParam.TxIns[i].FromAmount)
+		if err != nil {
+			return "", err
+		}
+		zecTx.TxIn[i].SignatureScript = sigScript
+	}
+	var buf bytes.Buffer
+	if err = zecTx.ZecEncode(&buf, 0, wire.BaseEncoding); err != nil {
+		return "", err
+	}
+	str, _ := json.Marshal(zecTx)
+	fmt.Println(string(str))
+	return hex.EncodeToString(buf.Bytes()), nil
+}

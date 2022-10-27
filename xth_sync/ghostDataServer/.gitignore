@@ -1,0 +1,5 @@
+/.idea
+/tmplogs
+go.sum
+ghostDataServerNew
+*_test.go

@@ -1,0 +1,10 @@
+2022-05-08 21:16:24	ERROR	/Users/one/xutonghua/gitlab/hscsync/main.go:42	listen tcp :15009: bind: address already in use
+goroutine 1 [running]:
+runtime/debug.Stack()
+	/usr/local/go/src/runtime/debug/stack.go:24 +0x65
+hscsync/common/log.Error({0xc0003ff9b0, 0x2f, 0xc0003ff9b0})
+	/Users/one/xutonghua/gitlab/hscsync/common/log/log.go:405 +0x54
+main.main()
+	/Users/one/xutonghua/gitlab/hscsync/main.go:42 +0x6dc
+
+

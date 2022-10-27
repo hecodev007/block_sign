@@ -1,0 +1,7 @@
+/stellarsign
+tmplog/
+tmplogs/
+csv
+go.sum
+.idea/
+.DS_Store

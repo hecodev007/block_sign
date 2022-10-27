@@ -1,0 +1,26 @@
+package kava
+import (
+	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/kava-labs/go-sdk/client"
+	"github.com/kava-labs/go-sdk/kava"
+	"testing"
+)
+func Test_rpc(t *testing.T){
+	config := sdk.GetConfig()
+	kava.SetBech32AddressPrefixes(config)
+	cdc := kava.MakeCodec()
+	kavaClient := client.NewKavaClient(cdc, mnemonic, kava.Bip44CoinType, rpcAddr, networkTestnet)
+	kavaClient.Keybase.SetCodec(cdc)
+	kavaAddress := "kava1l0xsq2z7gqd7yly0g40y5836g0appumark77ny"
+	addr, err := sdk.AccAddressFromBech32(kavaAddress)
+	if err != nil {
+		panic(err)
+	}
+
+	acc, err := kavaClient.GetAccount(addr)
+	if err != nil {
+		panic(err)
+	}
+
+	fmt.Println("Account:", acc)
+}

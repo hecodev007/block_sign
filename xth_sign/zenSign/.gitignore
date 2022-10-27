@@ -1,0 +1,7 @@
+/zenSign
+tmplog/
+tmplogs/
+logs/
+csv
+go.sum
+.idea/

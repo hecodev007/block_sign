@@ -1,0 +1,13 @@
+appname="xrpserver"
+coin="xrp"
+[server]
+port="9700"
+[log]
+outfile= "tmplogs/info"
+errfile= "tmplogs/err"
+formatter= "text"
+release= 0.1
+mode= "dev"
+level= "info" #debug info warn error panic
+max_age= 24
+rotation_time= 24

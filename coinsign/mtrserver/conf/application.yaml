@@ -1,0 +1,26 @@
+run_model: "debug"
+coinnet: "main"
+
+system_model: cold #冷热系统切换 cold hot
+
+http:
+  port: 18583
+  read_timeout: 120
+  write_timeout: 120
+
+log:
+  log_path: "./tmp"
+  log_name: "mtrserver.log"
+  log_level: "debug"
+
+mtr:
+ create_addr_path: "./pem/mtr/create"  #地址生成目录
+ default_fee: 100000 #0.001 默认手续费
+ max_fee: 10000000 #0.1 默认最高手续费
+ min_fee: 1000 #0.0001 默认最低手续费
+ push_servers:
+ - "http://47.244.140.180:9999/" #广播URL
+ servers:
+ - "http://mtr.rylink.io:30869" #rpc客户端
+
+

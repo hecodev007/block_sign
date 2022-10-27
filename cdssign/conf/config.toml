@@ -1,0 +1,31 @@
+coinType = "cds"
+version = "v1"
+port = "12035"
+debug = true
+walletType = "hot"
+filePath = "./file"
+isStartThread = true
+mchId = "fee_address"
+orderId = "202002102011"
+
+
+[auth]
+enable = false
+user = "123"
+password = "123"
+
+[cds]
+#nodeUrl = "https://mainnet.infura.io/v3/6132414ac62a460e9ccff44a3b4bcc7d"
+#nodeUrl = "https://ropsten.infura.io/v3/6132414ac62a460e9ccff44a3b4bcc7d"
+nodeUrl = "http://18.182.64.34:8866" #test
+user = ""
+password = ""
+gasPrice = 15000000000
+gasLimit = 60000
+maxGasPriceGwei = 200
+minGasPriceGwei = 1
+
+#networkid = 100   #main
+#ChainId = 0
+networkid = 97 #test
+ChainId = 1

@@ -1,0 +1,27 @@
+coinType = "eth"
+version = "v1"
+port = "12011"
+debug = true
+walletType = "hot"
+filePath = "./file"
+isStartThread = true
+mchId = "fee_address"
+orderId = "202002102011"
+
+
+[auth]
+enable = false
+user = "123"
+password = "123"
+
+[eth]
+#nodeUrl = "https://mainnet.infura.io/v3/6132414ac62a460e9ccff44a3b4bcc7d"
+nodeUrl = "https://ropsten.infura.io/v3/6132414ac62a460e9ccff44a3b4bcc7d"
+user = ""
+password = ""
+gasPrice = 1000000000
+gasLimit = 2000000
+maxGasPriceGwei = 200
+minGasPriceGwei = 1
+#networkid = 1
+networkid = 3

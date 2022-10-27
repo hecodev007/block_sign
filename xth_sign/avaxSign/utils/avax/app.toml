@@ -1,0 +1,39 @@
+name = "avax"
+
+[server]
+runmode = "debug"
+ip="0.0.0.0"
+port="18071"
+read_timeout= 60
+write_timeout= 60
+
+[csv]
+dir= "csv"
+read_file= ""
+write_file= ""
+
+[log]
+OutFile= "tmplogs/info"
+errfile= "tmplogs/err"
+formatter= "text"
+release= 0.1
+mode= "dev"
+level= "debug"
+log_path= "tmp"
+log_name= "debug.log"
+max_age= 24
+rotation_time= 24
+[node]
+#url = "https://api.avax.network"
+url = "http://avax.rylink.io:20650"
+
+#主网配置
+assetID="FvwEAhmxKfeiG8SnEvq42hc6whRyY3EFYAvebMqDNDGCgxN5Z"  #主网:FvwEAhmxKfeiG8SnEvq42hc6whRyY3EFYAvebMqDNDGCgxN5Z 测试网:nznftJBicce1PfWQeNEVBmDyweZZ6zcM3p78z9Hy9Hhdhfaxm
+#info.getBlockchainID
+chainID="2oYMBNV4eNHyqk2fjjV5nVQLDbtmNJzq5s3qs3Lo6ftnC6FByM" #主网:2oYMBNV4eNHyqk2fjjV5nVQLDbtmNJzq5s3qs3Lo6ftnC6FByM 测试网:jnUjZSRt16TcRnZzmh5aMhavwVHz3zBrSN8GfFMTQkzUnoBxC
+networkID= 1 #mainnet 1,testnet 4
+
+#测试网配置
+#assetID="nznftJBicce1PfWQeNEVBmDyweZZ6zcM3p78z9Hy9Hhdhfaxm"  #主网:FvwEAhmxKfeiG8SnEvq42hc6whRyY3EFYAvebMqDNDGCgxN5Z 测试网:nznftJBicce1PfWQeNEVBmDyweZZ6zcM3p78z9Hy9Hhdhfaxm
+#chainID="jnUjZSRt16TcRnZzmh5aMhavwVHz3zBrSN8GfFMTQkzUnoBxC" #主网:2oYMBNV4eNHyqk2fjjV5nVQLDbtmNJzq5s3qs3Lo6ftnC6FByM 测试网:jnUjZSRt16TcRnZzmh5aMhavwVHz3zBrSN8GfFMTQkzUnoBxC
+#networkID= 4 #mainnet 1,testnet 4

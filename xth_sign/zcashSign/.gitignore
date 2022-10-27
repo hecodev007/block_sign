@@ -1,0 +1,6 @@
+/zcashSign
+tmplog/
+logs/
+csv
+go.sum
+.idea/

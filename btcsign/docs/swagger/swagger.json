@@ -1,0 +1,157 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "{{.Description}}",
+        "title": "{{.Title}}",
+        "contact": {},
+        "license": {},
+        "version": "{{.Version}}"
+    },
+    "host": "{{.Host}}",
+    "basePath": "{{.BasePath}}",
+    "paths": {
+        "/v1/create": {
+            "post": {
+                "produces": [
+                    "application/json"
+                ],
+                "summary": "创建签名模板",
+                "parameters": [
+                    {
+                        "description": "sign tpl",
+                        "name": "body",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "type": "object"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "{\"code\":0,\"message\":\"ok\",\"data\":{},\"hash\":\"8978608dad8f150ea142e1c076f6564e\"}",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "/v1/createaddr": {
+            "post": {
+                "produces": [
+                    "application/json"
+                ],
+                "summary": "生成地址",
+                "parameters": [
+                    {
+                        "description": "{'num':10,'orderId':'123456','mchId':'test','coinName':'btc'}",
+                        "name": "body",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "type": "object"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "{\"code\":0,\"message\":\"ok\",\"data\":{},\"hash\":\"8978608dad8f150ea142e1c076f6564e\"}",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "/v1/importpk": {
+            "post": {
+                "consumes": [
+                    "multipart/form-data"
+                ],
+                "produces": [
+                    "multipart/form-data"
+                ],
+                "summary": "临时导入地址私钥",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "address",
+                        "name": "address",
+                        "in": "formData",
+                        "required": true
+                    },
+                    {
+                        "type": "string",
+                        "description": "privkey",
+                        "name": "privkey",
+                        "in": "formData",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "{\"code\":0,\"message\":\"ok\",\"data\":{},\"hash\":\"8978608dad8f150ea142e1c076f6564e\"}",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "/v1/push": {
+            "post": {
+                "produces": [
+                    "application/json"
+                ],
+                "summary": "广播交易",
+                "parameters": [
+                    {
+                        "description": "push hex",
+                        "name": "body",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "type": "object"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "{\"code\":0,\"message\":\"ok\",\"data\":{},\"hash\":\"8978608dad8f150ea142e1c076f6564e\"}",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "/v1/sign": {
+            "post": {
+                "produces": [
+                    "application/json"
+                ],
+                "summary": "模板签名",
+                "parameters": [
+                    {
+                        "description": "sign json",
+                        "name": "body",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "type": "object"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "{\"code\":0,\"message\":\"ok\",\"data\":{},\"hash\":\"8978608dad8f150ea142e1c076f6564e\"}",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

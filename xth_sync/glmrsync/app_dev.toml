@@ -1,0 +1,64 @@
+name = "glmr"
+
+[server]
+runmode = "debug"
+ip="0.0.0.0"
+port="15033"
+read_timeout= 60
+write_timeout= 60
+
+[Sync]
+name = "glmr"
+enablesync = false
+enablegoroutine = false
+enablemultiscan = 1
+enablemempool = false  #
+fullbackup = true #交易全量保存数据库，false 只保存监控地址的交易,arp只能false要更新数据库用户余额
+epochcount = 2
+epochtime  = 60
+initheight = 171347
+enablerollback = false
+rollheight = 4623132
+confirmations = 11
+intervaltime = 20
+
+[nodes.glmr]
+url = "https://moonbeam.api.onfinality.io/public"
+
+[databases.user]
+name= "addrmanagement"
+type= "mysql"
+url= "rm-j6c5ekl1af4dc9k8w499.mysql.rds.aliyuncs.com:3306"
+user= "hoocustody"
+password= "Eb!ZXrNt!!x5xru0"
+mode= "release"
+
+[databases.sync]
+name= "glmrsync"
+type= "mysql"
+url= "rm-j6c5ekl1af4dc9k8w499.mysql.rds.aliyuncs.com:3306"
+user= "hoocustody"
+password= "Eb!ZXrNt!!x5xru0"
+mode= "release"
+
+
+[push]
+enable = false
+type = "http" #rabbitmq/http
+agent = false
+url = "http://127.0.0.1:8090/agent/index"
+user = "agentuser"
+password = "agentpass"
+mqurl="amqp://rylink:rylink2020@172.17.2.65"
+reconns=30
+publishers=["moac"]
+
+[log]
+outfile= "tmplogs/info"
+errfile= "tmplogs/err"
+formatter= "text"
+release= 0.1
+mode= "dev"
+level= "info" #debug info warn error panic
+max_age= 24
+rotation_time= 24

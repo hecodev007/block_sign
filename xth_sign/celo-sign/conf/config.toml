@@ -1,0 +1,23 @@
+coinType = "celo"
+version = "v1"
+port = "8585"
+debug = true
+walletType = "hot"
+filePath = "./file"
+isStartThread = true
+mchId = "cgld"
+orderId = "202007081346"
+
+
+[auth]
+enable = false
+user = "123"
+password = "123"
+
+[celo]
+nodeUrl1 = "https://alfajores-forno.celo-testnet.org"
+nodeUrl = "http://celo.rylink.io:32545"
+user = ""
+password = ""
+gasPrice = 10000000000
+networkid = 1

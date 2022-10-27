@@ -1,0 +1,6 @@
+.idea/
+./terrasign
+./csv
+tmplogs
+
+go.sum

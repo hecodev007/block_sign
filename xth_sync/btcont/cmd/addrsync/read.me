@@ -1,0 +1,9 @@
+CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build; aws s3 cp ./addrmng s3://piupiupiu/;
+
+
+pkill -9 addrmng;
+rm -rf addrmng btc.out;
+sudo wget -O addrmng  "https://piupiupiu.s3.ap-northeast-1.amazonaws.com/addrmng";
+sudo chmod +x ./addrmng;
+nohup ./addrmng diff_cold_scan >./addrmng.out &
+

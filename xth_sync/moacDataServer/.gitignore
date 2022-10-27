@@ -1,0 +1,5 @@
+/.idea
+/tmplogs
+go.sum
+moacDataServer
+*_test.go

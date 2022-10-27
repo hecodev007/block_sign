@@ -1,0 +1,115 @@
+# default false
+release_mode = false
+# 开启防止cdn重放攻击
+cdn_disable = true
+# default DEBUG, DEBUG INFO WARN ERROR OFF
+log_level = "ERROR"
+# 输出的文件目录
+log_file = "logs"
+
+# REDIS,FILE,COOKIE(COOKIE Default)
+session_store = "COOKIE"
+
+# REDIS,MEMCACHED,IN_MEMORY(IN_MEMORY Default)
+cache_store = "IN_MEMORY"
+
+[app]
+name = "Hoo Custody"
+version = "0.0.1"
+
+[server]
+graceful = true
+addr = ":8080"
+domain_api = "localhost.com"  # Domains
+domain_web = "localhost"
+domain_socket = "socket.localhost.com"
+
+[database.web]
+name = "custody"
+user_name = "root"
+pwd  = "123456"
+host = "127.0.0.1"
+port = "3306"
+
+[redis]
+model = "ALONE" #CLUSTER
+alone_address = "127.0.0.1:6379" # 单机地址
+alone_pwd = ""
+cluster_address = ["127.0.0.1:7000","127.0.0.1:7001","127.0.0.1:7002","127.0.0.1:7003","127.0.0.1:7004","127.0.0.1:7005","127.0.0.1:7006"] # 集群地址
+cluster_pwd = ""
+
+[memcached]
+server = "127.0.0.1:11211"
+
+# 分布式追踪
+[opentracing]
+disable = false
+type = "appdash"  # "jaeger" "appdash" or "elastic"
+service_name = "hooCustody" # jaeger or elastic serviceName
+address = "http://localhost:8700" # jaeger-agent 127.0.0.1:6831 ｜ appdash http://localhost:8700
+
+
+
+[rabbitmq]
+mq_url = "127.0.0.1:5672"
+mq_user = "guest"
+mq_password = "guest"
+
+[push]
+enable = false  # true
+type = "http" #rabbitmq/http
+agent = false   # true
+url = "http://127.0.0.1:8090/agent/index"
+user = "agentuser"
+password = "agentpass"
+mqurl="amqps://hoocustody:#M12$59gjegC8tza4Eg1bgUV@b-59fecdb5-5f87-4fd4-b099-121f293555ea.mq.ap-northeast-1.amazonaws.com:5671"
+reconns=30
+publishers=["moac"]
+
+# Casbin权限策略配置
+[casbin]
+model_path= 'rbac_model.conf'
+
+[email]
+iam_user_name= "new-project@hoo.com"     # from地址
+recipient= []             # 接收地址
+# recipient= [ "moyunrz@163.com" , "lananrz@163.com" ]             # 接收地址
+smtp_password="BG/CV8RZPkXrtIde9ZONEO142PqfV+2lP+Fcsgq0pOMQ"
+smtp_username="AKIAZXPISQLLFWOJQDQ4"
+host = "email-smtp.ap-northeast-1.amazonaws.com"
+
+
+[sms.inland]
+app_key="NQ1021"
+app_secret="WcS0qK"
+app_code="1000"
+batch ="http://39.97.4.102:9090/sms/batch/v1" # 相同内容群发地址
+distinct ="http://39.97.4.102:9090/sms/distinct/v1" # 一对一内容群发地址
+balance ="http://39.97.4.102:9090/sms/balance/v1" # 余额查询地址
+
+[sms.iso]
+app_key="I10271"
+app_secret="lA594d"
+app_code="1000"
+batch ="http://39.97.4.102:9090/sms/batch/v1" # 相同内容群发地址
+distinct ="http://39.97.4.102:9090/sms/distinct/v1" # 一对一内容群发地址
+balance ="http://39.97.4.102:9090/sms/balance/v1" # 余额查询地址
+
+[sns]
+secret_key = "qYh76D2Zc/+BpviyUkrvUxbxwYKdkFSFKNDpuCH1"
+access_key_id = "AKIAZXPISQLLNKJRB5MF"
+region= "ap-northeast-1"
+
+[blockchain]
+url = "127.0.0.1:10086/v3/isInsideAddress"
+client_id = ""
+api_secret = ""
+
+
+[grpc.server]
+host = "127.0.0.1"
+port = "8027"
+
+[grpc.client]
+host = "127.0.0.1"
+port = "8027"

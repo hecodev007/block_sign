@@ -1,0 +1,5 @@
+/.idea
+/tmplogs
+go.sum
+atomDataServer
+*_test.go

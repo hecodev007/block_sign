@@ -1,0 +1,118 @@
+ding_token = "e73c7441c796143b2c374b0f5a87efc59bdd37c950805c831d5cd46014e9814d"
+ding_name = "collect"
+
+[collectors.eth]
+name="eth"
+spec="@every 1800s"
+min_amount=0.001
+need_fee=0.002
+alarm_fee=0.1
+max_count=50
+url = "http://47.244.140.180:9999"
+user = ""
+password = ""
+ignore_coins=[
+"aisa",
+"dlb",
+"dili"
+]
+assign_coins=[
+"eth",
+"usdk"
+]
+assign_address=[
+]
+mchs=[
+'HOOtest',
+'hoo',
+'test',
+'cointubecloud@gmail.com',
+'13466675250@139.com',
+'15817394003@163.com',
+'635985570@qq.com',
+'wujukeji1@126.com',
+'wujukeji@126.com',
+'jianz9619@gmail.com',
+'wangl150158@gmail.com',
+'cooldeheng@gmail.com'
+]
+
+[collectors.klay]
+name="klay"
+spec="@every 1800s"
+min_amount=1.0
+need_fee=0.002
+alarm_fee=1.0
+max_count=50
+url = "http://47.244.140.180:9999"
+user = ""
+password = ""
+ignore_coins=[]
+mchs=[]
+
+[collectors.bnb]
+name="bnb"
+spec="@every 1800s"
+min_amount=1.0
+need_fee=0.002
+alarm_fee=1.0
+max_count=50
+url = "http://47.244.140.180:9999"
+user = ""
+password = ""
+ignore_coins=[]
+mchs=[]
+
+
+[collectors.zvc]
+name="zvc"
+spec="@every 180s"
+min_amount=1.0
+max_count=10
+url = "http://47.244.140.180:9999"
+user = ""
+password = ""
+ignore_coins=[]
+mchs=[]
+
+[collectors.cds]
+name="cds"
+spec="@every 180s"
+min_amount=1.0
+max_count=10
+url = "http://47.75.171.17:18030"
+user = ""
+password = ""
+ignore_coins=[]
+mchs=[
+'hoo',
+'635985570@qq.com',
+'goapi'
+]
+
+
+
+[collectors.hx]
+name="hx"
+spec="@every 180s"
+min_amount=1.0
+need_fee=0.002
+alarm_fee=1.0
+max_count=10
+url = "http://127.0.0.1:18888"
+user = ""
+password = ""
+ignore_coins=[]
+mchs=[
+'hoo',
+'635985570@qq.com',
+'goapi'
+]
+
+
+
+[db]
+master = "hoocustody:Eb!ZXrNt!!x5xru0@tcp(47.106.11.249:33111)/finance_data?charset=utf8mb4"
+slaves = [
+    "hoocustody:Eb!ZXrNt!!x5xru0@tcp(47.106.11.249:33111)/finance_data?charset=utf8mb4",
+]

@@ -1,0 +1,39 @@
+http_port: ":9980"
+env: developer
+gen_file_path: "/Users/zwj/gopath/src/qieusdtserver/files"
+#本地地址加载目录
+#load_address_path: "/Users/zwj/gopath/src/createaddr/files/usdt"
+load_address_path: "/Users/zwj/gopath/src/qieusdtserver/files/usdt"
+old_address_file: "/Users/zwj/gopath/src/qieusdtserver/files/old.csv"
+usdt:
+  host: 127.0.0.1:9099
+  #host: 127.0.0.1:9099
+  user: user
+  password: 709394
+redis:
+  host: 10.17.1.236
+  port: 6379
+  password:
+  dbindex: 2
+
+rabbitmq:
+  host: "10.17.1.236"
+  port: 5672
+  user: "admin"
+  password: "admin"
+
+log:
+  formatter: text
+  release:   0.1
+  mode:      develop
+  level:     "debug"
+  log_path:  "./"
+  log_name:  "usdt_trans_log"
+  max_age:   24
+  rotation_time:   24
+
+consul:
+  consul_addr: 127.0.0.1:8500 #"10.17.1.235:8500"
+  server_addr: "127.0.0.1"
+  server_name:  uline_pay
+  id: usdt_transcation

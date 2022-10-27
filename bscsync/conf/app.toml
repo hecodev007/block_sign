@@ -1,0 +1,71 @@
+name = "bsc"
+mode = "dev"
+
+[Sync]
+name = "bsc"
+enablesync = false
+enablemultiscan = 0
+enablegoroutine = false
+enablemempool = false
+fullbackup = false
+epochcount = 100
+epochtime = 60
+initheight = 9999999999999
+enablerollback = false
+rollheight = 10000
+confirmations = 6
+intervaltime = 1
+flag = 1
+
+[nodes.bsc]
+url = "https://bsc-dataseed1.binance.org"
+rpc_key = ""
+rpc_secret = ""
+
+
+[databases.user]
+name= "addrmanagement"
+type= "mysql"
+url= "127.0.0.1:3306"
+user= "root"
+password= "root"
+mode= "release"
+
+[databases.sync]
+name= "flowsync"
+type= "mysql"
+url= "127.0.0.1:3306"
+user= "root"
+password= "root"
+mode= "release"
+
+
+
+[server]
+runmode = "debug"
+ip = "0.0.0.0"
+port = "18891"
+read_timeout = 60
+write_timeout = 60
+
+[mq]
+hostport = "b-30ba08b2-dbea-4e1a-a282-b4569cb9896f.mq.ap-northeast-1.amazonaws.com:5671"
+username = "blockchain_coin-MQ"
+password  = "draXv3HB4dKqmDjANU"
+
+[push]
+enable = true
+type = "http"
+agent = true
+url = "http:// 192.169.2.157:8090/agent/index"
+user = "ryryry1"
+pass = "hhoshoh565"
+mqurl = "48Fk3oStM4Dl3nIma3xPCZE2CRWuxByw3Ip3ORyYBoUW2VfRcE9aPiqEwuNBcudUPfiAK+Mq0w=="
+reconns = 30
+publishers = ["bsc"]
+
+[log]
+level = "info"
+formatter = "json"
+outfile = "./logs/info.out"
+errfile = "./logs/error.out"

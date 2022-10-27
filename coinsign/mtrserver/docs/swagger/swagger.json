@@ -1,0 +1,68 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "{{.Description}}",
+        "title": "{{.Title}}",
+        "contact": {},
+        "license": {},
+        "version": "{{.Version}}"
+    },
+    "host": "{{.Host}}",
+    "basePath": "{{.BasePath}}",
+    "paths": {
+        "/v1/createaddr": {
+            "post": {
+                "produces": [
+                    "application/json"
+                ],
+                "summary": "生成地址",
+                "parameters": [
+                    {
+                        "description": "{'num':10,'orderId':'123456','mchId':'test','coinName':'mtr'}",
+                        "name": "body",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "type": "object"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "{\"code\":0,\"message\":\"ok\",\"data\":{},\"hash\":\"8978608dad8f150ea142e1c076f6564e\"}",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "/v1/transfer": {
+            "post": {
+                "produces": [
+                    "application/json"
+                ],
+                "summary": "交易签名",
+                "parameters": [
+                    {
+                        "description": "sign json",
+                        "name": "body",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "type": "object"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "{\"code\":0,\"message\":\"ok\",\"data\":\"123123123\"}",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

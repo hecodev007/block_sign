@@ -1,0 +1,24 @@
+coinType = "heco"
+version = "v1"
+port = "8586"
+debug = true
+walletType = "hot"
+filePath = "./file"
+isStartThread = true
+isStartValid = true
+mchId = "test"
+orderId = "202001150940"
+
+
+[auth]
+enable = false
+user = "123"
+password = "123"
+
+[heco]
+nodeUrl = "https://http-testnet.hecochain.com"
+user = ""
+password = ""
+gasPrice = 20000000000
+gasLimit = 400000
+networkid = 256  # main： 128 test： 256

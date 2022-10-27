@@ -1,0 +1,6 @@
+/karsign
+tmplog/
+tmplogs/
+csvbak
+go.sum
+.idea/

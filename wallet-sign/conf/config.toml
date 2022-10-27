@@ -1,0 +1,105 @@
+coinType = "ar"
+version = "v1"
+port = "8585"
+debug = true
+walletType = "hot"
+filePath = "./file"
+isStartThread = true
+mchId = "xtz"
+orderId = "202102041847"
+nodeUrl = "grpc.trongrid.io:50051"
+
+
+[auth]
+encrypt = true
+enable = false
+user = "Y6ze"
+password = "Y6ze"
+
+[gxc]
+chainId = "4f7d07969c446f8342033acb3ab2ae5044cbe0fde93db02de75bd17fa8fd84b8"
+nodeUrl = "http://18.178.242.239:28090/rpc"
+memoKey = "5KXipdXY133pZhP4sdGwwRGW6vGZ4aoJgC7UmnxBKH4Xt1YwGAd"
+
+[ar]
+nodeUrl = "http://54.250.240.45:1984/"
+
+[cds]
+nodeUrl = "http://13.115.216.183:8866"
+user = ""
+password = ""
+gasPrice = 21000
+networkid = 130
+
+[ksm]
+nodeUrl = "http://ksm.rylink.io:30933"
+
+[cring]
+nodeUrl = "http://13.114.44.225:31933"
+
+[dot]
+nodeUrl = "http://dot.rylink.io:30993"
+[fis]
+nodeUrl = "http://3.115.88.125:31833"
+[ori]
+nodeUrl = "http://ori.rylink.io:29933"
+[pcx]
+nodeUrl = "wss://mainnet.chainx.org/ws"
+nodeUrl1 = "ws://pcx.rylink.io:30887"
+[near]
+nodeUrl = "https://rpc.mainnet.near.org"
+[tkm]
+nodeUrl = "https://rpc.mainnet.near.org"
+
+[fio]
+nodeUrl = "https://fio.eosrio.io"
+nodeUrl1 = "http://fio.rylink.io:25678"
+
+[hnt]
+nodeUrl1 = "http://hnt.rylink.io:30808"
+nodeUrl = "https://api.helium.io"
+lockTime = 1
+
+[sol]
+nodeUrl = "https://solana-api.projectserum.com"
+user = ""
+password = ""
+
+[xtz]
+nodeUrl = "https://rpc.tzkt.io/mainnet/"
+user = ""
+password = ""
+
+[bsc]
+nodeUrl1 = "https://data-seed-prebsc-1-s1.binance.org:8545/"
+nodeUrl = "http://bsc.rylink.io:30575"
+user = ""
+password = ""
+gasPrice = 20000000000
+gasLimit = 400000
+networkid = 56  # main： 56 test： 97
+
+[heco]
+nodeUrl = "https://http-testnet.hecochain.com"
+user = ""
+password = ""
+gasPrice = 20000000000
+gasLimit = 400000
+networkid = 256  # main： 128 test： 256
+
+[trx]
+nodeUrl = "http://3.225.171.164:50051"
+backUrls = [
+    "52.53.189.99:50051",
+    "18.196.99.16:50051",
+    "34.253.187.192:50051",
+    "18.133.82.227:50051",
+    "35.180.51.164:50051"
+]
+user = ""
+password = ""
+[dip]
+nodeUrl = "http://dip.rylink.io:26657"
+apiUrl = "http://dip.rylink.io:20080"
+user = ""
+password = ""

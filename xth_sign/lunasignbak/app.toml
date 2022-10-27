@@ -1,0 +1,37 @@
+name = "kava"
+
+[server]
+runmode = "debug"
+ip="0.0.0.0"
+port="18859"
+read_timeout= 60
+write_timeout= 60
+
+[csv]
+dir= "csv"
+read_file= ""
+write_file= ""
+
+[log]
+OutFile= "tmplogs/info"
+errfile= "tmplogs/err"
+formatter= "text"
+release= 0.1
+mode= "dev"
+level= "debug"
+log_path= "tmp"
+log_name= "debug.log"
+max_age= 24
+rotation_time= 24
+[node]
+node = "https://lcd.terra.dev"
+url = "http://18.179.51.56:26657"
+#node = "http://13.114.218.135:30657"
+#url = "http://13.114.218.135:30657"
+#url = "https://rpc.kava.io"
+#node = "http://kava.rylink.io:30680"
+#url = "http://kava.rylink.io:30657"
+chainID="kava-8"
+
+#node = "http://13.114.44.225:30680"
+#url = "http://13.114.44.225:30657"

@@ -1,0 +1,46 @@
+{"level":"info","msg":"listen port:8049","time":"2019-05-20T13:23:43+08:00"}
+{"level":"info","msg":"Listening folder","time":"2019-05-20T13:23:48+08:00"}
+{"level":"info","msg":"Discover new files","time":"2019-05-20T13:23:48+08:00"}
+{"level":"info","msg":"ReadFile 加载指定地址文件，A:pem/bch/file/hootest/bch_a_usb_123456.csv,B:pem/bch/file/hootest/bch_b_usb_123456.csv","time":"2019-05-20T13:23:48+08:00"}
+{"level":"info","msg":"ReadFile 解密地址：qzqcyrgrmw2fa00ujgs3wherqzujm5ajgylztljuhh","time":"2019-05-20T13:23:48+08:00"}
+{"level":"info","msg":"ReadFile 解密地址：qz67msukr4pnasm0g6c74470nu3j3v4jjg4p6vha5a","time":"2019-05-20T13:23:48+08:00"}
+{"level":"info","msg":"ReadFile 解密地址：qp49ak9fcp02jh9jtalq4p7a3u6lff0guqux8y68gd","time":"2019-05-20T13:23:48+08:00"}
+{"level":"info","msg":"ReadFile 解密地址：qp8n8gs7acr35wlpxpq2z2zq9du94pfgtqqsf7r5z8","time":"2019-05-20T13:23:48+08:00"}
+{"level":"info","msg":"ReadFile 解密地址：qrdaphp7pn4uk2ynr4qjcm9djgru3ykftch2g3zeg0","time":"2019-05-20T13:23:48+08:00"}
+{"level":"info","msg":"ReadFile 解密地址：qrwce0uqpq6ckrccsa4u0lfxpgwykenjxutpk2006t","time":"2019-05-20T13:23:48+08:00"}
+{"level":"info","msg":"ReadFile 解密地址：qzwreswvmlvdplmezlxyttu779vfm9djyy8pszmec2","time":"2019-05-20T13:23:48+08:00"}
+{"level":"info","msg":"ReadFile 解密地址：qrkgc6wrn5capd3cruye3dlth65ne0z6qcchjzk5md","time":"2019-05-20T13:23:48+08:00"}
+{"level":"info","msg":"ReadFile 解密地址：qz4mnhe8wds578kk700rwrnz20txzmm4j57jesq23g","time":"2019-05-20T13:23:48+08:00"}
+{"level":"info","msg":"ReadFile 解密地址：qpt47jhmu9kjpxqk7c03w7xet5qnv350u5xhqwn94g","time":"2019-05-20T13:23:48+08:00"}
+{"level":"info","msg":"ReadFile 加载指定地址文件，A:pem/bch/file/mytest/bch_a_usb_new123.csv,B:pem/bch/file/mytest/bch_b_usb_new123.csv","time":"2019-05-20T13:23:48+08:00"}
+{"level":"info","msg":"ReadFile 解密地址：qpwcvttvecjgy4wepysufzmjn7ed3sh84q2ztfcapz","time":"2019-05-20T13:23:48+08:00"}
+{"level":"info","msg":"ReadFile 解密地址：qq8yqxp4ylhplzdv5l6r7vgq4ert89ue6cxqd6jj7m","time":"2019-05-20T13:23:48+08:00"}
+{"level":"info","msg":"ReadFile 解密地址：qqcp8fh4wajcw29f0f8z2ehmjzlpxevdfc0tx75wv8","time":"2019-05-20T13:23:48+08:00"}
+{"level":"info","msg":"ReadFile 解密地址：qpnpr2axplll0d2vdxfc3cmwy7h699tqzyuak9t07u","time":"2019-05-20T13:23:48+08:00"}
+{"level":"info","msg":"ReadFile 解密地址：qz23n4f8k8x6pfdetcphgsh3648f89lplct8vsr899","time":"2019-05-20T13:23:48+08:00"}
+{"level":"info","msg":"ReadFile 解密地址：qp4lgl2cdsjw08rqg6e3505svty3l0a6d5vdu70dca","time":"2019-05-20T13:23:48+08:00"}
+{"level":"info","msg":"ReadFile 解密地址：qrmm9uq3tneq8rx2drfcjau34s9kp564hygep0e48m","time":"2019-05-20T13:23:48+08:00"}
+{"level":"info","msg":"ReadFile 解密地址：qpl5k0jfw2quj3c6jstu9yhmjtnjl9wk3genlqhxmk","time":"2019-05-20T13:23:48+08:00"}
+{"level":"info","msg":"ReadFile 解密地址：qza86900yxns3zn4hecfmfqalc26sqtkzs3epaqyaq","time":"2019-05-20T13:23:48+08:00"}
+{"level":"info","msg":"ReadFile 解密地址：qz4020hgg3mvarlh4u42wgxz34k9xpdltsawp6avpv","time":"2019-05-20T13:23:48+08:00"}
+{"level":"info","msg":"Listening folder","time":"2019-05-20T13:23:53+08:00"}
+{"level":"info","msg":"File directory has not changed","time":"2019-05-20T13:23:53+08:00"}
+{"level":"info","msg":"Listening folder","time":"2019-05-20T13:23:58+08:00"}
+{"level":"info","msg":"File directory has not changed","time":"2019-05-20T13:23:58+08:00"}
+{"level":"info","msg":"Listening folder","time":"2019-05-20T13:24:03+08:00"}
+{"level":"info","msg":"File directory has not changed","time":"2019-05-20T13:24:03+08:00"}
+{"level":"info","msg":"Listening folder","time":"2019-05-20T13:24:08+08:00"}
+{"level":"info","msg":"File directory has not changed","time":"2019-05-20T13:24:08+08:00"}
+{"level":"info","msg":"Listening folder","time":"2019-05-20T13:24:13+08:00"}
+{"level":"info","msg":"File directory has not changed","time":"2019-05-20T13:24:13+08:00"}
+{"level":"info","msg":"Listening folder","time":"2019-05-20T13:24:18+08:00"}
+{"level":"info","msg":"File directory has not changed","time":"2019-05-20T13:24:18+08:00"}
+{"level":"info","msg":"Listening folder","time":"2019-05-20T13:24:23+08:00"}
+{"level":"info","msg":"File directory has not changed","time":"2019-05-20T13:24:23+08:00"}
+{"level":"info","msg":"Listening folder","time":"2019-05-20T13:24:28+08:00"}
+{"level":"info","msg":"File directory has not changed","time":"2019-05-20T13:24:28+08:00"}
+{"level":"info","msg":"Shutdown Server ...","time":"2019-05-20T13:24:28+08:00"}
+{"level":"info","msg":"Server exiting","time":"2019-05-20T13:24:28+08:00"}
+{"level":"info","msg":"listen port:8049","time":"2019-05-20T13:34:25+08:00"}
+{"level":"info","msg":"Shutdown Server ...","time":"2019-05-20T13:34:28+08:00"}
+{"level":"info","msg":"Server exiting","time":"2019-05-20T13:34:28+08:00"}

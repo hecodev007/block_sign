@@ -1,0 +1,7 @@
+env = "prod"
+min_fee = "0.00035000"
+max_fee = "0.01"
+min_amount = "1.0"
+max_amount = "1000.0"
+utxo_number = 10
+second = 120

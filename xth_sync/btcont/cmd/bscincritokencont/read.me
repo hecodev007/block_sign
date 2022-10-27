@@ -1,0 +1,11 @@
+
+CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build; aws s3 cp ./bsctokencont s3://piupiupiu/;
+
+pkill -9 bsctokencont;
+rm -rf bsctokencont eth.out;
+sudo wget -O bsctokencont  "https://piupiupiu.s3.ap-northeast-1.amazonaws.com/bsctokencont";
+sudo chmod +x ./bsctokencont;
+nohup ./bsctokencont diff_cold_scan >./bsctokencont.out &
+nohup ./bsctokencont diff_suit_cold_scan >>./bsctokencont_suit.out &
+
+tail -f  ./bsctokencont.out

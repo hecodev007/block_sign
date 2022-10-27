@@ -1,0 +1,31 @@
+coinType = "aur"
+version = "v1"
+port = "14048"
+debug = true
+walletType = "hot"
+filePath = "./file"
+isStartThread = true
+mchId = "fee_address"
+orderId = "202002102011"
+
+
+[auth]
+enable = false
+user = "123"
+password = "123"
+
+[sep20]
+#测试网
+#nodeUrl = "https://testnet.aurora.dev"
+#main
+nodeUrl = "https://mainnet.aurora.dev"
+user = ""
+password = ""
+gasPrice = 1000000
+gasLimit = 7000000
+maxGasPriceGwei = 200
+minGasPriceGwei = 1
+#测试链id
+#chainId = 1313161555
+#主链id
+chainId = 1313161554

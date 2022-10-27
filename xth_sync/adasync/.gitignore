@@ -1,0 +1,5 @@
+/.idea
+/tmplogs
+go.sum
+adasync
+*_test.go

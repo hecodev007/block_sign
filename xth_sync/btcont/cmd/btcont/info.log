@@ -1,0 +1,4 @@
+1
+测试
+[xorm] [info]  2022/04/26 05:40:54.555863 PING DATABASE mysql
+2022-04-26 05:40:54	INFO	/Users/one/xutonghua/xth_sync/btcont/cmd/btc/main.go:15	info

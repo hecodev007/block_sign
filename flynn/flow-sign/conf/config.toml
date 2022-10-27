@@ -1,0 +1,24 @@
+coinType = "flow"
+version = "v1"
+port = "8585"
+debug = true
+walletType = "hot"
+filePath = "./file"
+isStartThread = true
+isStartValid = true
+mchId = "test"
+orderId = "202001150940"
+
+
+[auth]
+enable = false
+user = "123"
+password = "123"
+
+[flow]
+nodeUrl = "access.mainnet.nodes.onflow.org:9000"
+user = ""
+password = ""
+gasPrice = 20000000000
+gasLimit = 400000
+networkid = 256  # main： 128 test： 256

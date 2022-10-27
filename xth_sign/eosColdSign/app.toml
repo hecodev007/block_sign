@@ -1,0 +1,13 @@
+appname = "eosColdSign"
+coinName= "eos"
+runmode = "dev"
+httpport = 8042
+outFile = "tmplogs/info"
+errFile = "tmplogs/err"
+
+url = ""
+
+[prod]
+
+[dev]
+

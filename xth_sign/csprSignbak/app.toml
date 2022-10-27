@@ -1,0 +1,30 @@
+name = "mars"
+
+[server]
+runmode = "debug"
+ip="0.0.0.0"
+port="22008"
+read_timeout= 600
+write_timeout= 600
+
+[csv]
+dir= "csv"
+read_file= ""
+write_file= ""
+
+[log]
+OutFile= "tmplogs/info"
+errfile= "tmplogs/err"
+formatter= "text"
+release= 0.1
+mode= "dev"
+level= "debug"
+log_path= "tmp"
+log_name= "debug.log"
+max_age= 24
+rotation_time= 24
+
+[node]
+url="http://rylink:4CpmLnbOiaTbD20gPdsRYY6WiMFDyF8N8QzGGYrAfIw=@mars.rylink.io:8332"
+#url="http://stx.rylink.io:30999"
+fee=180

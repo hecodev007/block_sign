@@ -1,0 +1,48 @@
+0计算消耗的gas
+localhost:9999/gas
+curl -X POST http://localhost:9999/gas -d '{"inNum":1,"outNum":1}'
+
+1.构造交易
+curl -X POST http://localhost:9977/create -d '{"txinputs":[{"txins":[{"txid":"a00be78e2b6643391395bf4b237f162ba7cca51d0b032cfc7fc66980afdea081","vout":0,"address":"1PXC1aiZGXy4j81wt16g2rrUAsYVGUbuA7","scriptPubKey":"76a914f7086fd22f7d347a07d902fdd4f6011d4905be4288ac","amount":"0.00091776"},{"txid":"69431f3e6913e790cc42ca6d28fc7c457b586bdee285a7f89755651f1924fc7a","vout":1,"address":"1PXC1aiZGXy4j81wt16g2rrUAsYVGUbuA7","scriptPubKey":"76a914f7086fd22f7d347a07d902fdd4f6011d4905be4288ac","amount":"0.00000546"},{"txid":"1e245fbbd0cb006489de1efcac174c48e27b82f0c72b071234665859b3e9b1c9","vout":1,"address":"1PXC1aiZGXy4j81wt16g2rrUAsYVGUbuA7","scriptPubKey":"76a914f7086fd22f7d347a07d902fdd4f6011d4905be4288ac","amount":"0.00000546"},{"txid":"915a522f7f0bfa7c4e5a477d5af90670a4e8a74cdfd88581dccc2ddb0b06c2b5","vout":0,"address":"1PXC1aiZGXy4j81wt16g2rrUAsYVGUbuA7","scriptPubKey":"76a914f7086fd22f7d347a07d902fdd4f6011d4905be4288ac","amount":"0.00000546"},{"txid":"915a522f7f0bfa7c4e5a477d5af90670a4e8a74cdfd88581dccc2ddb0b06c2b5","vout":2,"address":"1PXC1aiZGXy4j81wt16g2rrUAsYVGUbuA7","scriptPubKey":"76a914f7086fd22f7d347a07d902fdd4f6011d4905be4288ac","amount":"0.00000546"},{"txid":"ad04fbb8f10c98f45289bc6cc38ab49327f72fa4ebc8054cf0611a69bf7e3a32","vout":1,"address":"1PXC1aiZGXy4j81wt16g2rrUAsYVGUbuA7","scriptPubKey":"76a914f7086fd22f7d347a07d902fdd4f6011d4905be4288ac","amount":"0.00000546"},{"txid":"0637f25d9cc941ce0f177754bcde8601c75ab8ee31e719663853a725f02d296b","vout":1,"address":"1PXC1aiZGXy4j81wt16g2rrUAsYVGUbuA7","scriptPubKey":"76a914f7086fd22f7d347a07d902fdd4f6011d4905be4288ac","amount":"0.00000546"}],"changeAddress":"1PXC1aiZGXy4j81wt16g2rrUAsYVGUbuA7","toAmount":"54074.67058064","toAddress":"1BNBwL1dzGeB2nSehDdZhgst3KofcXSWcV","fee":"0.00016"}]}'
+
+2.对signin签名
+curl -X POST http://localhost:9977/sign -d '[{"raw_tx":"010000000265f8a99092318a64bfab0bc777cdd6f247e91a061dfca10146728ac85c7681a50200000000ffffffff66a00252cde4210d8bbf3395194ca690150d68afb1856cb8a8f7b5358e44acb80100000000ffffffff020000000000000000166a146f6d6e69000000000000001f0000031b7a9494b022020000000000001976a914f7086fd22f7d347a07d902fdd4f6011d4905be4288ac00000000","txins":[{"txid":"a581765cc88a724601a1fc1d061ae947f2d6cd77c70babbf648a319290a9f865","vout":2,"address":"123AFkC49WcAZjC1JkN43tjB1j8a1szewm","scriptPubKey":"76a9140b60aec8096ea4dda65468fb360580f7475f3d6d88ac","amount":"0.00000546"},{"txid":"b8ac448e35b5f7a8b86c85b1af680d1590a64c199533bf8b0d21e4cd5202a066","vout":1,"address":"123AFkC49WcAZjC1JkN43tjB1j8a1szewm","scriptPubKey":"76a9140b60aec8096ea4dda65468fb360580f7475f3d6d88ac","amount":"0.00005"}]},{"raw_tx":"01000000023ac1c4de704cff7e700b4451cef0a9e07e4d2e2f3988b1db6ef12ae5e6cc72dd0100000000ffffffff66a00252cde4210d8bbf3395194ca690150d68afb1856cb8a8f7b5358e44acb80200000000ffffffff020000000000000000166a146f6d6e69000000000000001f0000015347e36c0022020000000000001976a914f7086fd22f7d347a07d902fdd4f6011d4905be4288ac00000000","txins":[{"txid":"dd72cce6e52af16edbb188392f2e4d7ee0a9f0ce51440b707eff4c70dec4c13a","vout":1,"address":"1DFoD2TX46dxTHx2zG34yhQwW5waLU9cDt","scriptPubKey":"76a914866de7a16a9f3e99d97f563f7c109c959448027188ac","amount":"0.00000546"},{"txid":"b8ac448e35b5f7a8b86c85b1af680d1590a64c199533bf8b0d21e4cd5202a066","vout":2,"address":"1DFoD2TX46dxTHx2zG34yhQwW5waLU9cDt","scriptPubKey":"76a914866de7a16a9f3e99d97f563f7c109c959448027188ac","amount":"0.00005"}]},{"raw_tx":"0100000003e36bfafbb91026adb3e6817c5d8e56182cc2691030eaee96c7f40737919d59860100000000ffffffffc5db84a743b65823cd1a2469b765370881b7e6c2393ca2841ac2928c079a05980100000000ffffffff66a00252cde4210d8bbf3395194ca690150d68afb1856cb8a8f7b5358e44acb80300000000ffffffff0322020000000000001976a914f7086fd22f7d347a07d902fdd4f6011d4905be4288ac0000000000000000166a146f6d6e69000000000000001f0000006831141b0022020000000000001976a914f7086fd22f7d347a07d902fdd4f6011d4905be4288ac00000000","txins":[{"txid":"86599d913707f4c796eeea301069c22c18568e5d7c81e6b3ad2610b9fbfa6be3","vout":1,"address":"1D9cazve6NWFcaaBdey7LVJHDMyE862wZT","scriptPubKey":"76a91485428afece5213903e34a380881b3f3207b9c0ad88ac","amount":"0.00000546"},{"txid":"98059a078c92c21a84a23c39c2e6b781083765b769241acd2358b643a784dbc5","vout":1,"address":"1D9cazve6NWFcaaBdey7LVJHDMyE862wZT","scriptPubKey":"76a91485428afece5213903e34a380881b3f3207b9c0ad88ac","amount":"0.00000546"},{"txid":"b8ac448e35b5f7a8b86c85b1af680d1590a64c199533bf8b0d21e4cd5202a066","vout":3,"address":"1D9cazve6NWFcaaBdey7LVJHDMyE862wZT","scriptPubKey":"76a91485428afece5213903e34a380881b3f3207b9c0ad88ac","amount":"0.00005"}]},{"raw_tx":"010000000244d81d4068a4cd4bf3df80aa3ad6675eeb79da30d267bbbf50d11e71460e58b80100000000ffffffff66a00252cde4210d8bbf3395194ca690150d68afb1856cb8a8f7b5358e44acb80400000000ffffffff020000000000000000166a146f6d6e69000000000000001f00000012f9c74f0022020000000000001976a914f7086fd22f7d347a07d902fdd4f6011d4905be4288ac00000000","txins":[{"txid":"b8580e46711ed150bfbb67d230da79eb5e67d63aaa80dff34bcda468401dd844","vout":1,"address":"17mtTCwwKh1yeMSr5HMqWJmXLSDSyfevz6","scriptPubKey":"76a9144a4e01c085f448003acfe0a00c8dcd5bc1c8320a88ac","amount":"0.00000546"},{"txid":"b8ac448e35b5f7a8b86c85b1af680d1590a64c199533bf8b0d21e4cd5202a066","vout":4,"address":"17mtTCwwKh1yeMSr5HMqWJmXLSDSyfevz6","scriptPubKey":"76a9144a4e01c085f448003acfe0a00c8dcd5bc1c8320a88ac","amount":"0.00005"}]},{"raw_tx":"0100000002d764562adc70effd55041ce828f0645bf962732fc1cfa608544eb77d90608fa00000000000ffffffff66a00252cde4210d8bbf3395194ca690150d68afb1856cb8a8f7b5358e44acb80500000000ffffffff020000000000000000166a146f6d6e69000000000000001f0000000118d3c8e022020000000000001976a914f7086fd22f7d347a07d902fdd4f6011d4905be4288ac00000000","txins":[{"txid":"a08f60907db74e5408a6cfc12f7362f95b64f028e81c0455fdef70dc2a5664d7","vout":0,"address":"1C15LYSUDYq6i61tQy3ArSST5Wq5aca25j","scriptPubKey":"76a91478ad01003f97c0cbf4f0a985d2841ef9a986f7f688ac","amount":"0.00000546"},{"txid":"b8ac448e35b5f7a8b86c85b1af680d1590a64c199533bf8b0d21e4cd5202a066","vout":5,"address":"1C15LYSUDYq6i61tQy3ArSST5Wq5aca25j","scriptPubKey":"76a91478ad01003f97c0cbf4f0a985d2841ef9a986f7f688ac","amount":"0.00005"}]}]'
+
+3.广播交易
+curl -X POST http://localhost:9977/push_transaction -d '{"hex":"01000000018f0e0fe2bb60bd163d13feb37439e41e19b53591638ff002c5c09233d7d18035000000006a47304402205efa910b2d09f826eace14f5250a1770bc0ccffbbab8a775fe488188e90853b40220083dd0e0cb7aaf0af54a94d00f6b52c2d11aa9aabbdb59cc697bad33159390d7012102b9fa9085a775bd521937fba3713e5088ca5ea962f3ba233fcb0b8676a84cda78ffffffff032ec10000000000001976a914f7086fd22f7d347a07d902fdd4f6011d4905be4288ac0000000000000000166a146f6d6e69000000000000001f0000029f045c189622020000000000001976a914f7086fd22f7d347a07d902fdd4f6011d4905be4288ac00000000","complete":true}'
+
+4上传ab文件
+curl -X POST http://localhost:9999/upload    -H 'content-type: multipart/form-data'  -F usdt_a=@/tmp/usdt_a.csv -F usdt_b=@/tmp/usdt_b.csv
+
+5.模板批量生成signin
+localhost:9999/get_signinputs
+curl -X POST http://localhost:9999/get_signinputs -H 'content-type: multipart/form-data' -F tx_input=@/tmp/tx_input.txt
+
+6.模板批量生成签名
+localhost:9999/signs
+curl -X POST http://localhost:9999/signs -H 'content-type: multipart/form-data' -F sign_input=@/tmp/sign_input_file20180927094916
+
+7.模板批量推送
+localhost:9999/push_transactions
+curl -X POST http://localhost:9999/push_transactions -H 'content-type: multipart/form-data' -F push_input=@/tmp/push_transaction_file20180926182502
+
+8.批量生成地址，同时生成加入abcd
+/batch_create_address
+curl -X POST http://localhost:9999/batch_create_address -d '{"num":2,"tagName":"testc"}'
+
+9.生成单个（单线程批量）
+curl -X POST  http://localhost:9999/create_address -d '{"num":10000}'
+
+10.获取内存中的私钥
+curl -X GET 'http://localhost:9999/get_key?address=1kRb54RTWsTQawLbcA2CoXCjS2v6sEv8V' -F address=1kRb54RTWsTQawLbcA2CoXCjS2v6sEv8V
+
+11.导入私钥
+curl -X POST http://localhost:9999/import_key '{"address":"1123123","aesPrivkey":"123123","aesKey":"123123"}'
+curl -X POST http://localhost:9977/import_key2 -d '{"address":"123","privkey":"123123123"}'
+
+
+12.删除内存私钥
+curl -X POST http://localhost:9999/remove_key -d '{"address":"1kRb54RTWsTQawLbcA2CoXCjS2v6sEv8V"}'
+
+13签名
+curl -X POST http://localhost:9977/sign -d '{"raw":"0100000003e841c37d0d562349f639a6b1f1f9581aea79f9d98de9d2be5584d0eba1bf7baa0000000000ffffffff7880bbcc777ace189e922b098eb8f0c5a44ef7c00743d42939cce92c556a8b540000000000ffffffff99e91670cbb8995f2c3f70a48d67a30277ea1001d0e10b8cf6f653d91b8ae7060600000000ffffffff020000000000000000166a146f6d6e69000000000000001f000000f5a2e6760022020000000000001976a91471b31f5d876fd94b192507b30b825abd9d1e013088ac00000000","txins":[{"txid":"aa7bbfa1ebd08455bed2e98dd9f979ea1a58f9f1b1a639f64923560d7dc341e8","vout":0,"address":"184URZSDPF6TPQifw7cN9Ce8zK1h5AjvXT","scriptPubKey":"76a9144d71053289284cb8522ae86dac4c58710a836e0f88ac","amount":"0.00000546"},{"txid":"548b6a552ce9cc3929d44307c0f74ea4c5f0b88e092b929e18ce7a77ccbb8078","vout":0,"address":"184URZSDPF6TPQifw7cN9Ce8zK1h5AjvXT","scriptPubKey":"76a9144d71053289284cb8522ae86dac4c58710a836e0f88ac","amount":"0.00000546"},{"txid":"06e78a1bd953f6f68c0be1d00110ea7702a3678da4703f2c5f99b8cb7016e999","vout":6,"address":"184URZSDPF6TPQifw7cN9Ce8zK1h5AjvXT","scriptPubKey":"76a9144d71053289284cb8522ae86dac4c58710a836e0f88ac","amount":"0.00003"}]}'

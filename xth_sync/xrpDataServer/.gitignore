@@ -1,0 +1,6 @@
+/.idea
+/tmplogs
+go.sum
+xrpDataServer
+json2go.json
+*_test.go

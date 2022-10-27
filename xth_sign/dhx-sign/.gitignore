@@ -1,0 +1,9 @@
+/dhxSign
+tmplog/
+tmplogs/
+csvbak
+go.sum
+.idea/
+csv
+vendor
+.DS_Store

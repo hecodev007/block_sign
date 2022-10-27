@@ -1,0 +1,41 @@
+2020-12-02 13:50:44	INFO	utils/zen/rpc.go:176	JSON value is not a string as expected
+2020-12-02 13:52:02	INFO	utils/zen/rpc.go:168	getblockcount
+Response: {"result":544003,"error":null,"id":"curltest"}
+2020-12-02 13:52:02	INFO	utils/zen/rpc.go:168	getblock
+Response: {"result":null,"error":{"code":-1,"message":"JSON value is not a string as expected"},"id":"curltest"}
+2020-12-02 13:52:02	INFO	utils/zen/rpc.go:176	JSON value is not a string as expected
+2020-12-02 13:53:31	INFO	utils/zen/rpc.go:155	rpc.client.Do &{POST http://rylink:4CpmLnbOiaTbD20gPdsRYY6WiMFDyF8N8QzGGYrAfIw=@zen.rylink.io:30231 HTTP/1.1 1 1 map[Content-Type:[application/json]] {{"id":"curltest","jsonrpc":"1.0","method":"getblockcount","params":[]}} 0x74ada0 70 [] false zen.rylink.io:30231 map[] map[] <nil> map[]   <nil> <nil> <nil> 0xc000030148} 
+
+2020-12-02 13:53:33	INFO	utils/zen/rpc.go:171	getblockcount
+Response: {"result":544079,"error":null,"id":"curltest"}
+2020-12-02 13:53:33	INFO	utils/zen/rpc.go:155	rpc.client.Do &{POST http://rylink:4CpmLnbOiaTbD20gPdsRYY6WiMFDyF8N8QzGGYrAfIw=@zen.rylink.io:30231 HTTP/1.1 1 1 map[Content-Type:[application/json]] {{"id":"curltest","jsonrpc":"1.0","method":"getblock","params":[543187]}} 0x74ada0 71 [] false zen.rylink.io:30231 map[] map[] <nil> map[]   <nil> <nil> <nil> 0xc000030148} 
+
+2020-12-02 13:53:33	INFO	utils/zen/rpc.go:171	getblock
+Response: {"result":null,"error":{"code":-1,"message":"JSON value is not a string as expected"},"id":"curltest"}
+2020-12-02 13:53:33	INFO	utils/zen/rpc.go:179	JSON value is not a string as expected
+2020-12-02 13:54:40	INFO	utils/zen/rpc.go:155	rpc.client.Do {"id":"curltest","jsonrpc":"1.0","method":"getblockcount","params":[]} 
+
+2020-12-02 13:54:41	INFO	utils/zen/rpc.go:171	getblockcount
+Response: {"result":544137,"error":null,"id":"curltest"}
+2020-12-02 13:54:41	INFO	utils/zen/rpc.go:155	rpc.client.Do {"id":"curltest","jsonrpc":"1.0","method":"getblock","params":[543187]} 
+
+2020-12-02 13:54:42	INFO	utils/zen/rpc.go:171	getblock
+Response: {"result":null,"error":{"code":-1,"message":"JSON value is not a string as expected"},"id":"curltest"}
+2020-12-02 13:54:42	INFO	utils/zen/rpc.go:179	JSON value is not a string as expected
+2020-12-02 13:55:06	INFO	utils/zen/rpc.go:155	rpc.client.Do {"id":"curltest","jsonrpc":"2.0","method":"getblockcount","params":[]} 
+
+2020-12-02 13:55:14	INFO	utils/zen/rpc.go:171	getblockcount
+Response: {"result":544180,"error":null,"id":"curltest"}
+2020-12-02 13:55:14	INFO	utils/zen/rpc.go:155	rpc.client.Do {"id":"curltest","jsonrpc":"2.0","method":"getblock","params":[543187]} 
+
+2020-12-02 13:55:16	INFO	utils/zen/rpc.go:171	getblock
+Response: {"result":null,"error":{"code":-1,"message":"JSON value is not a string as expected"},"id":"curltest"}
+2020-12-02 13:55:16	INFO	utils/zen/rpc.go:179	JSON value is not a string as expected
+2020-12-02 13:57:10	INFO	utils/zen/rpc.go:155	rpc.client.Do {"id":"curltest","jsonrpc":"2.0","method":"getblockcount","params":[]} 
+
+2020-12-02 13:57:10	INFO	utils/zen/rpc.go:171	getblockcount
+Response: {"result":544453,"error":null,"id":"curltest"}
+2020-12-02 13:57:10	INFO	utils/zen/rpc.go:155	rpc.client.Do {"id":"curltest","jsonrpc":"2.0","method":"getblock","params":["543187"]} 
+
+2020-12-02 13:57:11	INFO	utils/zen/rpc.go:171	getblock
+Response: {"result":{"hash":"0000000014bb7cadd0cf4470316e6ff5f3d1934026f1c6a57affae765531803d","confirmations":1267,"size":13907,"height":543187,"version":536870912,"merkleroot":"b57e3877b8932b61973c23a57c5105e8e78a62b6fdc93c3c232f1323740506a1","tx":["0895baff8e48a4afd7e18fb83f6e8d56acde4cd8ad04bd5bda2843ae75af93ff","3dbb2a55d7f0a1f0616373e98702851937a9c3f25378f5776816ffe56b6abbab","887ba7c35787459720311950abd742985524a5315b5c451367485efd5084791b","0d8b07fb56549cbc9d69080eaf8ea8d5e1963a90967e7c1ebe9b821d9b8104d9","12e064d3d0d2363bd8f9f60ea05b53294d9e5fe1071a65b380981ef6e7b0ea49","ef0776d3be1326826a31bf8e0a9cf5d3430687ebb6d801c75cefd334d98a363e","9fa61ea8b65380b1dde79b91975a70ace221c6db353aef51cddcdf59770dc566","0a18bc39966b8aa2e605b07eccfb04d1dd3bbea772f6445e9dc82f1b8fb99a1f","eff74de34427bb2491c5ce26e49844dfb051920b835ab94eb940cb77fe30d647","7cf9ee7f7083ce67add393ed228c7308b02fdb5231d613546ec32a2c57c69e6b","a2021d61db2dfc76eb1c54b1d005375ed25c6263b076291da4c6a7996ce2af6d","4a390056aa042ef1004e102a027f97cd08f176aa14150a4b1ccfae2eaa5e468a","c041522a9fa29c2fc77252eec75834e92ce160c186a432f4b3791877fc3b8e67","a14ed089d4789127264b5d781494dda62e232126ec48c70f563f4fdb9e798dc9","02d3df24f501a590585e1412ef884d01939bfbc22f362ddc6301f2eeebe104f6","cffa60bf33a71d24eeb8c32b34b55c27aab16fe99d320859e991809e78c15177","fab44a254dd979841e96e86042206a6b66a1aefb7e47f3b3d4b35f63628bd329"],"time":1562000078,"nonce":"0000000000000000000000000079000000000000f50800000000000000000000","solution":"007852a36e4b1173858733373f4f3779416d546b5a27258e67bed1592f28ca65acd9c0b926e187de943a086396bf981404a9b2b7757e29e5e7cb78c95f26952f684feee6fa8c59f18265ab16dc017176fb7af24606e4828afd199b1fb210a219ea6199cd279ad6f789090728daed53040ac5f143a5447e777d8e8ad4c04f10b3c7ab01444577d254d86d51562a16797e19a52526d893966f0d570f1b5b977149df3baf86183c3dc2009a16cb2957fc39cf493523797ee9f5e0dc1f88e71331876f8c20d7357c18a33bfe23e050dda468637509b82c33de88af77ab17422b3ab09db1ff74daf0211f3f96366e18cf47520f9238c81e0482c8dedeeccc0a14ca8619716eeb9a16c4672e65c3627671590a871fb6176b56c99ca11d55b3afb75aacae02c4ba59580eeae9ddcc44d1d0f0e778a8446b0f5a4e9a5e5a0728e53d37931594e9f6b1e4697924c0167cbcd9de20022b0da3d7ab37818621e0642735a6dc479c068fa202766ba42901f8662deb83fa64e15df13d412e83942834acc5079cc52f96ee8ba12feed84efc2579741f340c3bea2d1f99c17b96d5fef7f00fc994b19fb23e0f9c708202af8ad5a3c3d12d111df4afd7a91f903f14301b9b056bc5d7e939383297c67a12fbb67e70991687620a6b95516f07ea6386a23e69ed68e919fe5e1c1e69d81d12bb22a5a881fa03c2a1dca68c480caf0255a3817a097735a49cd2de06ad40c6e335d810030ae5ac22c40ae7546e8201c7281d4dda5ed8fbe19e1a44d5acb8d48bd710822292dda7c8751bfa9a617e6b5f8c358bdc775d05c717a243dcbc324727dab0720561258d5e837c349a9d32e591abbf6cfd635d5c4811155b0130492c94946741e75db13481724858fa1b3166c73abb56ef5bbbedf68a1fe9fa3a649d36b27537e3bd83d7a03b51f7c874ce47e0560227523f1ac902f8670c24505eb49aeaf356537ee17568b43fa0761e6f4503a24bc48f7e8bb35b0b26ab462e4f5bb6f608903f5ea2d0b8cd88b4e4a6c56bd2f5ab86530f5b19f8632e7ddf1f8b878362aa3254db3b69faff952607fceaab2052794d52b4419cbf79c0c0aedc495e4a0d63d9937e1c7d0fe1d3041506c5d1219c856e79230b331412e7e77415f188f2e235e32aa6a8c01ba74b0f7b41e474dc5c33320c11c717f9e67650a7de3f10073f3efbb6624493c84bc0afbecfd2a4a5dc474f6a0de87bd37b99d02919b3f75540ccae01ddd6b54fdb2359934bc9a9afc9d4e7e496774d37475c129dfcc943050529bf1f63dddb19b57c00e78452575ef8ca600ca5bd43674faa67ce671392f8a642a2abef9933fa0d58b706a6ca34cf104858a293ea8d8b88cffdec6d1f75e4e0ec24b82ffd3e429874a17b9cd35dce2bfa28d6bda7f7771ab5dcd5e73267dc176e48949d7590065842101e555265a54f0b99dff7ea1f606b7f25b3337f4e6f2f98064fb1cf742e94e6222dc0ee5fce6d12492feb159f2d3ba6830256729ca3b55117ee1df93a1e476b20e635e98e720463fe4fc3911ae2eaf8a51776af12ad929ccb8e8181f07263dea1ce4b3d490318119e20d920ba1f5504f416a727d9fd783a54ff271f63b7794151a63119b97e01aff9e063c3ce1ee8152b8c847d316bd287a3a019f8be5e2c4ed9a2dae4a309235494d49fb0afbc7ac0f055de147218c31336e025446e58e25a705f474fe6a2135db1762ecf5bcb5f128ffd4b7315ab3b76703a0f82ee55e70d7f7b5729164af64ceb69777bcf4e22dbf827f0cde053af1a410be4b29b9fa13fa10a75c0f618327be45b10c7142d27637fcc4f16439719b9962188d2c35dfc421a899f10f6dbab41aff429be36612227fb4cbb57b8be55231ad263684dc90e993cdc51e366f10521c1ff3b0f4e","bits":"1c17e30b","difficulty":5618876.761388252,"chainwork":"000000000000000000000000000000000000000000000000001b9fdd21216eef","anchor":"1c8e3c297d9a3724925916324ebced0eaea89d3922c34ccbb663cf2c96b6fa94","valuePools":[{"id":"sprout","monitored":true,"chainValue":135839.18069093,"chainValueZat":13583918069093,"valueDelta":-0.00020200,"valueDeltaZat":-20200}],"previousblockhash":"0000000015d761570ff83dba5c4e8636db7c602e100af54aed2eb584382f95a3","nextblockhash":"000000001377837ba4b4fca180c472008409eb8702f9918ebbbcca9c16bd9d3d"},"error":null,"id":"curltest"}

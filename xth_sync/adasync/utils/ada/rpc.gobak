@@ -1,0 +1,201 @@
+package ada
+
+import (
+	"adasync/common/db"
+	"adasync/models/ada"
+	"encoding/hex"
+	"errors"
+	"log"
+	"strings"
+	"xorm.io/xorm"
+)
+
+type RpcClient struct {
+	db *xorm.Engine
+}
+
+func NewRpcClient(coin  *xorm.Engine) *RpcClient{
+	return &RpcClient{
+		db:coin,
+	}
+}
+
+func (rpc *RpcClient)GetBlockCount()(int64,error){
+	block := new(ada.Block)
+	_,err := rpc.db.OrderBy("id desc").Get(block)
+	return block.BlockNo,err
+}
+type  Block struct {
+	Height int64
+	Hash string
+	Txs []*Transaction
+}
+type Transaction struct {
+	Hash string
+	BlockId int64
+	Vin  []*Txin
+	Vout []*Txout
+	Fee  int64
+}
+type Txin struct {
+	Txid    string
+	Address string
+	Index   int64
+	Value   int64
+}
+type Txout struct {
+	Txid string
+	Address string
+	Index int64
+	Value int64
+}
+func (rpc *RpcClient)GetBlockById(blockId int64)(*ada.Block,error){
+	blockData := new(ada.Block)
+	blockData.Id=blockId
+	succ,err := db.AdaConn.Get(blockData)
+
+	if !succ{
+		return nil,errors.New("block 高度还未达到")
+	}
+	return blockData,err
+}
+func (rpc *RpcClient) GetBlockByHeight(h int64) (*Block,error){
+	ret := new(Block)
+	blockData := new(ada.Block)
+	blockData.BlockNo=h
+	succ,err := db.AdaConn.Get(blockData)
+	if err != nil {
+		log.Println(err.Error())
+		return nil, err
+	}
+	if !succ{
+		return nil,errors.New("block 高度还未达到")
+	}
+	ret.Height=h
+	ret.Hash=hex.EncodeToString(blockData.Hash)
+
+	//获取交易
+	txs := make([]ada.Tx,0)
+	//txs := new(ada.Transaction)
+	//db.AdaConn.ShowSQL(true)
+	err = db.AdaConn.Where("block_id=?",blockData.Id).Find(&txs)
+	if err != nil {
+		log.Println(err.Error())
+		return nil, err
+	}
+	for _,txdata := range txs {
+		tx,err := rpc.getTxById(txdata.Id)
+		if err !=nil {
+			log.Println(err.Error())
+			return nil, err
+		}
+		ret.Txs = append(ret.Txs,tx)
+	}
+	return ret,nil
+
+}
+func (rpc *RpcClient)ListUninspent(addr string)([]*Txout,error){
+	uninspend := make([]ada.TxOut,0)
+	err := db.AdaConn.Join("left","tx_in","tx_in.tx_out_id=tx_out.tx_id and tx_in.tx_out_index=tx_out.index").Where("tx_in.id is null").Find(&uninspend,ada.TxOut{Address: addr})
+	if err !=nil {
+		return nil,err
+	}
+	ret := make([]*Txout,0)
+	for _,txout :=  range uninspend{
+		tmptxout := new(Txout)
+		tmptxout.Index=txout.Index
+
+
+		tmptx := new(ada.Tx)
+		tmptx.Id = txout.TxId
+		succ,err := rpc.db.Get(tmptx)
+		if err != nil {
+			return nil, err
+		}
+		if !succ{
+			return nil,errors.New("tx.id没查到")
+		}
+		tmptxout.Txid = hex.EncodeToString(tmptx.Hash)
+		tmptxout.Value=txout.Value
+		ret = append(ret,tmptxout)
+	}
+	return ret,nil
+}
+func (rpc *RpcClient)GetRawTransaction(txHash string) (*Transaction,error){
+	txHash = strings.TrimPrefix(txHash,"0x")
+	txhash,err := hex.DecodeString(txHash)
+	if err != nil {
+		return nil,err
+	}
+	tx := new(ada.Tx)
+	succ,err := db.AdaConn.Where("hash=?",txhash).Get(tx)
+	if err != nil {
+		return nil,err
+	}
+	if !succ{
+		return nil,errors.New("交易没查到")
+	}
+	return rpc.getTxById(tx.Id)
+}
+func (rpc *RpcClient)getTxById(id int64) (*Transaction,error){
+	ret := new(Transaction)
+	tx:= new(ada.Tx)
+	succ,err :=rpc.db.Where("id=?",id).Get(tx)
+	if err != nil {
+		return nil, err
+	}
+	if !succ{
+		return nil,errors.New("tx.id没查到")
+	}
+	ret.BlockId = tx.BlockId
+	ret.Fee = tx.Fee
+	ret.Hash = hex.EncodeToString(tx.Hash)
+
+
+	txouts := make([]ada.TxOut,0)
+	err = rpc.db.Where("tx_id=?",tx.Id).Find(&txouts)
+	if err != nil {
+		return nil, err
+	}
+	for _,txout := range txouts{
+		tmptxout := new(Txout)
+		tmptxout.Address=txout.Address
+		tmptxout.Index = txout.Index
+		tmptxout.Value = txout.Value
+		tmptx := new(ada.Tx)
+		tmptx.Id = txout.TxId
+		succ,err = rpc.db.Get(tmptx)
+		if err != nil {
+			return nil, err
+		}
+		if !succ{
+			return nil,errors.New("tx.id没查到")
+		}
+		tmptxout.Txid = hex.EncodeToString(tmptx.Hash)
+		ret.Vout = append(ret.Vout,tmptxout)
+	}
+	txins := make([]ada.TxInExtend,0)
+	err = rpc.db.Join("left","tx_out","tx_in.tx_out_id=tx_out.tx_id and tx_in.tx_out_index=tx_out.index").Where("tx_in.tx_in_id=?",tx.Id).Find(&txins)
+	if err != nil {
+		return nil, err
+	}
+	for _,txin := range txins{
+		tmptxin := new(Txin)
+		tmptxin.Value = txin.Value
+		tmptxin.Index = txin.Index
+		tmptxin.Address=txin.Address
+		tmptx := new(ada.Tx)
+		tmptx.Id = txin.TxOutId
+		succ,err = rpc.db.Get(tmptx)
+		if err != nil {
+			return nil, err
+		}
+		if !succ{
+			return nil,errors.New("tx.id没查到")
+		}
+		tmptxin.Txid = hex.EncodeToString(tmptx.Hash)
+		ret.Vin = append(ret.Vin,tmptxin)
+	}
+	return ret,nil
+
+}

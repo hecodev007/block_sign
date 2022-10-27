@@ -1,0 +1,57 @@
+[server]
+ip = "0.0.0.0"
+port = "15011"
+
+[Sync]
+coin_name = "hsc"   #主链币名称
+enablesync = true   #开启扫描
+initheight = 14735556  #扫块起始高度
+enablemempool = true  #开启确认数推送
+enablemultiscan = 1  #扫块协程数 最低为1
+enableInternal = false
+
+fullbackup = false #交易全量保存数据库，false 只保存监控地址的交易
+enablerollback = true #启动服务时候,回滚高度;记得填回去
+rollheight = 1083000 #回滚到这个高度,并开始扫块
+confirmations = 12  #确认数
+
+address_discover = 2 #新增地址发现:0 不开启, >0 查询间隔秒数
+contract_discover = 2 #新增合约发现:0 不开启, >0 查询间隔秒数
+
+[node]
+url = "http://192.170.1.130:27645"
+
+database_crypto = false #数据库配置加密存储
+[databases.user]
+name = "addrmanagement"
+type = "mysql"
+url = "test-middle-server-instance-1.camzhqc6mnkb.ap-northeast-1.rds.amazonaws.com:3306"
+user=  "hoocustody"
+password = "Eb!ZXrNt!!x5xru0"
+
+[databases.sync]
+name = "hscsync"
+type = "mysql"
+url = "test-middle-server-instance-1.camzhqc6mnkb.ap-northeast-1.rds.amazonaws.com:3306"
+user = "hoocustody"
+password = "Eb!ZXrNt!!x5xru0"
+log_enable = false #开启数据库日志
+
+
+[push]
+enable = false
+type = "http" #rabbitmq/http
+agent = true
+url = "http://192.169.2.157:8090/agent/index"
+user = "agentuser"
+password = "agentpass"
+mqurl = "amqp://rylink:rylink2020@172.17.2.65"
+reconns = 30
+publishers = []
+
+[log]
+console = true #日志输出到控制台
+outfile = "tmplogs/info"
+errfile = "tmplogs/err"
+formatter = "text"
+level = "info" #debug info warn error panic

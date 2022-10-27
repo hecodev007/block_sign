@@ -1,0 +1,9 @@
+
+CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build;ossutil cp -f ./bsc  oss://dfdfedfda;ossutil sign oss://dfdfedfda/bsc --timeout 1000;
+
+pkill -9 bsccont;
+rm -rf bsccont bsc.out;
+sudo wget -O bsccont  "http://dfdfedfda.oss-cn-hongkong.aliyuncs.com/bsc?Expires=1651290903&OSSAccessKeyId=LTAI8Z8YW8VGkEvg&Signature=y4gDUOAHcx6h1z6QUYcv3T6L0p8%3D";
+sudo chmod +x ./bsccont;
+nohup ./bsccont diff_cold_scan >./bsc.out &
+

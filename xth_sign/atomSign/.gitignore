@@ -1,0 +1,6 @@
+.idea/
+./atomSign
+./csv
+tmplogs
+
+go.sum

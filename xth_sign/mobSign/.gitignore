@@ -1,0 +1,6 @@
+/mobSign
+tmplog/
+tmplogs/
+csvbak
+go.sum
+.idea/

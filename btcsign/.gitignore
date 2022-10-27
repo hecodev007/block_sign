@@ -1,0 +1,8 @@
+vendor
+.idea/*
+file
+.DS_Store
+main_test.go
+logs
+*.log
+pem

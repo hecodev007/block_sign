@@ -1,0 +1,76 @@
+appname = "telossync"
+mode = "prod"
+
+[Sync]
+name = "tlos"
+enablesync = true
+enablemultiscan = 0
+enablegoroutine = true
+enablemempool = true
+fullbackup = false
+epochcount = 100
+epochtime  = 60
+initheight = 104864340
+enablerollback = false
+rollheight = 10000
+confirmations = 0
+
+[nodes.tlos]
+url = "http://telos.rylink.io:20888"
+rpc_key = ""
+rpc_secret = ""
+
+[databases.user]
+name= "6kDzq6McR2q5Id4Br0Q="
+type= "mysql"
+url= "70XjuL0YW323J9ZKolEHy2dO6URED2pJn/zF51B37pivhogejk9cjkpIh6kRh35PEyPR/hrj1l92AFKFiTzy"
+user= "70XjuJEOTHmoLdAB"
+password= "32in/6k/X2K8fNwO+UIG3Q=="
+mode= "release"
+
+
+[databases.sync]
+name= "/0H7tr0OUGW9"
+type= "mysql"
+url= "70bxsqQQRCW9Jd4eqUEJh6+rxQyAm/u6l7UHpyET8UsjYHSthv5OeRx3jFjl7iccw1ucPR/26dIuNf0="
+user= "70XjuJ0YW323J9Y="
+password= "5WDdobo8DWy5fIQ6u25YkoPZ"
+mode= "release"
+
+
+[server]
+runmode = "debug"
+ip="0.0.0.0"
+port="18890"
+read_timeout= 60
+write_timeout= 60
+
+
+[push]
+enable = true
+type = "http"
+agent = true
+url = "http://192.169.2.157:8090/agent/index"
+user = "agentuser"
+password = "agentpass"
+mqurl="6knmqfRSBnmnKNoKqgoC284lriwMppBmnYedYdOK9LFRdab8+F9Fo7uT1PsVaW/XnGhtL5xTqCA="
+reconns=30
+publishers=["tlos"]
+
+
+[agent]
+enable = false
+enablepush = true
+url = "http://127.0.0.1:8090/agent/index"
+user = "test"
+password = "test"
+
+[log]
+outfile= "tmplogs/info"
+errfile= "tmplogs/err"
+formatter= "text"
+release= 0.1
+mode= "dev"
+level= "info" #debug info warn error panic
+max_age= 24
+rotation_time= 24

@@ -1,0 +1,33 @@
+coinType = "ftm"
+version = "v1"
+port = "14035"
+debug = true
+walletType = "hot"
+filePath = "./file"
+isStartThread = true
+mchId = "fee_address"
+orderId = "202002102011"
+
+
+[auth]
+enable = false
+user = "123"
+password = "123"
+
+[ftm]
+#main
+#nodeUrl = "https://rpcapi.fantom.network"
+#test
+nodeUrl = "https://rpc.testnet.fantom.network"
+user = ""
+password = ""
+gasPrice = 1000000000
+gasLimit = 60000
+maxGasPriceGwei = 2000
+minGasPriceGwei = 1
+#main
+#networkid = 250
+#ChainId = 250
+#test
+networkid = 4002
+ChainId = 4002

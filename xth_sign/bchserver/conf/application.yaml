@@ -1,0 +1,30 @@
+run_model: "debug"
+
+system_model: cold #冷热系统切换 cold hot
+#system_model: hot #冷热系统切换 cold cold
+
+http:
+  port: 8049
+  read_timeout: 300
+  write_timeout: 3000
+
+log:
+  log_path: "./tmp"
+  log_name: "bchserver.log"
+  log_level: "debug"
+
+bch:
+ addr_path: "./pem/bch/file"  #地址读取目录
+ create_addr_path: "./pem/bch/create"  #地址生成目录
+ default_fee: 100000 #0.001 默认手续费
+ max_fee: 10000000 #0.1 默认最高手续费
+ min_fee: 400 #0.00004 默认最低手续费
+ push_servers:
+ - "http://47.244.140.180:9999/api/v1/bch/send" #广播URL
+ servers:
+ - "http://47.244.140.180:9999/" #暂时无用，无需通过rpc客户端
+
+#cron表达式
+cron:
+  loadkeyjob: "@every 5s"
+

@@ -1,0 +1,5 @@
+.idea/
+/filSign
+tmplogs/
+csv
+go.sum
